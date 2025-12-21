@@ -1,0 +1,382 @@
+/* ============================================
+   SILK Life Magazine - Custom Branding Styles
+   ============================================
+   Colors from CLAUDE.md:
+   - Primary: Warm Coral (#E07A5F)
+   - Secondary: Cream (#FFFDD0)
+   - Accent: Forest Green (#228B22)
+   ============================================ */
+
+:root {
+    --silk-primary: #E07A5F;
+    --silk-secondary: #FFFDD0;
+    --silk-accent: #228B22;
+    --silk-dark: #2C3E50;
+    --silk-light: #F8F9FA;
+    --silk-text: #3E3E3E;
+    --silk-text-light: #6C757D;
+}
+
+/* --- Typography --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
+body {
+    font-family: 'Inter', 'Arial', sans-serif;
+    background: var(--silk-light);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+blockquote,
+.quote_content {
+    font-family: 'Lora', Georgia, serif;
+    font-style: italic;
+}
+
+/* --- Header Branding --- */
+.header_top_bar_container {
+    background: var(--silk-dark);
+}
+
+.header_top_bar_container .header_top_bar {
+    background: var(--silk-dark);
+}
+
+.header_container {
+    background: #FFF;
+    border-bottom: 3px solid var(--silk-primary);
+}
+
+.header .logo h1 a {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--silk-primary) !important;
+    font-weight: 700;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.header .logo h4 {
+    color: var(--silk-accent) !important;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* --- Navigation --- */
+.menu_container {
+    background: var(--silk-primary);
+}
+
+.menu_container nav ul.sf-menu > li > a {
+    color: #FFF !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu_container nav ul.sf-menu > li:hover > a,
+.menu_container nav ul.sf-menu > li.selected > a {
+    background: rgba(0,0,0,0.2);
+}
+
+.menu_container nav ul.sf-menu ul {
+    background: var(--silk-dark);
+}
+
+.menu_container nav ul.sf-menu ul li a {
+    color: #FFF !important;
+}
+
+.menu_container nav ul.sf-menu ul li a:hover {
+    background: var(--silk-primary);
+}
+
+/* --- Category Labels --- */
+.post_details .category a,
+li.category a,
+.category_label {
+    background: var(--silk-primary) !important;
+    color: #FFF !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+
+/* Category-specific colors */
+.category-yoga a,
+[data-category="yoga"] .category a {
+    background: #9CAF88 !important; /* Sage Green */
+}
+
+.category-arts a,
+[data-category="arts"] .category a {
+    background: #C71585 !important; /* Vibrant Magenta */
+}
+
+.category-cafe a,
+[data-category="cafe"] .category a {
+    background: #8B4513 !important; /* Coffee Brown */
+}
+
+.category-homes a,
+[data-category="homes"] .category a {
+    background: #DAA520 !important; /* Warm Wood/Gold */
+}
+
+.category-tech a,
+[data-category="tech"] .category a {
+    background: #1E90FF !important; /* Electric Blue */
+}
+
+.category-community a,
+[data-category="community"] .category a {
+    background: var(--silk-accent) !important;
+}
+
+.category-wellness a,
+[data-category="wellness"] .category a {
+    background: #9CAF88 !important;
+}
+
+/* --- Section Headers --- */
+.section_header,
+.box_header {
+    border-left: 4px solid var(--silk-primary);
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.section_header h4,
+.box_header h4 {
+    color: var(--silk-dark);
+    font-weight: 600;
+}
+
+.section_header h4 span,
+.box_header h4 span {
+    color: var(--silk-primary);
+}
+
+/* --- Post Titles --- */
+.post h5 a,
+.post_content h5 a,
+.blog h5 a {
+    color: var(--silk-dark);
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 500;
+}
+
+.post h5 a:hover,
+.post_content h5 a:hover,
+.blog h5 a:hover {
+    color: var(--silk-primary);
+    text-decoration: none;
+}
+
+/* --- Buttons --- */
+.more,
+.button,
+input[type="submit"] {
+    background: var(--silk-primary) !important;
+    color: #FFF !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.more:hover,
+.button:hover,
+input[type="submit"]:hover {
+    background: var(--silk-accent) !important;
+    text-decoration: none;
+}
+
+/* --- Slider --- */
+.slider_container .description {
+    background: rgba(44, 62, 80, 0.9);
+}
+
+.slider_container .description h2 a {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.slider_container .description h2 a:hover {
+    color: var(--silk-primary);
+}
+
+/* --- Sidebar --- */
+.sidebar .box_header {
+    background: var(--silk-secondary);
+    border-left: 4px solid var(--silk-primary);
+}
+
+.sidebar .box_header h4 {
+    color: var(--silk-dark);
+}
+
+/* --- Footer --- */
+.footer_container {
+    background: var(--silk-dark);
+}
+
+.footer_container h4 {
+    color: #FFF;
+    font-family: 'Playfair Display', Georgia, serif;
+    border-bottom: 2px solid var(--silk-primary);
+    padding-bottom: 10px;
+}
+
+.footer_container a {
+    color: rgba(255,255,255,0.8);
+}
+
+.footer_container a:hover {
+    color: var(--silk-primary);
+}
+
+.footer_bottom_container {
+    background: #1a252f;
+}
+
+/* --- Social Icons --- */
+.social_icons a:hover {
+    opacity: 0.8;
+}
+
+/* --- Newsletter Box --- */
+.newsletter_box {
+    background: var(--silk-secondary);
+    border: 2px solid var(--silk-primary);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.newsletter_box h4 {
+    color: var(--silk-dark);
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* --- Tabs --- */
+.tabs_box .tabs li.selected a {
+    background: var(--silk-primary);
+    color: #FFF;
+}
+
+/* --- Author Box --- */
+.author_box {
+    border-left: 4px solid var(--silk-primary);
+    background: var(--silk-secondary);
+}
+
+/* --- Blockquotes --- */
+blockquote {
+    border-left: 4px solid var(--silk-primary);
+    background: var(--silk-secondary);
+    font-family: 'Lora', Georgia, serif;
+    font-style: italic;
+    color: var(--silk-dark);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .header .logo h1 a {
+        font-size: 28px;
+    }
+
+    .menu_container nav {
+        background: var(--silk-primary);
+    }
+}
+
+/* --- SILK Unified Navigation Bar --- */
+.silk-nav-bar {
+    background: var(--silk-dark);
+    padding: 8px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+
+.silk-nav-bar .silk-sites {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.silk-nav-bar .silk-sites a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.silk-nav-bar .silk-sites a:hover {
+    color: var(--silk-primary);
+}
+
+.silk-nav-bar .silk-sites .active a {
+    color: var(--silk-primary);
+    font-weight: 600;
+}
+
+/* --- Article Cards Enhancement --- */
+.post {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* --- Featured Story Ribbon --- */
+.featured-ribbon {
+    position: absolute;
+    top: 15px;
+    left: -5px;
+    background: var(--silk-accent);
+    color: #FFF;
+    padding: 5px 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- SILK Values Badge --- */
+.silk-values {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.silk-value {
+    background: var(--silk-secondary);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--silk-dark);
+    font-family: 'Inter', sans-serif;
+}
+
+.silk-value.strength { border-left: 3px solid #E07A5F; }
+.silk-value.integrity { border-left: 3px solid #228B22; }
+.silk-value.love { border-left: 3px solid #C71585; }
+.silk-value.knowledge { border-left: 3px solid #1E90FF; }
