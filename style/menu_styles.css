@@ -27,7 +27,7 @@
 .style_2 .sf-menu a:hover,
 .style_3 .sf-menu a:hover
 {
-	background-color: #ED1C24;
+	background-color: #9CAF88;
 }
 .style_2 .sf-menu li:hover, .style_2 .sf-menu li.selected,
 .style_2 .sf-menu li.submenu:hover,
@@ -46,9 +46,9 @@
 .style_10 .sf-menu li:hover a, .style_10 .sf-menu li.selected a,
 .style_10 .sf-menu li.submenu:hover a
 {
-	background-color: #ED1C24;
-	border-top-color: #ED1C24;
-	border-bottom-color: #ED1C24;
+	background-color: #9CAF88;
+	border-top-color: #9CAF88;
+	border-bottom-color: #9CAF88;
 }
 .style_2 .sf-menu li.selected.submenu a,
 .style_2 .sf-menu li.submenu:hover a,
@@ -86,7 +86,7 @@
 .style_3.menu_container,
 .style_3 .sf-menu li
 {
-	border-top-color: #ED1C24;
+	border-top-color: #9CAF88;
 }
 /* --- menu style 4 --- */
 .style_4.menu_container,
@@ -102,7 +102,7 @@
 {
 	background-color: #FFF;
 	border-bottom-color: #FFF;
-	border-top-color: #ED1C24;
+	border-top-color: #9CAF88;
 }
 /* --- menu style 5 & 7 & 9 & 10 --- */
 .style_5.menu_container,
@@ -118,7 +118,7 @@
 .style_5 .sf-menu a:hover,
 .style_10 .sf-menu a:hover
 {
-	background-color: #ED1C24;
+	background-color: #9CAF88;
 }
 /* --- menu style 6 --- */
 .style_6 .sf-menu
