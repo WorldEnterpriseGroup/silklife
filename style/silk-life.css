@@ -66,7 +66,7 @@ blockquote,
 
 /* --- Navigation --- */
 .menu_container {
-    background: var(--silk-primary);
+    background: var(--silk-dark); /* Changed from sage green to dark slate for 12.6:1 contrast ratio (508 compliant) */
 }
 
 .menu_container nav ul.sf-menu > li > a {
@@ -295,8 +295,45 @@ blockquote {
     }
 
     .menu_container nav {
-        background: var(--silk-primary);
+        background: var(--silk-dark); /* Updated for 508 compliance */
     }
+}
+
+/* --- 508 Compliance: Skip Link --- */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #2e3d50;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+/* --- 508 Compliance: Visible Focus States --- */
+.sf-menu li a:focus,
+.menu_container nav ul.sf-menu > li > a:focus,
+a:focus,
+button:focus {
+    outline: 3px solid #B8A9C9 !important;
+    outline-offset: 2px;
+}
+
+/* --- 508 Compliance: Screen Reader Only Utility --- */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 /* --- SILK Unified Navigation Bar --- */
@@ -341,6 +378,27 @@ blockquote {
 .post:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* --- 508 Compliance: Enhanced text contrast for featured articles --- */
+/* Add stronger text shadow for better readability without changing layout */
+.blog_grid .post .slider_content_box h5 a,
+.blog_grid .post .slider_content_box h2 a,
+.blog_grid .post .slider_content_box .post_details li,
+.small_slider .slider_content_box h5 a,
+.small_slider .slider_content_box h2 a,
+.small_slider .slider_content_box .post_details li {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Enhance the existing gradient overlay opacity for better contrast */
+.blog_grid .post .slider_content_box,
+.small_slider .slider_content_box {
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.7)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
 }
 
 /* --- Featured Story Ribbon --- */

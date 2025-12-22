@@ -674,9 +674,9 @@ h6
 /* --- menu --- */
 .menu_container
 {
-	border-top: 3px solid #E9E9E9;
-	border-bottom: 1px solid #E9E9E9;
-	background: #FFF;
+	border-top: 3px solid #1a252f; /* Changed to darker shade for dark theme */
+	border-bottom: 1px solid #1a252f; /* Changed to darker shade for dark theme */
+	background: #2e3d50; /* Changed to dark slate - matches silk-life.css */
 }
 .menu_container.sticky.move
 {
@@ -703,8 +703,8 @@ h6
 {
 	height: 42px;
 	border: none;
-	border-top: 3px solid #E9E9E9;
-	border-bottom: 1px solid #E9E9E9;
+	border-top: 3px solid #1a252f; /* Changed to darker shade for dark theme */
+	border-bottom: 1px solid #1a252f; /* Changed to darker shade for dark theme */
 	padding-right: 15px;
 }
 .sf-menu>li
@@ -713,14 +713,14 @@ h6
 }
 .sf-menu li, .sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active
 {
-	background: none #fff;
+	background: none #2e3d50; /* Changed to dark slate - matches silk-life.css */
 }
 .sf-menu li a, .sf-menu li a:visited
 {
 	font-family: 'Roboto';
 	font-size: 18px;
 	font-weight: 400;
-	color: #25282A;
+	color: #FFF; /* Changed to white for dark background - can be overridden by silk-life.css */
 	padding: 10px 0 15px 15px;
 	border: none;
 }
@@ -739,7 +739,7 @@ h6
 }
 .sf-menu a:hover
 {
-	background-color: #F0F0F0;
+	background-color: rgba(0,0,0,0.2); /* Dark slate with transparency for hover */
 }
 .sf-menu li.submenu ul
 {
@@ -748,9 +748,9 @@ h6
 .sf-menu li:hover, .sf-menu li.selected,
 .sf-menu li.submenu:hover
 {
-	background-color: #F0F0F0;
+	background-color: rgba(0,0,0,0.2); /* Dark slate with transparency */
 	border-top-color: #9CAF88;
-	border-bottom-color: #F0F0F0;
+	border-bottom-color: rgba(0,0,0,0.2);
 }
 .sf-menu li ul
 {
