@@ -388,6 +388,7 @@ button:focus {
 .small_slider .slider_content_box h5 a,
 .small_slider .slider_content_box h2 a,
 .small_slider .slider_content_box .post_details li {
+    color: #FFFFFF !important;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0, 0, 0, 0.7);
 }
 
@@ -437,3 +438,197 @@ button:focus {
 .silk-value.integrity { border-left: 3px solid #A8B5A0; }
 .silk-value.love { border-left: 3px solid #B8A9C9; }
 .silk-value.knowledge { border-left: 3px solid #94A7B8; }
+
+/* ============================================
+   SILK Ecosystem Promotion Blocks
+   ============================================ */
+
+.silk-promo-block {
+    background: linear-gradient(135deg, var(--silk-secondary) 0%, #fff 100%);
+    border-radius: 12px;
+    padding: 25px 30px;
+    text-align: center;
+    border: 1px solid rgba(156, 175, 136, 0.3);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.silk-promo-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-color: var(--silk-primary);
+}
+
+.silk-promo-block .promo-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.silk-promo-block .promo-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--silk-text-light);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.silk-promo-block .promo-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--silk-dark);
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.silk-promo-block .promo-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--silk-text);
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.silk-promo-block .promo-cta {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* SILK Yoga - Lavender theme */
+.silk-promo-block.yoga {
+    background: linear-gradient(135deg, #f3eff8 0%, #fff 100%);
+    border-color: rgba(184, 169, 201, 0.4);
+}
+
+.silk-promo-block.yoga .promo-cta {
+    background: #B8A9C9;
+    color: #fff;
+}
+
+.silk-promo-block.yoga .promo-cta:hover {
+    background: #9d8bb3;
+}
+
+/* SILK Homes - Sage Green theme */
+.silk-promo-block.homes {
+    background: linear-gradient(135deg, #f4f7f2 0%, #fff 100%);
+    border-color: rgba(156, 175, 136, 0.4);
+}
+
+.silk-promo-block.homes .promo-cta {
+    background: #9CAF88;
+    color: #fff;
+}
+
+.silk-promo-block.homes .promo-cta:hover {
+    background: #8a9d78;
+}
+
+/* SILK Corp - Slate Blue theme */
+.silk-promo-block.corp {
+    background: linear-gradient(135deg, #eef2f5 0%, #fff 100%);
+    border-color: rgba(46, 61, 80, 0.2);
+}
+
+.silk-promo-block.corp .promo-cta {
+    background: var(--silk-dark);
+    color: #fff;
+}
+
+.silk-promo-block.corp .promo-cta:hover {
+    background: #1a252f;
+}
+
+/* Horizontal promo row */
+.silk-promo-row {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.silk-promo-row .silk-promo-block {
+    flex: 1;
+}
+
+/* Sidebar promo stack */
+.silk-promo-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.silk-promo-sidebar .silk-promo-block {
+    padding: 20px;
+}
+
+.silk-promo-sidebar .silk-promo-block .promo-title {
+    font-size: 18px;
+}
+
+.silk-promo-sidebar .silk-promo-block .promo-text {
+    font-size: 13px;
+}
+
+/* Header banner promo */
+.silk-promo-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: linear-gradient(90deg, var(--silk-dark) 0%, #3d4f63 100%);
+    padding: 12px 30px;
+    border-radius: 8px;
+}
+
+.silk-promo-banner .promo-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.silk-promo-banner .promo-item:hover {
+    opacity: 0.85;
+}
+
+.silk-promo-banner .promo-item .icon {
+    font-size: 20px;
+}
+
+.silk-promo-banner .promo-item .text {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.silk-promo-banner .promo-item .site {
+    font-weight: 600;
+    color: var(--silk-primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .silk-promo-row {
+        flex-direction: column;
+    }
+
+    .silk-promo-banner {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+}
