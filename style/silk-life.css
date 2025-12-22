@@ -1,20 +1,19 @@
 /* ============================================
    SILK Life Magazine - Custom Branding Styles
    ============================================
-   Colors from CLAUDE.md:
-   - Primary: Warm Coral (#E07A5F)
-   - Secondary: Cream (#FFFDD0)
-   - Accent: Forest Green (#228B22)
+   Calming yoga-inspired palette matching
+   SILK Yoga (#b39fd3) and SILK Corp (#a5cbe1)
    ============================================ */
 
 :root {
-    --silk-primary: #E07A5F;
-    --silk-secondary: #FFFDD0;
-    --silk-accent: #228B22;
-    --silk-dark: #2C3E50;
-    --silk-light: #F8F9FA;
-    --silk-text: #3E3E3E;
-    --silk-text-light: #6C757D;
+    --silk-primary: #9CAF88;      /* Sage Green - calming, natural */
+    --silk-secondary: #F7F6F3;    /* Warm off-white */
+    --silk-accent: #B8A9C9;       /* Soft lavender - ties to SILK Yoga */
+    --silk-dark: #2e3d50;         /* Dark slate - matches SILK Corp */
+    --silk-light: #FAFAF8;        /* Soft warm white */
+    --silk-text: #4A5568;         /* Softer dark gray */
+    --silk-text-light: #718096;   /* Muted gray */
+    --silk-warm: #D4C5B9;         /* Warm taupe for accents */
 }
 
 /* --- Typography --- */
@@ -110,7 +109,7 @@ li.category a,
     border-radius: 2px;
 }
 
-/* Category-specific colors */
+/* Category-specific colors - soft, muted tones */
 .category-yoga a,
 [data-category="yoga"] .category a {
     background: #9CAF88 !important; /* Sage Green */
@@ -118,22 +117,22 @@ li.category a,
 
 .category-arts a,
 [data-category="arts"] .category a {
-    background: #C71585 !important; /* Vibrant Magenta */
+    background: #B8A9C9 !important; /* Soft Lavender */
 }
 
 .category-cafe a,
 [data-category="cafe"] .category a {
-    background: #8B4513 !important; /* Coffee Brown */
+    background: #C4A77D !important; /* Warm Sand/Latte */
 }
 
 .category-homes a,
 [data-category="homes"] .category a {
-    background: #DAA520 !important; /* Warm Wood/Gold */
+    background: #A8B5A0 !important; /* Muted Olive */
 }
 
 .category-tech a,
 [data-category="tech"] .category a {
-    background: #1E90FF !important; /* Electric Blue */
+    background: #94A7B8 !important; /* Soft Steel Blue */
 }
 
 .category-community a,
@@ -376,7 +375,7 @@ blockquote {
     font-family: 'Inter', sans-serif;
 }
 
-.silk-value.strength { border-left: 3px solid #E07A5F; }
-.silk-value.integrity { border-left: 3px solid #228B22; }
-.silk-value.love { border-left: 3px solid #C71585; }
-.silk-value.knowledge { border-left: 3px solid #1E90FF; }
+.silk-value.strength { border-left: 3px solid #9CAF88; }
+.silk-value.integrity { border-left: 3px solid #A8B5A0; }
+.silk-value.love { border-left: 3px solid #B8A9C9; }
+.silk-value.knowledge { border-left: 3px solid #94A7B8; }
