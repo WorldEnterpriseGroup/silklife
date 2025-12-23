@@ -620,6 +620,87 @@ button:focus {
     color: var(--silk-primary);
 }
 
+/* Image-based advertisement blocks */
+.silk-ad-banner {
+    display: block;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin: 30px 0;
+}
+
+.silk-ad-banner:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.silk-ad-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.silk-ad-banner .ad-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    padding: 30px 25px 20px;
+    color: #fff;
+}
+
+.silk-ad-banner .ad-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.silk-ad-banner .ad-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.silk-ad-banner .ad-cta {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--silk-primary);
+}
+
+.silk-ad-banner.full-width {
+    border-radius: 0;
+    margin: 40px -15px;
+}
+
+.silk-ad-banner.full-width .ad-overlay {
+    padding: 40px 30px 25px;
+}
+
+.silk-ad-banner.full-width .ad-title {
+    font-size: 32px;
+}
+
+/* Sidebar ad styling */
+.silk-ad-sidebar {
+    margin: 20px 0;
+}
+
+.silk-ad-sidebar .ad-title {
+    font-size: 18px;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .silk-promo-row {
@@ -630,5 +711,13 @@ button:focus {
         flex-direction: column;
         gap: 15px;
         padding: 20px;
+    }
+
+    .silk-ad-banner .ad-title {
+        font-size: 18px;
+    }
+
+    .silk-ad-banner.full-width .ad-title {
+        font-size: 22px;
     }
 }
