@@ -1,63 +1,792 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>The House That Taught Me How to Share - SILK Life Magazine</title>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
-<meta name="description" content="Jordan moved into the Ravenswood co-housing thinking they'd have a private room and share a kitchen. They got that, plus an education in what home actually means." />
-<link href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap' rel='stylesheet'>
-<link rel="stylesheet" href="style/reset.css">
-<link rel="stylesheet" href="style/style.css">
-<link rel="stylesheet" href="style/silk-life.css">
-</head>
-<body>
-<div class="site_container">
-<div class="page">
-<div class="page_layout clearfix">
-<div class="row">
-<div class="column column_2_3">
-<div class="post single">
-<h1 class="post_title">The House That Taught Me How to Share</h1>
-<ul class="post_details clearfix">
-<li class="detail category">In <a href="category_homes.html">Homes & Living</a></li>
-<li class="detail date">3:00 PM, Dec 16</li>
-<li class="detail author">By <a href="#">Jordan Lee</a></li>
-</ul>
-<img src="images/articles/homes-tour.webp" alt="Victorian cottage hallway showing shared living space in Ravenswood">
-<div class="post_content clearfix">
-<h3 class="excerpt">The tour took fifteen minutes. Emma showed me my room—small, bright, enough space for a bed and desk. The shared kitchen. The parlor. Two bathrooms for five people. "That's it," she said. "Questions?" I had a thousand questions. I asked none of them. I moved in the next week.</h3>
-<div class="text">
-<p>I'd lived alone for eight years. My own apartment, my own schedule, my own everything. Privacy was normal. Sharing was what you did in college dorms, suffering through until you could afford your own place.</p>
-<p>Then rent went up. Again. And I found myself at thirty-five, priced out of living alone, facing a choice: different city, or different living situation.</p>
-<p>SILK Homes wasn't what I expected. The Ravenswood cottage is old—1892 old. Creaky floors, vintage fixtures, that particular smell of houses that have seen over a century of people living and leaving. But it's maintained, warm, full of afternoon light through wavy glass windows.</p>
-<p>"We share common spaces," Emma explained during the tour. "Kitchen, living room, dining room. Bedrooms are private. We have a cleaning schedule, grocery system, house meetings once a month."</p>
-<blockquote class="inside_text">
-Living with people isn't about losing privacy. It's about gaining presence—someone to notice if you're okay, to share coffee with at odd hours, to remind you you're not alone.
-<span class="author">— Jordan Lee</span>
-</blockquote>
-<p>The first month was adjustment. Learning whose footsteps were whose. Understanding the morning bathroom dance. Figuring out which shelf in the fridge was mine, which cookware was communal, when quiet hours started.</p>
-<p>I expected friction. Rules broken, arguments over dishes, passive-aggressive notes about thermostats. College dorm drama at middle age.</p>
-<p>Instead: Sarah making extra coffee because she heard me coming downstairs. Tom leaving a book on my door with a note: "thought you'd like this." Maya teaching me to cook actual vegetables instead of surviving on takeout. Bill fixing my bike without being asked.</p>
-<p>Small kindnesses. Daily noticing. The opposite of isolation.</p>
-<p>We're not best friends. We don't hang out constantly. Tom annoys me sometimes—he talks during movies, leaves beard trimmings in the sink. I probably annoy him back. But we coexist, and that coexistence has grown into something more: community.</p>
-<p>Last month I got sick—actual flu, not just a cold. Stayed in bed for three days. Nobody lectured me about dishes or cleaning duties. Emma brought soup. Sarah checked on me. Maya left medicine outside my door with a note: "Take this. Sleep. We've got your chores."</p>
-<p>I cried a little, alone in my room. When's the last time anyone took care of me? When's the last time anyone noticed I needed taking care of?</p>
-<p>Living alone, you can disappear. Not die-and-nobody-finds-you dramatic—just fade. Skip meals. Stay up too late. Neglect yourself in small ways that accumulate. There's no witness, so there's no accountability.</p>
-<p>Here, there's witness. Sarah notices if I skip breakfast. Tom asks if I'm okay when I'm quiet. Maya calls me out when I'm working too much. I do the same for them. We keep each other human.</p>
-<p>The house teaches this. Victorian architecture designed for multi-generational living—parlors for gathering, kitchens built for cooking together, porches for sitting outside watching neighbors pass. Modern apartments are designed for isolation. These old houses remember community.</p>
-<p>Would I go back to living alone? People ask this. I don't know. I miss some things—walking around naked, playing music loud at midnight, eating cereal for dinner without judgment. But I don't miss the loneliness. The coming home to empty rooms. The forgetting how to be around people.</p>
-<p>This house taught me how to share. Not just kitchen space and bathroom schedules, but life. Presence. Attention. The knowledge that someone's listening when I come home, someone cares if I'm okay, someone will notice if I'm not.</p>
-<p>Emma asked if I want to renew my room for another year. I said yes immediately. This Victorian cottage with its creaky floors and shared everything has become more home than any apartment I paid too much rent to live in alone.</p>
-<p>The tour was fifteen minutes. Learning to live here is ongoing. But I'm learning. We all are. Together.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/main.js"></script>
-</body>
+	<head>
+		<title>The House That Taught Me How to Share - SILK Life Magazine</title>
+		<!--meta-->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="SILK Life, Homes, Co-Housing, Victorian Cottage, Ravenswood, Community Living, Intentional Living" />
+		<meta name="description" content="Emma moved into the Ravenswood co-housing thinking she'd have a private room and share a kitchen. She got that, plus an education in what home actually means." />
+		<!--style-->
+		<link href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="style/reset.css">
+		<link rel="stylesheet" type="text/css" href="style/superfish.css">
+		<link rel="stylesheet" type="text/css" href="style/prettyPhoto.css">
+		<link rel="stylesheet" type="text/css" href="style/jquery.qtip.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="style/menu_styles.css">
+		<link rel="stylesheet" type="text/css" href="style/animations.css">
+		<link rel="stylesheet" type="text/css" href="style/responsive.css">
+		<link rel="stylesheet" type="text/css" href="style/odometer-theme-default.css">
+		<link rel="stylesheet" type="text/css" href="style/silk-life.css">
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="manifest" href="images/site.webmanifest">
+		<meta name="theme-color" content="#9CAF88">
+	</head>
+	<body>
+		<div class="site_container">
+			<div class="header_top_bar_container clearfix">
+				<div class="header_top_bar">
+					<form class="search" action="search.html" method="get">
+						<input type="text" name="s" placeholder="Search..." value="Search..." class="search_input hint">
+						<input type="submit" class="search_submit" value="">
+					</form>
+					<ul class="social_icons clearfix">
+						<li>
+							<a target="_blank" href="https://facebook.com/silkcorp" class="social_icon facebook" title="facebook">
+								&nbsp;
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://twitter.com/silkcorp" class="social_icon twitter" title="twitter">
+								&nbsp;
+							</a>
+						</li>
+						<li>
+							<a href="mailto:hello@silklife.org" class="social_icon mail" title="mail">
+								&nbsp;
+							</a>
+						</li>
+					</ul>
+					<div class="latest_news_scrolling_list_container">
+						<ul>
+							<li class="category">LATEST</li>
+							<li class="left"><a href="#"></a></li>
+							<li class="right"><a href="#"></a></li>
+							<li class="posts">
+								<ul class="latest_news_scrolling_list">
+									<li>
+										<a href="post-digital-wellness.html" title="">Digital Wellness: Finding Balance in a Connected World</a>
+									</li>
+									<li>
+										<a href="post-cafe-farm-table.html" title="">From Our Garden to Your Table</a>
+									</li>
+									<li>
+										<a href="post-ravenswood.html" title="">Life in Ravenswood: A Community Portrait</a>
+									</li>
+								</ul>
+							</li>
+							<li class="date">
+								<abbr title="15 Dec 2024" class="timeago current">15 Dec 2024</abbr>
+								<abbr title="12 Dec 2024" class="timeago">12 Dec 2024</abbr>
+								<abbr title="08 Dec 2024" class="timeago">08 Dec 2024</abbr>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header_container">
+				<div class="header clearfix">
+					<div class="logo">
+						<h1><a href="index.html" title="SILK Life">SILK Life</a></h1>
+						<h4>Stories of Intentional Living</h4>
+					</div>
+					<div class="placeholder">728 x 90</div>
+				</div>
+			</div>
+			<div class="menu_container clearfix">
+				<nav>
+				<ul class="sf-menu">
+					<li>
+						<a href="index.html" title="Home">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Stories">
+							Stories
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Community">
+							Community
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Events">
+							Events
+						</a>
+					</li>
+					<li>
+						<a href="#" title="About">
+							About
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Subscribe">
+							Subscribe
+						</a>
+					</li>
+				</ul>
+				</nav>
+				<div class="mobile_menu_container">
+					<a href="#" class="mobile-menu-switch">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</a>
+					<div class="mobile-menu-divider"></div>
+					<nav>
+					<ul class="mobile-menu">
+						<li>
+							<a href="index.html" title="Home">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Stories">
+								Stories
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Community">
+								Community
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Events">
+								Events
+							</a>
+						</li>
+						<li>
+							<a href="#" title="About">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Subscribe">
+								Subscribe
+							</a>
+						</li>
+					</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="page">
+				<div class="page_layout page_margin_top clearfix">
+					<div class="row page_margin_top">
+						<div class="column column_1_1">
+							<div class="horizontal_carousel_container small">
+								<ul class="blog horizontal_carousel autoplay-1 scroll-1 visible-3 navigation-1 easing-easeInOutQuint duration-750">
+									<li class="post">
+										<a href="post-home-sustainable-living.html" title="Sustainable Living in a Victorian Cottage">
+											<img src='images/samples/510x187/image_08.jpg' alt='img'>
+										</a>
+										<h5><a href="post-home-sustainable-living.html" title="Sustainable Living in a Victorian Cottage">Sustainable Living in a Victorian Cottage</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+											<li class="date">
+												10:30 AM, Dec 18
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-home-radiator-patience.html" title="The Radiator's Lesson in Patience">
+											<img src='images/samples/510x187/image_01.jpg' alt='img'>
+										</a>
+										<h5><a href="post-home-radiator-patience.html" title="The Radiator's Lesson in Patience">The Radiator's Lesson in Patience</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+											<li class="date">
+												7:15 AM, Dec 15
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-ravenswood.html" title="Life in Ravenswood: A Community Portrait">
+											<img src='images/samples/510x187/image_03.jpg' alt='img'>
+										</a>
+										<h5><a href="post-ravenswood.html" title="Life in Ravenswood: A Community Portrait">Life in Ravenswood: A Community Portrait</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+											<li class="date">
+												2:30 PM, Dec 12
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<hr class="divider page_margin_top">
+					<!-- HEADER BANNER AD: Cross-promote SILK Cafe -->
+					<div class="header-banner-ad" style="text-align: center; margin: 20px 0;">
+						<a href="https://silkcafe.org" target="_blank" rel="noopener" style="display: block;">
+							<img src="images/ads/banner/silk-cafe-banner.webp" alt="SILK Cafe - Community gathering" style="max-width: 100%; height: auto; border-radius: 8px;">
+						</a>
+						<p style="font-size: 10px; color: #A0AEC0; margin-top: 6px;">Advertisement</p>
+					</div>
+					<div class="row page_margin_top">
+						<div class="column column_2_3">
+							<div class="row">
+								<div class="post single">
+									<h1 class="post_title">
+										The House That Taught Me How to Share
+									</h1>
+									<ul class="post_details clearfix">
+										<li class="detail category">In <a href="category-homes.html" title="HOMES">Homes & Living</a></li>
+										<li class="detail date">3:00 PM, Dec 16</li>
+										<li class="detail author">By <a href="#" title="Emma Clarke">Emma Clarke</a></li>
+										<li class="detail views">2,847 Views</li>
+										<li class="detail comments"><a href="#comments_list" class="scroll_to_comments" title="14 Comments">14 Comments</a></li>
+									</ul>
+									<a href="images/articles/homes-tour.webp" class="post_image page_margin_top prettyPhoto" title="The tour took fifteen minutes. Sarah showed me my room—small, bright, enough space for a bed and desk. The shared kitchen. The parlor. Two bathrooms for five people.">
+										<img src='images/articles/homes-tour.webp' alt='Victorian cottage hallway showing shared living space in Ravenswood'>
+									</a>
+									<div class="sentence">
+										<span class="text">The tour took fifteen minutes. Sarah showed me my room—small, bright, enough space for a bed and desk. The shared kitchen. The parlor. Two bathrooms for five people. "That's it," she said. "Questions?" I had a thousand questions. I asked none of them.</span>
+										<span class="author">Emma Clarke, SILK Life</span>
+									</div>
+									<div class="post_content page_margin_top_section clearfix">
+										<div class="content_box">
+											<h3 class="excerpt">I moved in the next week. That was three years ago. Back then I'd lived alone for eight years—my own apartment in Columbus, my own schedule, my own everything. Privacy was normal. Sharing was what you did in college dorms, something you suffered through until you could afford your own place.</h3>
+											<div class="text">
+												<p>Then rent went up. Again. And I found myself at thirty-five, priced out of living alone in the city, facing a choice: different city, or different living situation.</p>
+												<p>SILK Homes in Ravenswood wasn't what I expected. The cottage is old—1892 old, built when the river town was booming with lumber money. Creaky hardwood floors, vintage radiators that clank like church bells, that particular smell of houses that have seen over a century of people living and leaving. But it's maintained, warm, full of afternoon light through wavy glass windows.</p>
+												<p>"We share common spaces," Sarah explained during the tour, her voice matter-of-fact but kind. "Kitchen, living room, dining room. Bedrooms are private. We have a cleaning schedule, grocery system, house meetings once a month."</p>
+												<blockquote class="inside_text page_margin_top">
+													Living with people isn't about losing privacy. It's about gaining presence—someone to notice if you're okay, to share coffee with at odd hours, to remind you you're not alone.
+													<span class="author">&#8212;&nbsp;&nbsp;Emma Clarke</span>
+												</blockquote>
+												<p>The first month was adjustment. Learning whose footsteps were whose on the old stairs. Understanding the morning bathroom dance—Tom always showered at 5:45, so if you wanted hot water, you went at 6:30. Figuring out which shelf in the fridge was mine, which cookware was communal, when quiet hours started.</p>
+												<p>I expected friction. Rules broken, arguments over dishes, passive-aggressive notes about thermostats. College dorm drama at middle age.</p>
+												<p>Instead: Sarah making extra coffee because she heard me coming downstairs. Tom leaving a book on my door with a note: "thought you'd like this." Maya teaching me to cook actual vegetables instead of surviving on takeout and frozen dinners. Bill fixing my bike chain without being asked, just because he saw it was broken.</p>
+												<p>Small kindnesses. Daily noticing. The opposite of isolation.</p>
+												<div class="sidebar-ad page_margin_top" style="max-width: 500px; margin: 20px auto;">
+													<a href="https://silkhomes.org" class="silk-ad-banner" target="_blank" rel="noopener" style="display: block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+														<img src="images/ads/silk-homes-banner.webp" alt="SILK Homes - Live With Intention" style="width: 100%; height: auto;">
+													</a>
+													<p style="font-size: 10px; color: #718096; text-align: center; margin-top: 5px;">Advertisement</p>
+												</div>
+												<p>We're not best friends. We don't hang out constantly. Tom annoys me sometimes—he talks during movies, leaves beard trimmings in the sink on Sundays when he does his weekly shave. I probably annoy him back with my early-morning keyboard typing when I'm on deadline. But we coexist, and that coexistence has grown into something more: community.</p>
+												<p>Last February I got sick—actual flu, not just a cold. Fever, chills, the works. Stayed in bed for three days straight. Nobody lectured me about dishes or cleaning duties. Sarah brought soup from her grandmother's recipe. Maya checked on me every few hours. Tom left medicine outside my door with a note: "Take this. Sleep. We've got your chores."</p>
+												<p>I cried a little, alone in my room with the afternoon light coming through those old wavy windows. When's the last time anyone took care of me? When's the last time anyone noticed I needed taking care of?</p>
+												<p>Living alone, you can disappear. Not die-and-nobody-finds-you dramatic—just fade. Skip meals. Stay up too late. Neglect yourself in small ways that accumulate. There's no witness, so there's no accountability, no one to call you on your patterns.</p>
+												<blockquote class="inside_text page_margin_top">
+													This house taught me how to share. Not just kitchen space and bathroom schedules, but life. Presence. Attention. The knowledge that someone's listening when I come home.
+													<span class="author">&#8212;&nbsp;&nbsp;Emma Clarke</span>
+												</blockquote>
+												<p>Here, there's witness. Sarah notices if I skip breakfast three days in a row. Tom asks if I'm okay when I'm quieter than usual at dinner. Maya calls me out when I'm working too much, forgetting to go outside. I do the same for them. We keep each other human, keep each other honest.</p>
+												<p>The house teaches this. Victorian architecture designed for multi-generational living—parlors built for gathering, kitchens meant for cooking together, wide porches for sitting outside watching neighbors pass. Modern apartments are designed for isolation, for privacy taken to its logical extreme. These old houses remember community, were built with it in mind.</p>
+												<p>The radiators demand it too—they're all connected, heating the whole house from one boiler in the basement. You can't just heat your room. When one person adjusts the thermostat, everyone feels it. It's a metaphor I didn't ask for but needed.</p>
+												<p>Would I go back to living alone? People ask this when they visit, looking around the shared kitchen with barely-concealed concern. I don't know. I miss some things—walking around naked at 2am, playing music loud at midnight, eating cereal for dinner without anyone making gentle suggestions about nutrition. But I don't miss the loneliness. The coming home to empty rooms. The forgetting how to be around people, how to compromise, how to share.</p>
+												<p>Sarah asked if I wanted to renew my room for another year. I said yes before she finished the question. This Victorian cottage with its creaky floors and shared everything has become more home than any apartment I paid too much rent to live in alone. More real. More true.</p>
+												<p>The tour was fifteen minutes. Learning to live here is ongoing. But I'm learning. We all are. Together, which turns out to be the whole point.</p>
+												<a title="14 Comments" href="post-homes-tour.html" class="read_more page_margin_top scroll_to_comments"><span class="arrow"></span><span>14 COMMENTS</span></a>
+											</div>
+										</div>
+										<div class="author_box animated_element">
+											<div class="author">
+												<a title="Emma Clarke" href="#" class="thumb">
+													<img alt="img" src="images/samples/Team_100x100/image_05.jpg">
+												</a>
+												<div class="details">
+													<h5><a title="Emma Clarke" href="#">Emma Clarke</a></h5>
+													<h6>COMMUNITY MEMBER</h6>
+													<a href="#" class="more highlight margin_top_15">PROFILE</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row page_margin_top">
+								<div class="share_box clearfix">
+									<label>Share:</label>
+									<ul class="social_icons clearfix">
+										<li>
+											<a target="_blank" title="" href="https://facebook.com/silkcorp" class="social_icon facebook">
+												&nbsp;
+											</a>
+										</li>
+										<li>
+											<a target="_blank" title="" href="https://twitter.com/silkcorp" class="social_icon twitter">
+												&nbsp;
+											</a>
+										</li>
+										<li>
+											<a title="" href="mailto:hello@silklife.org" class="social_icon mail">
+												&nbsp;
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row page_margin_top">
+								<ul class="taxonomies tags left clearfix">
+									<li>
+										<a href="#" title="Homes">HOMES</a>
+									</li>
+									<li>
+										<a href="#" title="Co-Housing">CO-HOUSING</a>
+									</li>
+									<li>
+										<a href="#" title="Community Living">COMMUNITY LIVING</a>
+									</li>
+									<li>
+										<a href="#" title="Intentional Living">INTENTIONAL LIVING</a>
+									</li>
+								</ul>
+								<ul class="taxonomies categories right clearfix">
+									<li>
+										<a href="category-homes.html" title="HOMES">HOMES & LIVING</a>
+									</li>
+								</ul>
+							</div>
+							<div class="row page_margin_top_section">
+								<h4 class="box_header">Related Articles</h4>
+								<div class="horizontal_carousel_container page_margin_top">
+									<ul class="blog horizontal_carousel autoplay-1 scroll-1 navigation-1 easing-easeInOutQuint duration-750">
+										<li class="post">
+											<a href="post-home-sustainable-living.html" title="Sustainable Living in a Victorian Cottage">
+												<img src='images/samples/330x242/image_08.jpg' alt='img'>
+											</a>
+											<h5><a href="post-home-sustainable-living.html" title="Sustainable Living in a Victorian Cottage">Sustainable Living in a Victorian Cottage</a></h5>
+											<ul class="post_details simple">
+												<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+												<li class="date">
+													10:30 AM, Dec 18
+												</li>
+											</ul>
+										</li>
+										<li class="post">
+											<a href="post-home-radiator-patience.html" title="The Radiator's Lesson in Patience">
+												<img src='images/samples/330x242/image_01.jpg' alt='img'>
+											</a>
+											<h5><a href="post-home-radiator-patience.html" title="The Radiator's Lesson in Patience">The Radiator's Lesson in Patience</a></h5>
+											<ul class="post_details simple">
+												<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+												<li class="date">
+													7:15 AM, Dec 15
+												</li>
+											</ul>
+										</li>
+										<li class="post">
+											<a href="post-home-community-garden.html" title="The Community Garden That Grew a Neighborhood">
+												<img src='images/samples/330x242/image_03.jpg' alt='img'>
+											</a>
+											<h5><a href="post-home-community-garden.html" title="The Community Garden That Grew a Neighborhood">The Community Garden That Grew a Neighborhood</a></h5>
+											<ul class="post_details simple">
+												<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+												<li class="date">
+													4:45 PM, Dec 10
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row page_margin_top_section">
+								<h4 class="box_header">Leave a Comment</h4>
+								<p class="padding_top_30">Your email address will not be published. Required fields are marked with *</p>
+								<form class="comment_form margin_top_15" id="comment_form" method="post" action="post-homes-tour.html">
+									<fieldset class="column column_1_3">
+										<input class="text_input" name="name" type="text" value="Your Name *" placeholder="Your Name *">
+									</fieldset>
+									<fieldset class="column column_1_3">
+										<input class="text_input" name="email" type="text" value="Your Email *" placeholder="Your Email *">
+									</fieldset>
+									<fieldset class="column column_1_3">
+										<input class="text_input" name="website" type="text" value="Website" placeholder="Website">
+									</fieldset>
+									<fieldset>
+										<textarea name="message" placeholder="Comment *">Comment *</textarea>
+									</fieldset>
+									<fieldset>
+										<input type="submit" value="POST COMMENT" class="more active">
+										<a href="#cancel" id="cancel_comment" title="Cancel reply">Cancel reply</a>
+									</fieldset>
+								</form>
+							</div>
+							<div class="row page_margin_top_section">
+								<h4 class="box_header">14 Comments</h4>
+								<ul id="comments_list">
+									<li class="comment clearfix" id="comment-1">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Sarah Mitchell">Sarah Mitchell</a></h5>
+												<abbr title="16 Dec 2024" class="timeago">16 Dec 2024</abbr>
+											</div>
+											<p>
+												Emma, this made me tear up. I remember your tour day—you looked so nervous. Look at us now. So glad you stayed.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-2">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Maya Chen">Maya Chen</a></h5>
+												<abbr title="16 Dec 2024" class="timeago">16 Dec 2024</abbr>
+											</div>
+											<p>
+												The radiator metaphor! Yes! I never thought about it that way but you're absolutely right. We're all connected to the same heat source.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-3">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Tom Richardson">Tom Richardson</a></h5>
+												<abbr title="16 Dec 2024" class="timeago">16 Dec 2024</abbr>
+											</div>
+											<p>
+												Sorry about the beard trimmings. I'll work on that. Also you're welcome for the book.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-4">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Rachel Kim">Rachel Kim</a></h5>
+												<abbr title="17 Dec 2024" class="timeago">17 Dec 2024</abbr>
+											</div>
+											<p>
+												I've been thinking about co-housing for when my lease ends. This gives me courage to actually try it instead of just wondering.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-5">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Bill Henderson">Bill Henderson</a></h5>
+												<abbr title="17 Dec 2024" class="timeago">17 Dec 2024</abbr>
+											</div>
+											<p>
+												Your bike's chain was loose again yesterday. I tightened it. Old houses, old bikes—they both need regular attention.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-6">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Annie Walsh">Annie Walsh</a></h5>
+												<abbr title="17 Dec 2024" class="timeago">17 Dec 2024</abbr>
+											</div>
+											<p>
+												"Forgetting how to be around people"—I felt that in my bones. Living alone for too long changes you in ways you don't notice until you try to live with others again.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-7">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Jordan Hayes">Jordan Hayes</a></h5>
+												<abbr title="18 Dec 2024" class="timeago">18 Dec 2024</abbr>
+											</div>
+											<p>
+												Three years! Has it really been that long? Time moves different when you're not just surviving alone in an apartment.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="column column_1_3">
+							<div class="tabs no_scroll clearfix">
+								<ul class="tabs_navigation clearfix">
+									<li>
+										<a href="#sidebar-most-read" title="Most Read">
+											Most Read
+										</a>
+										<span></span>
+									</li>
+									<li>
+										<a href="#sidebar-most-commented" title="Commented">
+											Commented
+										</a>
+										<span></span>
+									</li>
+								</ul>
+								<div id="sidebar-most-read">
+									<ul class="blog rating page_margin_top clearfix">
+										<li class="post">
+											<a href="post-ravenswood.html" title="Life in Ravenswood">
+												<img src='images/samples/510x187/image_12.jpg' alt='img'>
+											</a>
+											<div class="post_content">
+												<span class="number animated_element" data-value="4 521"></span>
+												<h5><a href="post-ravenswood.html" title="Life in Ravenswood">Life in Ravenswood: A Community Portrait</a></h5>
+												<ul class="post_details simple">
+													<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="post">
+											<div class="post_content">
+												<span class="number animated_element" data-value="3 892"></span>
+												<h5><a href="post-coffee-culture.html" title="The Art of Slow Coffee">The Art of Slow Coffee</a></h5>
+												<ul class="post_details simple">
+													<li class="category"><a href="category-cafe.html" title="CAFE">CAFE</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="post">
+											<div class="post_content">
+												<span class="number animated_element" data-value="3 124"></span>
+												<h5><a href="post-digital-wellness.html" title="Digital Wellness">Digital Wellness: Finding Balance</a></h5>
+												<ul class="post_details simple">
+													<li class="category"><a href="category-tech.html" title="TECH">TECH</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+									<a class="more page_margin_top" href="#">SHOW MORE</a>
+								</div>
+								<div id="sidebar-most-commented">
+									<ul class="blog rating page_margin_top clearfix">
+										<li class="post">
+											<a href="post-art-walk.html" title="First Friday Art Walk">
+												<img src='images/samples/510x187/image_02.jpg' alt='img'>
+											</a>
+											<div class="post_content">
+												<span class="number animated_element" data-value="45"></span>
+												<h5><a href="post-art-walk.html" title="First Friday Art Walk">First Friday Art Walk</a></h5>
+												<ul class="post_details simple">
+													<li class="category"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+									<a class="more page_margin_top" href="#">SHOW MORE</a>
+								</div>
+							</div>
+							<div class="row page_margin_top_section" style="background: linear-gradient(135deg, #f4f7f2 0%, #fff 100%); border-radius: 12px; padding: 20px; border: 1px solid rgba(156, 175, 136, 0.3);">
+								<h4 class="box_header" style="color: #2C3E50;">More in Homes</h4>
+								<ul class="blog small page_margin_top clearfix" style="list-style: none; padding: 0;">
+									<li class="post" style="margin-bottom: 15px; border-bottom: 1px solid rgba(156, 175, 136, 0.2); padding-bottom: 15px;">
+										<h6><a href="post-home-sustainable-living.html" title="Sustainable Living in a Victorian Cottage">Sustainable Living in a Victorian Cottage</a></h6>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+										</ul>
+									</li>
+									<li class="post" style="margin-bottom: 15px; border-bottom: 1px solid rgba(156, 175, 136, 0.2); padding-bottom: 15px;">
+										<h6><a href="post-home-radiator-patience.html" title="The Radiator's Lesson in Patience">The Radiator's Lesson in Patience</a></h6>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+										</ul>
+									</li>
+									<li class="post" style="margin-bottom: 15px; border-bottom: 1px solid rgba(156, 175, 136, 0.2); padding-bottom: 15px;">
+										<h6><a href="post-home-community-garden.html" title="The Community Garden That Grew a Neighborhood">The Community Garden That Grew a Neighborhood</a></h6>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+										</ul>
+									</li>
+									<li class="post" style="margin-bottom: 15px; border-bottom: 1px solid rgba(156, 175, 136, 0.2); padding-bottom: 15px;">
+										<h6><a href="post-ravenswood.html" title="Life in Ravenswood">Life in Ravenswood: A Community Portrait</a></h6>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="sidebar-ad page_margin_top">
+								<a href="https://silkhomes.org" class="silk-ad-banner" target="_blank" rel="noopener" style="display: block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+									<img src="images/ads/silk-homes-banner.webp" alt="SILK Homes - Live With Intention" style="width: 100%; height: auto;">
+								</a>
+								<p style="font-size: 10px; color: #718096; text-align: center; margin-top: 5px;">Advertisement</p>
+							</div>
+							<div class="row page_margin_top" style="background: linear-gradient(135deg, #f4f7f2 0%, #fff 100%); border-radius: 12px; padding: 20px; border: 1px solid rgba(156, 175, 136, 0.3);">
+								<blockquote style="border-left: 4px solid #9CAF88; padding-left: 15px; font-style: italic; color: #2C3E50;">
+									<p>"Living with people isn't about losing privacy. It's about gaining presence—someone to notice if you're okay, to share coffee with at odd hours, to remind you you're not alone."</p>
+									<footer style="margin-top: 10px; font-size: 14px; color: #6C757D;">— Emma Clarke</footer>
+								</blockquote>
+							</div>
+							<div class="row page_margin_top_section" style="background: linear-gradient(135deg, #f4f7f2 0%, #fff 100%); border-radius: 12px; padding: 20px; border: 1px solid rgba(156, 175, 136, 0.3);">
+								<h4 class="box_header" style="color: #2C3E50;">Popular Articles</h4>
+								<ul class="blog small page_margin_top clearfix" style="list-style: none; padding: 0;">
+									<li class="post" style="margin-bottom: 15px; border-bottom: 1px solid rgba(156, 175, 136, 0.2); padding-bottom: 15px;">
+										<h6><a href="post-pottery-studio.html" title="Clay & Calm">Clay & Calm: Inside a Local Pottery Studio</a></h6>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+										</ul>
+									</li>
+									<li class="post" style="margin-bottom: 15px; border-bottom: 1px solid rgba(156, 175, 136, 0.2); padding-bottom: 15px;">
+										<h6><a href="post-cafe-farm-table.html" title="From Our Garden to Your Table">From Our Garden to Your Table</a></h6>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-cafe.html" title="CAFE">CAFE</a></li>
+										</ul>
+									</li>
+									<li class="post" style="margin-bottom: 15px; border-bottom: 1px solid rgba(156, 175, 136, 0.2); padding-bottom: 15px;">
+										<h6><a href="post-digital-wellness.html" title="Digital Wellness">Digital Wellness: Finding Balance</a></h6>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-tech.html" title="TECH">TECH</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="sidebar-ad page_margin_top">
+								<a href="https://silkcafe.org" class="silk-ad-banner" target="_blank" rel="noopener" style="display: block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+									<img src="images/ads/silk-cafe-banner.webp" alt="SILK Cafe - Gather With Intention" style="width: 100%; height: auto;">
+								</a>
+								<p style="font-size: 10px; color: #718096; text-align: center; margin-top: 5px;">Advertisement</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_container">
+				<div class="footer clearfix">
+					<div class="row">
+						<div class="column column_1_3">
+							<h4 class="box_header">About SILK Life</h4>
+							<p class="padding_top_bottom_25">SILK Life is a lifestyle magazine celebrating intentional living, wellness, and community in the Mid-Ohio Valley. We share stories of Strength, Integrity, Love, and Knowledge.</p>
+							<div class="row">
+								<div class="column column_1_2">
+									<h5>SILK Life Magazine</h5>
+									<p>
+										Ravenswood, WV<br>
+										Parkersburg, WV<br>
+										Marietta, OH
+									</p>
+								</div>
+								<div class="column column_1_2">
+									<h5>Contact</h5>
+									<p>
+										Email: hello@silklife.org<br>
+										Web: silklife.org
+									</p>
+								</div>
+							</div>
+							<h4 class="box_header page_margin_top">Connect With Us</h4>
+							<ul class="social_icons dark page_margin_top clearfix">
+								<li>
+									<a target="_blank" title="" href="https://facebook.com/silkcorp" class="social_icon facebook">
+										&nbsp;
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="" href="https://twitter.com/silkcorp" class="social_icon twitter">
+										&nbsp;
+									</a>
+								</li>
+								<li>
+									<a title="" href="mailto:hello@silklife.org" class="social_icon mail">
+										&nbsp;
+									</a>
+								</li>
+								<li>
+									<a title="" href="#" class="social_icon instagram">
+										&nbsp;
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="column column_1_3">
+							<h4 class="box_header">Categories</h4>
+							<ul class="taxonomies columns clearfix page_margin_top">
+								<li>
+									<a href="category-yoga.html" title="YOGA">YOGA</a>
+								</li>
+								<li>
+									<a href="category-arts.html" title="ARTS">ARTS</a>
+								</li>
+								<li>
+									<a href="category-cafe.html" title="CAFE">CAFE</a>
+								</li>
+								<li>
+									<a href="category-homes.html" title="HOMES">HOMES</a>
+								</li>
+								<li>
+									<a href="category-tech.html" title="TECH">TECH</a>
+								</li>
+							</ul>
+						</div>
+						<div class="column column_1_3">
+							<h4 class="box_header">SILK Network</h4>
+							<p class="padding_top_bottom_25">
+								<a href="https://silkcorp.org">SILK Corp</a><br>
+								<a href="https://silkyoga.org">SILK Yoga</a><br>
+								<a href="https://silkarts.org">SILK Arts</a><br>
+								<a href="https://silkcafe.org">SILK Cafe</a><br>
+								<a href="https://silkhomes.org">SILK Homes</a><br>
+								<a href="https://silkwomen.org">SILK Women</a>
+							</p>
+						</div>
+					</div>
+					<div class="row copyright_row">
+						<div class="column column_2_3">
+							© Copyright SILK Life Magazine - Part of the SILK Corp Family
+						</div>
+						<div class="column column_1_3">
+							<ul class="footer_menu">
+								<li>
+									<h6><a href="#" title="About">About</a></h6>
+								</li>
+								<li>
+									<h6><a href="#" title="Subscribe">Subscribe</a></h6>
+								</li>
+								<li>
+									<h6><a href="#" title="Contact">Contact</a></h6>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="background_overlay"></div>
+		<!--js-->
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-bbq.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.12.1.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.4.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+		<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+		<script type="text/javascript" src="js/jquery.sliderControl.js"></script>
+		<script type="text/javascript" src="js/jquery.timeago.js"></script>
+		<script type="text/javascript" src="js/jquery.hint.js"></script>
+		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+		<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+		<script type="text/javascript" src="js/jquery.imagesloaded-packed.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/odometer.min.js"></script>
+	</body>
 </html>

@@ -6,7 +6,9 @@ This file provides guidance to Claude Code when working with the SILK Life magaz
 
 ## Project Overview
 
-**SILK Life** is the lifestyle magazine for the SILK community, featuring intimate personal stories from ~50 community members living in retrofitted Victorian cottages in the Ohio River Valley.
+**SILK Life** is the lifestyle magazine for the SILK community, featuring intimate personal stories from ~50 community members living in retrofitted Victorian cottages in the **Mid-Ohio Valley**.
+
+> **IMPORTANT:** The region is called "Mid-Ohio Valley" (NOT "Ohio Valley"). Always use "Mid-Ohio Valley" in all content, ads, and copy.
 
 - **Domain:** silklife.org
 - **Type:** Static HTML magazine website
@@ -180,6 +182,40 @@ images/articles/yoga-morning-practice.webp
 images/homepage/hp-yoga-11-330.webp
 images/homepage/hp-arts-02-510.webp
 ```
+
+### Image Generation (MCP Tool)
+
+**Tool:** `mcp__nanobanana__generate_image`
+
+This MCP tool generates images using Gemini 3 Pro Image model. Use it for all SILK Life image needs.
+
+**Key Parameters:**
+| Parameter | Values | Description |
+|-----------|--------|-------------|
+| `prompt` | string | Detailed image description (required) |
+| `aspect_ratio` | "1:1", "3:2", "4:3", "16:9", "21:9" | Output shape |
+| `model_tier` | "flash", "pro", "auto" | Quality level (pro = best) |
+| `resolution` | "high", "4k", "2k", "1k" | Output resolution |
+| `thinking_level` | "low", "high" | Reasoning depth (Pro only) |
+| `enable_grounding` | true/false | Real-world accuracy |
+
+**Example Usage:**
+```
+Tool: mcp__nanobanana__generate_image
+prompt: "Documentary photography style, candid authentic moment. Woman meditating in Victorian parlor with tall windows, cast iron radiator, worn hardwood floors. Natural lighting, photojournalistic, no text."
+aspect_ratio: "1:1"
+model_tier: "pro"
+resolution: "high"
+```
+
+**Pro Tips for Realistic Photos:**
+- Add "iPhone 15 Pro snapshot, f/11 aperture" for flat, realistic look
+- Add "deep depth of field, everything in sharp focus" for documentary feel
+- Include "no text overlays" to keep images clean
+- Use "candid moment, unposed, authentic" for natural feeling
+
+**Post-Processing:**
+Convert PNG output to WebP: `cwebp -q 90 [input.png] -o [output.webp]`
 
 ---
 

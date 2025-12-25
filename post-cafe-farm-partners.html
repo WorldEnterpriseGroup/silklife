@@ -1,64 +1,741 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Jesse's Garden Education - SILK Life Magazine</title>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
-<meta name="description" content="Jesse grows food in a backyard plot smaller than most living rooms. What he's really cultivating is knowledge—teaching anyone who asks how to grow their own." />
-<link href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap' rel='stylesheet'>
-<link rel="stylesheet" href="style/reset.css">
-<link rel="stylesheet" href="style/style.css">
-<link rel="stylesheet" href="style/silk-life.css">
-</head>
-<body>
-<div class="site_container">
-<div class="page">
-<div class="page_layout clearfix">
-<div class="row">
-<div class="column column_2_3">
-<div class="post single">
-<h1 class="post_title">Jesse's Garden Education</h1>
-<ul class="post_details clearfix">
-<li class="detail category">In <a href="category_cafe.html">Cafe & Community</a></li>
-<li class="detail date">7:30 AM, Dec 9</li>
-<li class="detail author">By <a href="#">Rachel Kim</a></li>
-</ul>
-<img src="images/articles/cafe-farm-partners.webp" alt="Jesse working in backyard garden plot behind Victorian cottages">
-<div class="post_content clearfix">
-<h3 class="excerpt">Jesse's garden plot measures maybe twenty by fifteen feet—tiny by farming standards. But what grows there feeds half our cottages, and more importantly, teaches anyone who stops by how to grow their own food. Partnership isn't always about scale. Sometimes it's just about showing up at dawn to transplant seedlings.</h3>
-<div class="text">
-<p>I found Jesse in his garden at 6:15 AM, kneeling in the dirt, transplanting lettuce seedlings. Mist still hung low. The sun hadn't cleared the Victorian rooflines. He looked up, smiled, kept working.</p>
-<p>"You're up early," I said.</p>
-<p>"So are you," he pointed out. "Want to help?"</p>
-<p>This is how Jesse teaches—by doing, and letting you join in. No formal lessons, no YouTube tutorials. Just: here's a seedling, here's where it goes, try not to crush the roots.</p>
-<p>I knelt beside him in the damp earth. He showed me once, then watched me do it wrong, then corrected gently. "Little deeper. Give the roots room." I tried again. Better.</p>
-<blockquote class="inside_text">
-Anyone can grow food. You just need dirt, seeds, and willingness to fail repeatedly until you figure it out.
-<span class="author">— Jesse Martinez</span>
-</blockquote>
-<p>Jesse's been gardening this plot for three years. Before him, it was just weedy grass behind the Victorian cottages. He dug it by hand, one shovel-full at a time, turning grass into beds. Built raised boxes from reclaimed lumber. Hauled compost in a wheelbarrow from the community pile.</p>
-<p>Now it produces constantly. Lettuce, tomatoes, beans, herbs, whatever grows in West Virginia's temperamental climate. Jesse plants intensively—succession planting, he calls it—so something's always ready. He gives most of it away.</p>
-<p>"Why not sell it?" people ask.</p>
-<p>Jesse shrugs. "Because then it's a business. I don't want a business. I want a garden."</p>
-<p>But he does partner with people. Teaches them. Maya learned composting from Jesse. Bill got his tomato starts from Jesse's seedlings. Emma's planning a plot next spring after spending mornings watching Jesse work.</p>
-<p>"I'm not a farmer," Jesse says. "I'm a teacher who uses dirt."</p>
-<p>Last Saturday he ran an informal workshop—"just come hang out in the garden"—and twelve people showed up. They weeded, transplanted, learned about crop rotation and companion planting. Jesse answered questions, demonstrated techniques, sent everyone home with seedlings and encouragement.</p>
-<p>"Start small," he told them. "One tomato plant. See if it lives. Next year, plant two."</p>
-<p>This is partnership at its simplest. Not contracts or business plans. Just knowledge shared, skills passed on, food grown and distributed within a community small enough that everyone knows whose hands planted what.</p>
-<p>By 7:30, we'd finished the lettuce. Jesse stood, brushed dirt from his knees, surveyed the garden with satisfaction. "Two weeks, we'll have salad. You coming back to help harvest?"</p>
-<p>"If I'm up at 6 AM again," I said.</p>
-<p>"You will be," Jesse grinned. "Gardening does that—rewires your sleep schedule, your relationship to food, your understanding of seasons. Give it time."</p>
-<p>He's probably right. I'm already thinking about spring, about maybe trying my own plot. Jesse's already thinking about it too—planning space, saving seeds, ready to teach one more person how to get dirt under their fingernails and food from the ground.</p>
-<p>That's the real harvest from Jesse's garden. Not just vegetables, but knowledge. Not just food, but connection to how food grows. Not just partnership, but community built one seedling at a time.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/main.js"></script>
-</body>
+	<head>
+		<title>Jesse's Garden Education - SILK Life Magazine</title>
+		<!--meta-->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="SILK Life, Garden, Farm Partners, Community Agriculture, Jesse Martinez, Parkersburg" />
+		<meta name="description" content="Jesse grows food in a backyard plot smaller than most living rooms. What he's really cultivating is knowledge—teaching anyone who asks how to grow their own." />
+		<!--style-->
+		<link href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="style/reset.css">
+		<link rel="stylesheet" type="text/css" href="style/superfish.css">
+		<link rel="stylesheet" type="text/css" href="style/prettyPhoto.css">
+		<link rel="stylesheet" type="text/css" href="style/jquery.qtip.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="style/menu_styles.css">
+		<link rel="stylesheet" type="text/css" href="style/animations.css">
+		<link rel="stylesheet" type="text/css" href="style/responsive.css">
+		<link rel="stylesheet" type="text/css" href="style/odometer-theme-default.css">
+		<link rel="stylesheet" type="text/css" href="style/silk-life.css">
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="manifest" href="images/site.webmanifest">
+		<meta name="theme-color" content="#9CAF88">
+	</head>
+	<body>
+		<div class="site_container">
+			<div class="header_top_bar_container clearfix">
+				<div class="header_top_bar">
+					<form class="search" action="search.html" method="get">
+						<input type="text" name="s" placeholder="Search..." value="Search..." class="search_input hint">
+						<input type="submit" class="search_submit" value="">
+					</form>
+					<ul class="social_icons clearfix">
+						<li>
+							<a target="_blank" href="https://facebook.com/silkcorp" class="social_icon facebook" title="facebook">
+								&nbsp;
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://twitter.com/silkcorp" class="social_icon twitter" title="twitter">
+								&nbsp;
+							</a>
+						</li>
+						<li>
+							<a href="mailto:hello@silklife.org" class="social_icon mail" title="mail">
+								&nbsp;
+							</a>
+						</li>
+					</ul>
+					<div class="latest_news_scrolling_list_container">
+						<ul>
+							<li class="category">LATEST</li>
+							<li class="left"><a href="#"></a></li>
+							<li class="right"><a href="#"></a></li>
+							<li class="posts">
+								<ul class="latest_news_scrolling_list">
+									<li>
+										<a href="post-digital-wellness.html" title="">Digital Wellness: Finding Balance in a Connected World</a>
+									</li>
+									<li>
+										<a href="post-farm-table.html" title="">From Our Garden to Your Table</a>
+									</li>
+									<li>
+										<a href="post-ravenswood.html" title="">Life in Ravenswood: A Community Portrait</a>
+									</li>
+								</ul>
+							</li>
+							<li class="date">
+								<abbr title="15 Dec 2024" class="timeago current">15 Dec 2024</abbr>
+								<abbr title="12 Dec 2024" class="timeago">12 Dec 2024</abbr>
+								<abbr title="08 Dec 2024" class="timeago">08 Dec 2024</abbr>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header_container">
+				<div class="header clearfix">
+					<div class="logo">
+						<h1><a href="index.html" title="SILK Life">SILK Life</a></h1>
+						<h4>Stories of Intentional Living</h4>
+					</div>
+					<div class="placeholder">728 x 90</div>
+				</div>
+			</div>
+			<div class="menu_container clearfix">
+				<nav>
+				<ul class="sf-menu">
+					<li>
+						<a href="index.html" title="Home">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Stories">
+							Stories
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Community">
+							Community
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Events">
+							Events
+						</a>
+					</li>
+					<li>
+						<a href="#" title="About">
+							About
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Subscribe">
+							Subscribe
+						</a>
+					</li>
+				</ul>
+				</nav>
+				<div class="mobile_menu_container">
+					<a href="#" class="mobile-menu-switch">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</a>
+					<div class="mobile-menu-divider"></div>
+					<nav>
+					<ul class="mobile-menu">
+						<li>
+							<a href="index.html" title="Home">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Stories">
+								Stories
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Community">
+								Community
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Events">
+								Events
+							</a>
+						</li>
+						<li>
+							<a href="#" title="About">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Subscribe">
+								Subscribe
+							</a>
+						</li>
+					</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="page">
+				<div class="page_layout page_margin_top clearfix">
+					<div class="row page_margin_top">
+						<div class="column column_1_1">
+							<div class="horizontal_carousel_container small">
+								<ul class="blog horizontal_carousel autoplay-1 scroll-1 visible-3 navigation-1 easing-easeInOutQuint duration-750">
+									<li class="post">
+										<a href="post-cafe-farm-table.html" title="From Our Garden to Your Table">
+											<img src='images/samples/510x187/image_03.jpg' alt='img'>
+										</a>
+										<h5><a href="post-cafe-farm-table.html" title="From Our Garden to Your Table">From Our Garden to Your Table</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-cafe.html" title="CAFE">CAFE</a></li>
+											<li class="date">
+												11:00 AM, Dec 14
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-home-community-garden.html" title="The Backyard Revolution">
+											<img src='images/samples/510x187/image_08.jpg' alt='img'>
+										</a>
+										<h5><a href="post-home-community-garden.html" title="The Backyard Revolution">The Backyard Revolution</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+											<li class="date">
+												8:30 AM, Dec 11
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-cafe-behind-scenes.html" title="Wednesday Night at Maya's Table">
+											<img src='images/samples/510x187/image_01.jpg' alt='img'>
+										</a>
+										<h5><a href="post-cafe-behind-scenes.html" title="Wednesday Night at Maya's Table">Wednesday Night at Maya's Table</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-cafe.html" title="CAFE">CAFE</a></li>
+											<li class="date">
+												12:00 PM, Dec 17
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<hr class="divider page_margin_top">
+
+					<!-- HEADER BANNER AD: Cross-promote SILK Yoga -->
+					<div class="header-banner-ad" style="text-align: center; margin: 20px 0;">
+						<a href="https://silkyoga.org" target="_blank" rel="noopener" style="display: block;">
+							<img src="images/ads/banner/silk-yoga-banner.webp" alt="SILK Yoga - Wellness for mind and body" style="max-width: 100%; height: auto; border-radius: 8px;">
+						</a>
+						<p style="font-size: 10px; color: #A0AEC0; margin-top: 6px;">Advertisement</p>
+					</div>
+
+					<div class="row page_margin_top">
+						<div class="column column_2_3">
+							<div class="row">
+								<div class="post single">
+									<h1 class="post_title">
+										Jesse's Garden Education
+									</h1>
+									<ul class="post_details clearfix">
+										<li class="detail category">In <a href="category-cafe.html" title="CAFE">Cafe & Community</a></li>
+										<li class="detail date">7:30 AM, Dec 9</li>
+										<li class="detail author">By <a href="#" title="Rachel Kim">Rachel Kim</a></li>
+										<li class="detail views">2,315 Views</li>
+										<li class="detail comments"><a href="#comments_list" class="scroll_to_comments" title="14 Comments">14 Comments</a></li>
+									</ul>
+									<a href="images/articles/cafe-farm-partners.webp" class="post_image page_margin_top prettyPhoto" title="Jesse's garden plot: twenty by fifteen feet, but what grows there feeds half our cottages and teaches anyone who stops by.">
+										<img src='images/articles/cafe-farm-partners.webp' alt='Jesse working in backyard garden plot behind Victorian cottages'>
+									</a>
+									<div class="sentence">
+										<span class="text">Jesse's garden plot: twenty by fifteen feet, but what grows there feeds half our cottages and teaches anyone who stops by.</span>
+										<span class="author">Rachel Kim, SILK Life</span>
+									</div>
+									<div class="post_content page_margin_top_section clearfix">
+										<div class="content_box">
+											<h3 class="excerpt">Jesse's garden plot measures maybe twenty by fifteen feet—tiny by farming standards. But what grows there feeds half our cottages, and more importantly, teaches anyone who stops by how to grow their own food. Partnership isn't always about scale. Sometimes it's just about showing up at dawn to transplant seedlings.</h3>
+											<div class="text">
+												<p>I found Jesse in his garden at 6:15 AM, kneeling in the dirt, transplanting lettuce seedlings. Mist still hung low. The sun hadn't cleared the Victorian rooflines. He looked up, smiled, kept working.</p>
+												<p>"You're up early," I said.</p>
+												<p>"So are you," he pointed out. "Want to help?"</p>
+												<p>This is how Jesse teaches—by doing, and letting you join in. No formal lessons, no YouTube tutorials. Just: here's a seedling, here's where it goes, try not to crush the roots.</p>
+												<p>I knelt beside him in the damp earth. He showed me once, then watched me do it wrong, then corrected gently. "Little deeper. Give the roots room." I tried again. Better.</p>
+												<blockquote class="inside_text page_margin_top">
+													Anyone can grow food. You just need dirt, seeds, and willingness to fail repeatedly until you figure it out.
+													<span class="author">&#8212;&nbsp;&nbsp;Jesse Martinez</span>
+												</blockquote>
+												<p>Jesse's been gardening this plot for three years. Before him, it was just weedy grass behind the Victorian cottages. He dug it by hand, one shovel-full at a time, turning grass into beds. Built raised boxes from reclaimed lumber. Hauled compost in a wheelbarrow from the community pile.</p>
+											<div class="article-ad page_margin_top_bottom" style="text-align: center; padding: 20px 0; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; margin: 30px 0;">
+												<a href="https://silkhomes.org" target="_blank" rel="noopener" style="display: inline-block;">
+													<img src="images/ads/silk-homes-banner.webp" alt="SILK Homes - Live With Intention" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+												</a>
+												<p style="font-size: 10px; color: #718096; margin-top: 8px;">Advertisement</p>
+											</div>
+												<p>Now it produces constantly. Lettuce, tomatoes, beans, herbs, whatever grows in West Virginia's temperamental climate. Jesse plants intensively—succession planting, he calls it—so something's always ready. He gives most of it away.</p>
+												<p>"Why not sell it?" people ask.</p>
+												<p>Jesse shrugs. "Because then it's a business. I don't want a business. I want a garden."</p>
+												<p>But he does partner with people. Teaches them. Maya learned composting from Jesse. Bill got his tomato starts from Jesse's seedlings. Emma's planning a plot next spring after spending mornings watching Jesse work.</p>
+												<p>"I'm not a farmer," Jesse says. "I'm a teacher who uses dirt."</p>
+												<p>Last Saturday he ran an informal workshop—"just come hang out in the garden"—and twelve people showed up. They weeded, transplanted, learned about crop rotation and companion planting. Jesse answered questions, demonstrated techniques, sent everyone home with seedlings and encouragement.</p>
+												<p>"Start small," he told them. "One tomato plant. See if it lives. Next year, plant two."</p>
+												<p>This is partnership at its simplest. Not contracts or business plans. Just knowledge shared, skills passed on, food grown and distributed within a community small enough that everyone knows whose hands planted what.</p>
+												<p>By 7:30, we'd finished the lettuce. Jesse stood, brushed dirt from his knees, surveyed the garden with satisfaction. "Two weeks, we'll have salad. You coming back to help harvest?"</p>
+												<p>"If I'm up at 6 AM again," I said.</p>
+												<p>"You will be," Jesse grinned. "Gardening does that—rewires your sleep schedule, your relationship to food, your understanding of seasons. Give it time."</p>
+												<p>He's probably right. I'm already thinking about spring, about maybe trying my own plot. Jesse's already thinking about it too—planning space, saving seeds, ready to teach one more person how to get dirt under their fingernails and food from the ground.</p>
+												<p>That's the real harvest from Jesse's garden. Not just vegetables, but knowledge. Not just food, but connection to how food grows. Not just partnership, but community built one seedling at a time.</p>
+												<a title="14 Comments" href="#comments_list" class="read_more page_margin_top scroll_to_comments"><span class="arrow"></span><span>14 COMMENTS</span></a>
+											</div>
+										</div>
+										<div class="author_box animated_element">
+											<div class="author">
+												<a title="Rachel Kim" href="#" class="thumb">
+													<img alt="img" src="images/samples/Team_100x100/image_02.jpg">
+												</a>
+												<div class="details">
+													<h5><a title="Rachel Kim" href="#">Rachel Kim</a></h5>
+													<h6>COMMUNITY MEMBER</h6>
+													<a href="#" class="more highlight margin_top_15">PROFILE</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row page_margin_top">
+								<div class="share_box clearfix">
+									<label>Share:</label>
+									<ul class="social_icons clearfix">
+										<li>
+											<a target="_blank" title="" href="https://facebook.com/silkcorp" class="social_icon facebook">
+												&nbsp;
+											</a>
+										</li>
+										<li>
+											<a target="_blank" title="" href="https://twitter.com/silkcorp" class="social_icon twitter">
+												&nbsp;
+											</a>
+										</li>
+										<li>
+											<a title="" href="mailto:hello@silklife.org" class="social_icon mail">
+												&nbsp;
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row page_margin_top">
+								<ul class="taxonomies tags left clearfix">
+									<li>
+										<a href="#" title="Garden">GARDEN</a>
+									</li>
+									<li>
+										<a href="#" title="Farm Partners">FARM PARTNERS</a>
+									</li>
+									<li>
+										<a href="#" title="Community Agriculture">COMMUNITY AGRICULTURE</a>
+									</li>
+									<li>
+										<a href="#" title="Teaching">TEACHING</a>
+									</li>
+								</ul>
+								<ul class="taxonomies categories right clearfix">
+									<li>
+										<a href="category-cafe.html" title="CAFE">CAFE & COMMUNITY</a>
+									</li>
+								</ul>
+							</div>
+							<div class="row page_margin_top_section">
+								<h4 class="box_header">Related Articles</h4>
+								<div class="horizontal_carousel_container page_margin_top">
+									<ul class="blog horizontal_carousel autoplay-1 scroll-1 navigation-1 easing-easeInOutQuint duration-750">
+										<li class="post">
+											<a href="post-cafe-farm-table.html" title="From Our Garden to Your Table">
+												<img src='images/samples/330x242/image_03.jpg' alt='img'>
+											</a>
+											<h5><a href="post-cafe-farm-table.html" title="From Our Garden to Your Table">From Our Garden to Your Table</a></h5>
+											<ul class="post_details simple">
+												<li class="category"><a href="category-cafe.html" title="CAFE">CAFE</a></li>
+												<li class="date">
+													11:00 AM, Dec 14
+												</li>
+											</ul>
+										</li>
+										<li class="post">
+											<a href="post-cafe-seasonal-menu.html" title="What October Tastes Like">
+												<img src='images/samples/330x242/image_01.jpg' alt='img'>
+											</a>
+											<h5><a href="post-cafe-seasonal-menu.html" title="What October Tastes Like">What October Tastes Like</a></h5>
+											<ul class="post_details simple">
+												<li class="category"><a href="category-cafe.html" title="CAFE">CAFE</a></li>
+												<li class="date">
+													2:15 PM, Dec 10
+												</li>
+											</ul>
+										</li>
+										<li class="post">
+											<a href="post-home-community-garden.html" title="The Backyard Revolution">
+												<img src='images/samples/330x242/image_08.jpg' alt='img'>
+											</a>
+											<h5><a href="post-home-community-garden.html" title="The Backyard Revolution">The Backyard Revolution</a></h5>
+											<ul class="post_details simple">
+												<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+												<li class="date">
+													8:30 AM, Dec 11
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row page_margin_top_section">
+								<h4 class="box_header">Leave a Comment</h4>
+								<p class="padding_top_30">Your email address will not be published. Required fields are marked with *</p>
+								<form class="comment_form margin_top_15" id="comment_form" method="post" action="post-cafe-farm-partners.html">
+									<fieldset class="column column_1_3">
+										<input class="text_input" name="name" type="text" value="Your Name *" placeholder="Your Name *">
+									</fieldset>
+									<fieldset class="column column_1_3">
+										<input class="text_input" name="email" type="text" value="Your Email *" placeholder="Your Email *">
+									</fieldset>
+									<fieldset class="column column_1_3">
+										<input class="text_input" name="website" type="text" value="Website" placeholder="Website">
+									</fieldset>
+									<fieldset>
+										<textarea name="message" placeholder="Comment *">Comment *</textarea>
+									</fieldset>
+									<fieldset>
+										<input type="submit" value="POST COMMENT" class="more active">
+										<a href="#cancel" id="cancel_comment" title="Cancel reply">Cancel reply</a>
+									</fieldset>
+								</form>
+							</div>
+							<div class="row page_margin_top_section">
+								<h4 class="box_header">14 Comments</h4>
+								<ul id="comments_list">
+									<li class="comment clearfix" id="comment-1">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Deb Morrison">Deb Morrison</a></h5>
+												<abbr title="9 Dec 2024" class="timeago">9 Dec 2024</abbr>
+											</div>
+											<p>
+												Jesse's approach is exactly right. Start small, fail often, learn as you go. That's how I started Morrison Farm forty years ago—one garden bed at a time. Now look at us. The best teachers are the ones who get their hands dirty alongside you.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-2">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Maya Chen">Maya Chen</a></h5>
+												<abbr title="9 Dec 2024" class="timeago">9 Dec 2024</abbr>
+											</div>
+											<p>
+												Jesse taught me everything I know about composting. He's patient, never judgmental when you mess up, and genuinely excited when something you planted actually grows. That's rare—finding someone who wants you to succeed as much as they want to succeed themselves.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-3">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Emma Clarke">Emma Clarke</a></h5>
+												<abbr title="10 Dec 2024" class="timeago">10 Dec 2024</abbr>
+											</div>
+											<p>
+												I'm one of those people planning a spring plot thanks to Jesse. Watching him work is like meditation—slow, methodical, connected to something bigger than yourself. I never thought I'd be interested in gardening, but here we are. That's what good teachers do—they change what you think you're capable of.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-4">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Bill Henderson">Bill Henderson</a></h5>
+												<abbr title="10 Dec 2024" class="timeago">10 Dec 2024</abbr>
+											</div>
+											<p>
+												Jesse gave me Cherokee Purple tomato starts three years running now. Never asks for anything back. Just says "grow them, share them, save some seeds for next year." That's how knowledge spreads—generously, without keeping score.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="column column_1_3">
+							<div class="tabs no_scroll clearfix">
+								<ul class="tabs_navigation clearfix">
+									<li>
+										<a href="#sidebar-most-read" title="Most Read">
+											Most Read
+										</a>
+										<span></span>
+									</li>
+									<li>
+										<a href="#sidebar-most-commented" title="Commented">
+											Commented
+										</a>
+										<span></span>
+									</li>
+								</ul>
+								<div id="sidebar-most-read">
+									<ul class="blog rating page_margin_top clearfix">
+										<li class="post">
+											<a href="post-ravenswood.html" title="Life in Ravenswood">
+												<img src='images/samples/510x187/image_12.jpg' alt='img'>
+											</a>
+											<div class="post_content">
+												<span class="number animated_element" data-value="4 521"></span>
+												<h5><a href="post-ravenswood.html" title="Life in Ravenswood">Life in Ravenswood: A Community Portrait</a></h5>
+												<ul class="post_details simple">
+													<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="post">
+											<div class="post_content">
+												<span class="number animated_element" data-value="3 892"></span>
+												<h5><a href="post-coffee-culture.html" title="The Art of Slow Coffee">The Art of Slow Coffee</a></h5>
+												<ul class="post_details simple">
+													<li class="category"><a href="category-cafe.html" title="CAFE">CAFE</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="post">
+											<div class="post_content">
+												<span class="number animated_element" data-value="3 124"></span>
+												<h5><a href="post-digital-wellness.html" title="Digital Wellness">Digital Wellness: Finding Balance</a></h5>
+												<ul class="post_details simple">
+													<li class="category"><a href="category-tech.html" title="TECH">TECH</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+									<a class="more page_margin_top" href="#">SHOW MORE</a>
+								</div>
+								<div id="sidebar-most-commented">
+									<ul class="blog rating page_margin_top clearfix">
+										<li class="post">
+											<a href="post-art-walk.html" title="First Friday Art Walk">
+												<img src='images/samples/510x187/image_02.jpg' alt='img'>
+											</a>
+											<div class="post_content">
+												<span class="number animated_element" data-value="45"></span>
+												<h5><a href="post-art-walk.html" title="First Friday Art Walk">First Friday Art Walk</a></h5>
+												<ul class="post_details simple">
+													<li class="category"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+									<a class="more page_margin_top" href="#">SHOW MORE</a>
+								</div>
+							</div>
+							<div class="row page_margin_top_section" style="background: linear-gradient(135deg, #f4f7f2 0%, #fff 100%); border-radius: 12px; padding: 20px; border: 1px solid rgba(156, 175, 136, 0.3);">
+								<h4 class="box_header" style="color: #2C3E50;">More in Cafe</h4>
+								<ul class="blog small page_margin_top clearfix" style="list-style: none; padding: 0;">
+									<li class="post" style="margin-bottom: 15px; border-bottom: 1px solid rgba(156, 175, 136, 0.2); padding-bottom: 15px;">
+										<h6><a href="post-cafe-farm-table.html" title="From Our Garden to Your Table">From Our Garden to Your Table</a></h6>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-cafe.html" title="CAFE">CAFE</a></li>
+										</ul>
+									</li>
+									<li class="post" style="margin-bottom: 15px; border-bottom: 1px solid rgba(156, 175, 136, 0.2); padding-bottom: 15px;">
+										<h6><a href="post-cafe-behind-scenes.html" title="Wednesday Night at Maya's Table">Wednesday Night at Maya's Table</a></h6>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-cafe.html" title="CAFE">CAFE</a></li>
+										</ul>
+									</li>
+									<li class="post" style="margin-bottom: 15px; border-bottom: 1px solid rgba(156, 175, 136, 0.2); padding-bottom: 15px;">
+										<h6><a href="post-cafe-seasonal-menu.html" title="What October Tastes Like">What October Tastes Like</a></h6>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-cafe.html" title="CAFE">CAFE</a></li>
+										</ul>
+									</li>
+									<li class="post" style="margin-bottom: 15px;">
+										<h6><a href="post-cafe-quality-debate.html" title="Morning Coffee Philosophy">Morning Coffee Philosophy</a></h6>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-cafe.html" title="CAFE">CAFE</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="sidebar-ad page_margin_top">
+								<a href="https://silkcafe.org" class="silk-ad-banner" target="_blank" rel="noopener" style="display: block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+									<img src="images/ads/silk-cafe-banner.webp" alt="SILK Cafe - Community Gathering Space" style="width: 100%; height: auto;">
+								</a>
+								<p style="font-size: 10px; color: #718096; text-align: center; margin-top: 5px;">Advertisement</p>
+							</div>
+							<div class="row page_margin_top" style="background: linear-gradient(135deg, #f4f7f2 0%, #fff 100%); border-radius: 12px; padding: 20px; border: 1px solid rgba(156, 175, 136, 0.3);">
+								<blockquote style="border-left: 4px solid #9CAF88; padding-left: 15px; font-style: italic; color: #2C3E50;">
+									<p>"Gardening rewires you. Your sleep schedule, your relationship to food, your understanding of seasons. Give it time."</p>
+									<footer style="margin-top: 10px; font-size: 14px; color: #6C757D;">— Jesse Martinez</footer>
+								</blockquote>
+							</div>
+							<div class="row page_margin_top_section" style="background: linear-gradient(135deg, #f4f7f2 0%, #fff 100%); border-radius: 12px; padding: 20px; border: 1px solid rgba(156, 175, 136, 0.3);">
+								<h4 class="box_header" style="color: #2C3E50;">Popular Articles</h4>
+								<ul class="blog small page_margin_top clearfix" style="list-style: none; padding: 0;">
+									<li class="post" style="margin-bottom: 15px; border-bottom: 1px solid rgba(156, 175, 136, 0.2); padding-bottom: 15px;">
+										<h6><a href="post-home-community-garden.html" title="The Backyard Revolution">The Backyard Revolution</a></h6>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-homes.html" title="HOMES">HOMES</a></li>
+										</ul>
+									</li>
+									<li class="post" style="margin-bottom: 15px; border-bottom: 1px solid rgba(156, 175, 136, 0.2); padding-bottom: 15px;">
+										<h6><a href="post-pottery-studio.html" title="Clay & Calm">Clay & Calm: Inside a Local Pottery Studio</a></h6>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+										</ul>
+									</li>
+									<li class="post" style="margin-bottom: 15px;">
+										<h6><a href="post-yoga-morning-flow.html" title="The Parlor Floor Practice">The Parlor Floor Practice</a></h6>
+										<ul class="post_details simple">
+											<li class="category"><a href="category-yoga.html" title="YOGA">YOGA</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="sidebar-ad page_margin_top">
+								<a href="https://silkhomes.org" class="silk-ad-banner" target="_blank" rel="noopener" style="display: block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+									<img src="images/ads/silk-homes-banner.webp" alt="SILK Homes - Live With Intention" style="width: 100%; height: auto;">
+								</a>
+								<p style="font-size: 10px; color: #718096; text-align: center; margin-top: 5px;">Advertisement</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_container">
+				<div class="footer clearfix">
+					<div class="row">
+						<div class="column column_1_3">
+							<h4 class="box_header">About SILK Life</h4>
+							<p class="padding_top_bottom_25">SILK Life is a lifestyle magazine celebrating intentional living, wellness, and community in the Mid-Ohio Valley. We share stories of Strength, Integrity, Love, and Knowledge.</p>
+							<div class="row">
+								<div class="column column_1_2">
+									<h5>SILK Life Magazine</h5>
+									<p>
+										Ravenswood, WV<br>
+										Parkersburg, WV<br>
+										Marietta, OH
+									</p>
+								</div>
+								<div class="column column_1_2">
+									<h5>Contact</h5>
+									<p>
+										Email: hello@silklife.org<br>
+										Web: silklife.org
+									</p>
+								</div>
+							</div>
+							<h4 class="box_header page_margin_top">Connect With Us</h4>
+							<ul class="social_icons dark page_margin_top clearfix">
+								<li>
+									<a target="_blank" title="" href="https://facebook.com/silkcorp" class="social_icon facebook">
+										&nbsp;
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="" href="https://twitter.com/silkcorp" class="social_icon twitter">
+										&nbsp;
+									</a>
+								</li>
+								<li>
+									<a title="" href="mailto:hello@silklife.org" class="social_icon mail">
+										&nbsp;
+									</a>
+								</li>
+								<li>
+									<a title="" href="#" class="social_icon instagram">
+										&nbsp;
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="column column_1_3">
+							<h4 class="box_header">Categories</h4>
+							<ul class="taxonomies columns clearfix page_margin_top">
+								<li>
+									<a href="category-yoga.html" title="YOGA">YOGA</a>
+								</li>
+								<li>
+									<a href="category-arts.html" title="ARTS">ARTS</a>
+								</li>
+								<li>
+									<a href="category-cafe.html" title="CAFE">CAFE</a>
+								</li>
+								<li>
+									<a href="category-homes.html" title="HOMES">HOMES</a>
+								</li>
+								<li>
+									<a href="category-tech.html" title="TECH">TECH</a>
+								</li>
+							</ul>
+						</div>
+						<div class="column column_1_3">
+							<h4 class="box_header">SILK Network</h4>
+							<p class="padding_top_bottom_25">
+								<a href="https://silkcorp.org">SILK Corp</a><br>
+								<a href="https://silkyoga.org">SILK Yoga</a><br>
+								<a href="https://silkarts.org">SILK Arts</a><br>
+								<a href="https://silkcafe.org">SILK Cafe</a><br>
+								<a href="https://silkhomes.org">SILK Homes</a><br>
+								<a href="https://silkwomen.org">SILK Women</a>
+							</p>
+						</div>
+					</div>
+					<div class="row copyright_row">
+						<div class="column column_2_3">
+							© Copyright SILK Life Magazine - Part of the SILK Corp Family
+						</div>
+						<div class="column column_1_3">
+							<ul class="footer_menu">
+								<li>
+									<h6><a href="#" title="About">About</a></h6>
+								</li>
+								<li>
+									<h6><a href="#" title="Subscribe">Subscribe</a></h6>
+								</li>
+								<li>
+									<h6><a href="#" title="Contact">Contact</a></h6>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="background_overlay"></div>
+		<!--js-->
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-bbq.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.12.1.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.4.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+		<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+		<script type="text/javascript" src="js/jquery.sliderControl.js"></script>
+		<script type="text/javascript" src="js/jquery.timeago.js"></script>
+		<script type="text/javascript" src="js/jquery.hint.js"></script>
+		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+		<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+		<script type="text/javascript" src="js/jquery.imagesloaded-packed.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/odometer.min.js"></script>
+	</body>
 </html>

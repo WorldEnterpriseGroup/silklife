@@ -1,6 +1,6 @@
 # SILK Life Community Character Guide
 
-This document contains all established characters in the SILK Life magazine universe. These are real people living in retrofitted Victorian cottages in the Ohio River Valley towns of Ravenswood (WV), Parkersburg (WV), and Marietta (OH).
+This document contains all established characters in the SILK Life magazine universe. These are real people living in retrofitted Victorian cottages in the Mid-Ohio Valley towns of Ravenswood (WV), Parkersburg (WV), and Marietta (OH).
 
 **Community Size:** ~50 people across 3 locations
 **Setting:** 1880s-1890s Victorian cottages, retrofitted for intentional living
@@ -161,7 +161,7 @@ This document contains all established characters in the SILK Life magazine univ
 ## Version History
 - **v1.0** (December 2025): Initial 50-character database created
 - Characters established through SILK Life magazine articles
-- Locations based on real Ohio River Valley geography
+- Locations based on real Mid-Ohio Valley geography
 
 ---
 

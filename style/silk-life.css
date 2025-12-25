@@ -399,6 +399,41 @@ button:focus {
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
+/* --- Single Article Page: Disable hover effect (not clickable) --- */
+.post.single {
+    transition: none;
+}
+
+.post.single:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* --- Article Text Padding: Prevent text from touching container edges --- */
+.post.single .article-intro .text,
+.post.single .article-full-content .text {
+    padding: 0 20px;
+}
+
+.post.single .content_box .excerpt {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+/* --- Sticky Sidebar: Handled via page-level JavaScript for article pages --- */
+/* See individual post-*.html files for sticky sidebar implementation */
+/* IMPORTANT: Do not use generic .column_1_3 selectors - they conflict with form fieldsets */
+
+/* Main content column positioning */
+.article-layout > .column_2_3 {
+    position: relative;
+}
+
+/* Sidebar column - direct child of article-layout only */
+.article-layout > .column_1_3 {
+    /* Base styles - sticky behavior added via JS */
+}
+
 /* --- 508 Compliance: Enhanced text contrast for featured articles --- */
 /* Add stronger text shadow for better readability without changing layout */
 .blog_grid .post .slider_content_box h5 a,
