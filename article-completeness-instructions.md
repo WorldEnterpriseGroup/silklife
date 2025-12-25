@@ -12,6 +12,61 @@
 | `banner_ad_instructions.md` | How to create 21:9 banner ads with empty top half | **YES** |
 | This file | Instructions and HTML patterns | **YES** |
 
+---
+
+## Parallel Agent Workflow (ONE POST AT A TIME)
+
+**CRITICAL:** Always work on **ONE post at a time** using multiple parallel agents. This ensures full completion before moving to the next article.
+
+### Agent Roles for Migration
+
+| Agent | Task | Parallel? |
+|-------|------|-----------|
+| **Structure Agent** | Copy gold standard, migrate content, fix HTML structure | First |
+| **Image Agent** | Generate hero, in-article photos, sidebar ad, banner ad | Yes |
+| **Content Agent** | Expand word count if needed, write comments, verify author | Yes |
+| **Avatar Agent** | Generate/verify author avatar and comment avatars | Yes |
+| **Audit Agent** | Final validation against all scoring criteria | Last |
+
+### Article Selection Order
+
+**CRITICAL:** Select articles for migration in the order they appear on the homepage (`index.html`), from top to bottom:
+
+1. Open `index.html` and scan from the top of the page downward
+2. Identify the first article that has NOT yet been migrated to Enhanced Format
+3. Check if `articles/[slug]/index.html` exists - if not, this is the next article to migrate
+4. Continue in homepage order until all migrations are complete
+
+**Why homepage order?**
+- Ensures highest-visibility articles are migrated first
+- Provides clear, deterministic selection criteria
+- Prevents cherry-picking or skipping articles
+- Easy to track progress visually
+
+### Workflow Steps
+
+```
+1. OPEN index.html and find the next unmigrated article (top-down order)
+2. SELECT that legacy post-*.html file
+3. SPAWN parallel agents:
+   - Structure: Migrate to articles/[slug]/index.html
+   - Images: Generate all required images (4+ photos, ads)
+   - Content: Verify/expand content, add comments
+   - Avatars: Generate missing author/commenter avatars
+4. WAIT for all agents to complete
+5. SPAWN Audit agent to validate completeness
+6. UPDATE index.html links from post-*.html to articles/[slug]/
+7. UPDATE article_catalog.csv with final scores
+8. REPEAT for next article
+```
+
+### Why One Post at a Time?
+- Ensures 100% completion before moving on
+- Prevents partial migrations
+- Easier to track progress
+- All agents work on same context
+- Clear success criteria per article
+
 ### CRITICAL: The Gold Standard
 
 **The ONLY template to use is: `articles/yoga-beginners/index.html`**
@@ -304,12 +359,43 @@ articles/
 
 | Type | Dimensions | Format | Location |
 |------|------------|--------|----------|
-| Article Hero | 1024x683 | WebP | `images/articles/` |
-| Thumbnail | 330x242 | WebP | `images/homepage/thumbs/` |
-| Sidebar Ad (Block) | 300x250 or 300x600 | WebP | `images/ads/sidebar/` |
-| Banner Ad (Inline) | 728x90 or 468x60 | WebP | `images/ads/banner/` |
-| Carousel | 510x187 | WebP | `images/homepage/carousels/` |
-| Avatar | 100x100 | WebP | `images/avatars/` |
+| Article Hero | 1024x683 | AVIF | `images/articles/` |
+| **Featured Image (In-Article)** | **690x690 (1:1)** | AVIF | `images/articles/` or `articles/[slug]/media/` |
+| Thumbnail (Homepage) | Custom* | AVIF | `images/homepage/thumbs/` |
+| Sidebar Ad (Block) | 300x250 or 300x600 | AVIF | `images/ads/sidebar/` |
+| Banner Ad (Inline) | 728x90 or 468x60 | AVIF | `images/ads/banner/` |
+| Carousel | 510x187 | AVIF | `images/homepage/carousels/` |
+| Avatar | 100x100 | AVIF | `images/avatars/` |
+
+**Note:** AVIF is preferred over WebP (~65% smaller files at equivalent quality). Browser support: 93.8% (2025).
+
+### Featured Image Requirements (In-Article)
+
+**All featured images displayed within article content MUST be:**
+- **Aspect Ratio:** 1:1 (square)
+- **Dimensions:** 690x690 pixels
+- **Format:** AVIF (quality 50)
+
+These are the large images that appear inline within the article body, NOT the hero banner at the top.
+
+### Homepage Thumbnail Requirements*
+
+**Homepage thumbnails require CUSTOM sizing based on their placement location.** Before generating thumbnails:
+
+1. **Open `index.html`** and locate where the image will appear
+2. **Check the container dimensions** for that specific placement
+3. **Generate at the exact size needed** for that location
+
+**Common homepage thumbnail sizes:**
+| Placement | Dimensions | Notes |
+|-----------|------------|-------|
+| Grid cards (3-column) | 330x242 | Standard card thumbnail |
+| Square grid | 330x330 | Square card format |
+| Featured hero | 510x340 | Large featured card |
+| Carousel slide | 510x187 | Wide banner format |
+| Small sidebar | 100x100 | Thumbnail preview |
+
+**NEVER assume a size - always check the homepage first.**
 
 ---
 
@@ -680,6 +766,60 @@ Include phrases like:
 - "authentic, unposed"
 - "real-feeling, not staged"
 
+### CRITICAL: Vary Home Interiors
+
+**DO NOT repeat the same visual clichés in every image.** SILK properties are upscale, remodeled Victorians—but not every photo needs the same elements.
+
+**Avoid These Repetitive Elements:**
+- Cast iron radiator in every shot
+- Tall Victorian windows with wavy glass in every room
+- Same "farmhouse aesthetic" everywhere
+
+**SILK Property Standards:**
+
+| Element | What We Actually Have |
+|---------|----------------------|
+| **Floors** | Refinished hardwood throughout (almost never carpet) |
+| **Kitchens** | Updated with modern appliances, quality cabinets |
+| **Bathrooms** | Remodeled, modern fixtures |
+| **Size** | Ravenswood homes average ~2,500 sq ft |
+| **Condition** | Well-maintained, professionally remodeled |
+
+**Vary the Rooms & Settings:**
+
+| Instead of Always... | Also Show... |
+|---------------------|--------------|
+| Sunny parlor | Kitchen, breakfast nook, home office |
+| Victorian living room | Upstairs bedroom, reading nook, mudroom |
+| Morning golden hour | Evening lamplight, overcast days, nighttime |
+| Formal spaces | Casual corners, porches, gardens |
+
+**Town Character:**
+
+| Town | SILK Properties | Feel |
+|------|-----------------|------|
+| **Marietta, OH** | Restored Victorians near downtown | College town, arts scene, walkable |
+| **Ravenswood, WV** | Large remodeled Victorians (~2,500 sf) | Quiet river town, tight community |
+| **Parkersburg, WV** | Mixed historic neighborhoods | Revitalizing, working-class roots |
+
+**Example Varied Prompts:**
+
+```
+# Instead of always "Victorian parlor with radiator"...
+
+# Kitchen scene:
+"Woman making coffee in updated Victorian kitchen, white cabinets, hardwood floors, morning light through window over sink"
+
+# Bedroom scene:
+"Cozy upstairs bedroom in remodeled Victorian, hardwood floors, reading lamp on, evening light"
+
+# Porch scene:
+"Friends on wraparound porch of large Victorian home, string lights, summer evening"
+
+# Home office:
+"Small home office in converted Victorian bedroom, desk by window, hardwood floors, afternoon light"
+```
+
 ### Image Types to Generate
 
 #### 1. Article Photos (3-5 per article)
@@ -721,7 +861,7 @@ aspect_ratio: "3:2"
 model_tier: "pro"
 resolution: "high"
 ```
-Then convert output PNG to WebP: `cwebp -q 90 [output.png] -o images/articles/[name].webp`
+Then convert output PNG to AVIF: `convert [output.png] -quality 50 images/articles/[name].avif`
 
 #### 2. Generate Sidebar Ad (300x250, category-themed)
 ```
@@ -730,7 +870,7 @@ aspect_ratio: "4:3"
 model_tier: "pro"
 resolution: "high"
 ```
-Then resize and convert: `cwebp -q 90 -resize 300 250 [output.png] -o images/ads/sidebar/[slug]-sidebar.webp`
+Then resize and convert: `convert [output.png] -resize 300x250 -quality 50 images/ads/sidebar/[slug]-sidebar.avif`
 
 #### 3. Generate Banner Ad (728x90, wide horizontal)
 ```
@@ -739,7 +879,7 @@ aspect_ratio: "21:9"
 model_tier: "pro"
 resolution: "high"
 ```
-Then resize and convert: `cwebp -q 90 -resize 728 90 [output.png] -o images/ads/banner/[slug]-banner.webp`
+Then resize and convert: `convert [output.png] -resize 728x90 -quality 50 images/ads/banner/[slug]-banner.avif`
 
 #### 4. Generate Author Avatar (100x100, once per character)
 ```
@@ -748,7 +888,7 @@ aspect_ratio: "1:1"
 model_tier: "pro"
 resolution: "high"
 ```
-Then resize and convert: `cwebp -q 90 -resize 100 100 [output.png] -o images/avatars/[author-slug].webp`
+Then resize and convert: `convert [output.png] -resize 100x100 -quality 50 images/avatars/[author-slug].avif`
 
 **Pro Tips for Higher Quality:**
 - Add "iPhone 15 Pro snapshot, f/11 aperture" for flat, realistic photos
@@ -1273,6 +1413,75 @@ These 3 articles share identical content ("When Bill Brought Tomatoes"):
 [ ] 27. Calculate completeness score
 [ ] 28. Set last_updated timestamp
 ```
+
+### Homepage Link Update
+
+After migrating an article to the Enhanced Article Format (`articles/[slug]/index.html`), all homepage links must be updated to point to the new directory-based URL structure.
+
+**Why this matters:**
+- Legacy articles use: `post-yoga-beginners.html`
+- Enhanced articles use: `articles/yoga-beginners/` (directory index pattern)
+- The trailing slash is required for directory-based URLs
+
+**Where to update links on homepage (`index.html`):**
+1. **Article cards** - Thumbnail cards in grid layout
+2. **Carousel items** - Featured article banners in carousels
+3. **Featured sections** - Hero or spotlight article links
+4. **Sidebar links** - Popular posts, recent articles, related content
+5. **Category highlights** - Any category-specific article links
+
+**Update process:**
+
+```bash
+# Find all links to the migrated article
+grep -n "post-yoga-beginners.html" index.html
+
+# Examples of what to update:
+```
+
+```html
+<!-- BEFORE (legacy link) -->
+<a href="post-yoga-beginners.html">The Parlor Floor Practice</a>
+<a href="post-yoga-beginners.html"><img src="images/articles/yoga-beginners.webp"></a>
+
+<!-- AFTER (enhanced link) -->
+<a href="articles/yoga-beginners/">The Parlor Floor Practice</a>
+<a href="articles/yoga-beginners/"><img src="images/articles/yoga-beginners.webp"></a>
+```
+
+**Verification checklist:**
+- [ ] Search `index.html` for `post-[slug].html`
+- [ ] Replace all instances with `articles/[slug]/`
+- [ ] Verify trailing slash is present
+- [ ] Test all links in browser
+- [ ] Check both text links and image links
+- [ ] Verify carousel/slider links work
+- [ ] Confirm sidebar/widget links updated
+
+**Common locations to check:**
+```html
+<!-- Main article grid -->
+<div class="masonry-grid">
+    <a href="articles/yoga-beginners/">...</a>
+</div>
+
+<!-- Featured carousel -->
+<div class="carousel-item">
+    <a href="articles/cafe-farm-table/">...</a>
+</div>
+
+<!-- Sidebar popular posts -->
+<div class="popular-posts">
+    <a href="articles/homes-sustainable-living/">...</a>
+</div>
+
+<!-- Category sections -->
+<div class="category-yoga">
+    <a href="articles/yoga-morning-practice/">...</a>
+</div>
+```
+
+**Note:** This step should be completed BEFORE marking the article migration as complete in the CSV, as broken homepage links will prevent readers from accessing the newly migrated content.
 
 ---
 

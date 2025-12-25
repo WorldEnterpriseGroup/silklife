@@ -95,28 +95,60 @@ SILK Life aggregates stories from across the SILK ecosystem:
 
 ## Physical Property Details
 
-All stories take place in **authentic 1880s-1890s Victorian cottages**. These are NOT modern renovations.
+SILK properties are **extensively remodeled Victorian homes (1870s-1910s)** in Marietta, OH and Ravenswood, WV. These are **upscale, well-maintained homes**—among the nicest historic properties in the Mid-Ohio Valley. Ravenswood homes average ~2,500 sq ft.
 
-### Architectural Characteristics
-- **Era:** 1880s-1890s Victorian
-- **Ceiling Height:** 9-12 feet
-- **Room Size:** Small, intimate rooms
-- **Floors:** Original wide-plank hardwood (worn, authentic patina)
-- **Windows:** Tall double-hung with wavy antique glass
-- **Features:** Original radiators, plaster medallions, parlors, wraparound porches
+### CRITICAL: Avoid Repetitive Imagery
 
-### Interior Elements
-- **Walls:** Period-appropriate paint (sage green, dusty blue, warm yellow) or Victorian wallpaper
-- **Trim:** White-painted crown molding, baseboards
-- **Furniture:** Dark wood Victorian pieces, worn but cared for
-- **Modern additions:** Visible but not hidden (window AC, basic appliances)
+**DO NOT** use the same visual clichés in every image. Not every room needs:
+- A cast iron radiator prominently featured
+- Tall Victorian windows with wavy glass
+- The same "farmhouse" aesthetic
+
+**Vary the settings, rooms, and details across images.**
+
+### Property Standards (What SILK Homes Actually Have)
+
+| Element | SILK Standard |
+|---------|---------------|
+| **Floors** | Refinished hardwood throughout (almost never carpet) |
+| **Kitchens** | Updated with modern appliances, quality cabinets |
+| **Bathrooms** | Remodeled, modern fixtures |
+| **Windows** | Mix of restored originals and quality replacements |
+| **Heating** | Varies: radiators, forced air, mini-splits |
+| **Condition** | Well-maintained, professionally remodeled |
+
+### Variety in Image Settings
+
+Even though homes are nice, **vary the specific rooms and scenarios:**
+
+| Instead of Always... | Also Show... |
+|---------------------|--------------|
+| Sunny parlor with radiator | Kitchen with island, breakfast nook |
+| Victorian living room | Upstairs bedroom, home office, mudroom |
+| Formal spaces | Cozy corners, reading nooks, porches |
+| Morning golden hour | Evening lamplight, overcast days, night scenes |
+
+### Town Character
+
+| Town | SILK Properties | Character |
+|------|-----------------|-----------|
+| **Marietta, OH** | Restored Victorians near downtown | College town arts scene, walkable |
+| **Ravenswood, WV** | Large remodeled Victorians (~2,500 sf) | Quiet river town, tight community |
+| **Parkersburg, WV** | Mixed historic neighborhoods | Working-class roots, revitalizing |
+
+### What Makes It Authentic
+- Lived-in but well-cared-for spaces
+- Quality remodels that respect original architecture
+- Hardwood floors, original trim preserved
+- Modern comfort in historic bones
+- Real people living intentionally
 
 ### What It Is NOT
-- No modern farmhouse shiplap
-- No open concept layouts
-- No stainless steel appliances
-- No granite/marble counters
-- No staged/glamorous interiors
+- Shabby or run-down
+- Budget/DIY renovation aesthetic
+- Every room identical (vary the scenes!)
+- Modern farmhouse/shiplap/subway tile
+- Overly staged real estate photos
 
 ---
 
@@ -169,7 +201,7 @@ All stories take place in **authentic 1880s-1890s Victorian cottages**. These ar
 - **Cozy, humble, authentic** - not staged or glamorous
 - **People in casual attire** - sweaters, jeans, flannel (no suits)
 - **Small intimate spaces** with natural daylight
-- **Format:** WebP preferred
+- **Format:** AVIF preferred (~65% smaller than WebP at equivalent quality, 93.8% browser support 2025)
 
 ### Naming Conventions
 ```
@@ -215,7 +247,8 @@ resolution: "high"
 - Use "candid moment, unposed, authentic" for natural feeling
 
 **Post-Processing:**
-Convert PNG output to WebP: `cwebp -q 90 [input.png] -o [output.webp]`
+Convert PNG output to AVIF: `convert [input.png] -quality 50 [output.avif]`
+(AVIF quality 50 produces ~60-80KB files with excellent visual quality)
 
 ---
 

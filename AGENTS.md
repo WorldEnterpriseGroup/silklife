@@ -15,6 +15,9 @@ Keep existing formatting in each file. HTML uses tab indentation and compact att
 - Categories: `category-[name].html`.
 - Images: `images/articles/[category]-[topic].webp` and `images/homepage/hp-[topic]-[nn]-[size].webp`.
 
+## Image Generation
+Use the Nanobanana MCP for all image generation: `mcp__nanobanana__generate_image`.
+
 ## Testing Guidelines
 There is no automated test suite. Validate changes by running a local server and checking:
 - page rendering in desktop and mobile widths
