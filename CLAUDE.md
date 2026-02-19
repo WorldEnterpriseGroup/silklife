@@ -1,412 +1,99 @@
-# SILK Life Magazine - Project Instructions
+# World Enterprise Group — Site Standards
 
-This file provides guidance to Claude Code when working with the SILK Life magazine website.
+This is a static GitHub Pages website. All changes deploy automatically when pushed to the default branch.
 
----
+## Deployment
 
-## Project Overview
+- **Hosting**: GitHub Pages (static files only — no server-side code)
+- **Deploy trigger**: Push to default branch (`main`, `master`, or `gh-pages`)
+- **Custom domains**: Configured via `CNAME` file — never delete or modify it
 
-**SILK Life** is the lifestyle magazine for the SILK community, featuring intimate personal stories from ~50 community members living in retrofitted Victorian cottages in the **Mid-Ohio Valley**.
+## Image Standards
 
-> **IMPORTANT:** The region is called "Mid-Ohio Valley" (NOT "Ohio Valley"). Always use "Mid-Ohio Valley" in all content, ads, and copy.
+### Format: AVIF (mandatory)
 
-- **Domain:** silklife.org
-- **Type:** Static HTML magazine website
-- **Content:** 90+ articles across 5 categories
-- **Tier:** 2 (reports to SILK Corp)
-
-**SILK Core Values:** **S**trength, **I**ntegrity, **L**ove, **K**nowledge
-
----
-
-## SILK Ecosystem
-
-SILK Life aggregates stories from across the SILK ecosystem:
-
-```
-                    ┌─────────────────────┐
-                    │     SILK CORP       │
-                    │   silkcorp.org      │
-                    └──────────┬──────────┘
-                               │
-          ┌────────────────────┼────────────────────┐
-          │                    │                    │
-          ▼                    ▼                    ▼
-    ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-    │ SILK YACHT  │     │ SILK LIFE   │     │ SILK WOMEN  │
-    │  (5 Sites)  │     │ (THIS SITE) │     │ silkwomen   │
-    └──────┬──────┘     └─────────────┘     └─────────────┘
-           │
-    ┌──────┴──────┬──────────┬──────────┬──────────┐
-    │             │          │          │          │
-    ▼             ▼          ▼          ▼          ▼
-  YOGA         ARTS        CAFE       HOMES       TECH
-```
-
-### YACHT Properties (Content Sources)
-
-| Site | Domain | Focus | SILK Life Category |
-|------|--------|-------|-------------------|
-| **SILK Yoga** | silkyoga.org | Wellness, mindfulness, retreats | `category-yoga.html` |
-| **SILK Arts** | silkarts.org | Creative expression, galleries | `category-arts.html` |
-| **SILK Cafe** | silkcafe.org | Community gathering, farm-to-table | `category-cafe.html` |
-| **SILK Homes** | silkhomes.org | Intentional living, co-housing | `category-homes.html` |
-| **SILK Tech** | silktech.org | Digital wellness, innovation | `category-tech.html` |
-
-### Other SILK Properties
-
-| Site | Domain | Purpose | Relationship to SILK Life |
-|------|--------|---------|--------------------------|
-| **SILK Corp** | silkcorp.org | Parent company hub | Corporate oversight |
-| **SILK Women** | silkwomen.org | Global women's empowerment | Cross-promote women's stories |
-| **SILK Hive** | silkhive.org | Member portal, collaboration | Future: member-only content |
-| **SILK Guide** | (internal) | Brand guidelines | Design standards reference |
-
----
-
-## Character Guide
-
-**CRITICAL:** Before writing ANY SILK Life content, consult the character guide.
-
-- **Location:** `/mnt/d/silk/silklife/CHARACTERS.md`
-- **Contents:** 50 established characters with full profiles
-- **Required reading:** Names, ages, professions, locations, house descriptions, personalities
-
-### Core Characters (Quick Reference)
-
-| Name | Age | Role | Location | Notable |
-|------|-----|------|----------|---------|
-| Bill Henderson | 73 | Community elder | Ravenswood, Front St | Wraparound porch gathering spot |
-| Maya Chen | 32 | Garden coordinator | Ravenswood, Front St | Saturday coffee host |
-| Tom Richardson | 45 | Silent helper | Ravenswood, Front St | 6am runs; fixes things |
-| Sarah Mitchell | 34 | Innkeeper | Marietta, Second St | Three chickens; SILK Homes property |
-| Emma Clarke | 38 | Social connector | Ravenswood, Front St | SCOBY grower; knows everyone |
-| Elena Martinez | 41 | Night nurse/potter | Ravenswood, Front St | ER nights; pottery weekends |
-
-### Community Locations
-
-| Town | State | Population | Character |
-|------|-------|------------|-----------|
-| Ravenswood | WV | ~25 SILK members | Primary hub; tight-knit |
-| Parkersburg | WV | ~15 SILK members | Working-class; diverse |
-| Marietta | OH | ~10 SILK members | College town; arts scene |
-
----
-
-## Physical Property Details
-
-SILK properties are **extensively remodeled Victorian homes (1870s-1910s)** in Marietta, OH and Ravenswood, WV. These are **upscale, well-maintained homes**—among the nicest historic properties in the Mid-Ohio Valley. Ravenswood homes average ~2,500 sq ft.
-
-### CRITICAL: Avoid Repetitive Imagery
-
-**DO NOT** use the same visual clichés in every image. Not every room needs:
-- A cast iron radiator prominently featured
-- Tall Victorian windows with wavy glass
-- The same "farmhouse" aesthetic
-
-**Vary the settings, rooms, and details across images.**
-
-### Property Standards (What SILK Homes Actually Have)
-
-| Element | SILK Standard |
-|---------|---------------|
-| **Floors** | Refinished hardwood throughout (almost never carpet) |
-| **Kitchens** | Updated with modern appliances, quality cabinets |
-| **Bathrooms** | Remodeled, modern fixtures |
-| **Windows** | Mix of restored originals and quality replacements |
-| **Heating** | Varies: radiators, forced air, mini-splits |
-| **Condition** | Well-maintained, professionally remodeled |
-
-### Variety in Image Settings
-
-Even though homes are nice, **vary the specific rooms and scenarios:**
-
-| Instead of Always... | Also Show... |
-|---------------------|--------------|
-| Sunny parlor with radiator | Kitchen with island, breakfast nook |
-| Victorian living room | Upstairs bedroom, home office, mudroom |
-| Formal spaces | Cozy corners, reading nooks, porches |
-| Morning golden hour | Evening lamplight, overcast days, night scenes |
-
-### Town Character
-
-| Town | SILK Properties | Character |
-|------|-----------------|-----------|
-| **Marietta, OH** | Restored Victorians near downtown | College town arts scene, walkable |
-| **Ravenswood, WV** | Large remodeled Victorians (~2,500 sf) | Quiet river town, tight community |
-| **Parkersburg, WV** | Mixed historic neighborhoods | Working-class roots, revitalizing |
-
-### What Makes It Authentic
-- Lived-in but well-cared-for spaces
-- Quality remodels that respect original architecture
-- Hardwood floors, original trim preserved
-- Modern comfort in historic bones
-- Real people living intentionally
-
-### What It Is NOT
-- Shabby or run-down
-- Budget/DIY renovation aesthetic
-- Every room identical (vary the scenes!)
-- Modern farmhouse/shiplap/subway tile
-- Overly staged real estate photos
-
----
-
-## Writing Style
-
-### Voice & Tone
-- **Intimate, first-person narratives** - Personal stories, not journalism
-- **Self-practice focus** - NO workshops, classes, or paid instructors
-- **Honest imperfection** - Failed sourdough, awkward yoga, learning curves
-- **Specific moments** - "Tuesday at 6:47 AM" not "mornings"
-- **Community through presence** - Neighbors showing up, not formal events
-
-### What to Include
-- Specific times and dates
-- Sensory details (radiator clanking, coffee smell, river sounds)
-- Character names from CHARACTERS.md
-- Real street names (Front Street, Market Street, River Road)
-- Victorian house details (parlor, porch, bay window)
-- Imperfect outcomes (burnt bread, sore muscles, awkward silences)
-
-### What to Avoid
-- Generic wellness speak
-- Perfect Instagram moments
-- Professional instruction/workshops
-- Formal community "events"
-- Unnamed characters
-- Vague locations
-
-### Example Good Opening
-> "It was 6:47 on a Tuesday when I finally admitted my sourdough starter was dead. Maya found me staring at the jar on my kitchen counter—the one by the bay window where the morning light hits just right—and didn't say anything. Just set down a fresh jar of her own starter and started making coffee."
-
-### Example Bad Opening
-> "Starting my wellness journey has been transformative. Through our community workshops, I've learned so much about mindful living and sustainable practices."
-
----
-
-## Image Guidelines
-
-### Size Conventions
-
-| Use Case | Dimensions | Location |
-|----------|------------|----------|
-| Homepage thumbnails | 330x242 | `images/articles/` or `images/homepage/` |
-| Homepage squares | 330x330 | `images/homepage/hp-*-330.webp` |
-| Article hero | 1024x1024 | `images/articles/` |
-| Carousel banners | 510x187 | `images/homepage/hp-*-510.webp` |
-
-### Photo Style
-- **Realistic, documentary-style** photography
-- **Cozy, humble, authentic** - not staged or glamorous
-- **People in casual attire** - sweaters, jeans, flannel (no suits)
-- **Small intimate spaces** with natural daylight
-- **Format:** AVIF preferred (~65% smaller than WebP at equivalent quality, 93.8% browser support 2025)
-
-### Naming Conventions
-```
-images/articles/[category]-[topic].webp
-images/homepage/hp-[topic]-[number]-[size].webp
-
-Examples:
-images/articles/cafe-farm-table.webp
-images/articles/yoga-morning-practice.webp
-images/homepage/hp-yoga-11-330.webp
-images/homepage/hp-arts-02-510.webp
-```
-
-### Image Generation (MCP Tool)
-
-**Tool:** `mcp__nanobanana__generate_image`
-
-This MCP tool generates images using Gemini 3 Pro Image model. Use it for all SILK Life image needs.
-
-**Key Parameters:**
-| Parameter | Values | Description |
-|-----------|--------|-------------|
-| `prompt` | string | Detailed image description (required) |
-| `aspect_ratio` | "1:1", "3:2", "4:3", "16:9", "21:9" | Output shape |
-| `model_tier` | "flash", "pro", "auto" | Quality level (pro = best) |
-| `resolution` | "high", "4k", "2k", "1k" | Output resolution |
-| `thinking_level` | "low", "high" | Reasoning depth (Pro only) |
-| `enable_grounding` | true/false | Real-world accuracy |
-
-**Example Usage:**
-```
-Tool: mcp__nanobanana__generate_image
-prompt: "Documentary photography style, candid authentic moment. Woman meditating in Victorian parlor with tall windows, cast iron radiator, worn hardwood floors. Natural lighting, photojournalistic, no text."
-aspect_ratio: "1:1"
-model_tier: "pro"
-resolution: "high"
-```
-
-**Pro Tips for Realistic Photos:**
-- Add "iPhone 15 Pro snapshot, f/11 aperture" for flat, realistic look
-- Add "deep depth of field, everything in sharp focus" for documentary feel
-- Include "no text overlays" to keep images clean
-- Use "candid moment, unposed, authentic" for natural feeling
-
-**Post-Processing:**
-Convert PNG output to AVIF: `convert [input.png] -quality 50 [output.avif]`
-(AVIF quality 50 produces ~60-80KB files with excellent visual quality)
-
----
-
-## Site Structure
-
-```
-silklife/
-├── index.html                    # Homepage
-├── CHARACTERS.md                 # Character database (READ THIS)
-├── CNAME                         # silklife.org
-│
-├── category-yoga.html            # YACHT category pages
-├── category-arts.html
-├── category-cafe.html
-├── category-homes.html
-├── category-tech.html
-│
-├── post-*.html                   # Individual articles (~90)
-│
-├── style/
-│   ├── style.css                 # Main styles
-│   ├── silk-life.css             # Custom SILK Life styles
-│   └── responsive.css            # Mobile styles
-│
-├── images/
-│   ├── articles/                 # Article images (330x242, 1024x1024)
-│   ├── homepage/                 # Homepage-specific images
-│   └── samples/                  # Template placeholder images
-│
-└── js/
-    └── main.js                   # Site JavaScript
-```
-
-### Article File Naming
-```
-post-[category]-[topic].html
-
-Examples:
-post-yoga-morning-practice.html
-post-cafe-farm-table.html
-post-home-sustainable-living.html
-post-arts-pottery-studio.html
-post-tech-digital-wellness.html
-```
-
----
-
-## Content Categories
-
-### YOGA (category-yoga.html)
-- Personal meditation practices
-- Home yoga routines
-- Breathing exercises
-- Mindfulness moments
-- **NOT:** Studio classes, paid instructors, retreats
-
-### ARTS (category-arts.html)
-- Personal creative projects
-- Home art spaces (basement studios, sun porch offices)
-- Community art walks
-- Elena's pottery, Rachel's photography, Ben's portraits
-- **NOT:** Professional galleries, art schools
-
-### CAFE (category-cafe.html)
-- Home cooking stories
-- Garden-to-table experiences
-- Community meals (Bill's porch, Maya's kitchen)
-- Coffee rituals, bread baking
-- **NOT:** Restaurant reviews, professional chefs
-
-### HOMES (category-homes.html)
-- Victorian cottage living
-- Radiator struggles, drafty windows
-- Sustainable home practices
-- Co-housing experiences
-- **NOT:** Real estate listings, renovation shows
-
-### TECH (category-tech.html)
-- Digital wellness, phone boundaries
-- Rural connectivity challenges
-- Remote work from Victorian cottages
-- Omar's repair café, tech help traditions
-- **NOT:** Product reviews, gadget worship
-
----
-
-## Development
-
-### Local Server
-```bash
-# Python
-python -m http.server 8000
-
-# Node
-npx serve
-
-# VS Code Live Server
-# Right-click index.html → Open with Live Server
-```
-
-### Adding New Articles
-1. Copy existing `post-*.html` as template
-2. Update title, meta description, content
-3. Add character names from CHARACTERS.md
-4. Create/resize images to correct dimensions
-5. Add to relevant category page
-6. Update homepage if featured
-
-### GitHub
-- **Repo:** WorldEnterpriseGroup/silklife
-- **Hosting:** GitHub Pages
-- **Branch:** gh-pages (live), master (development)
-
----
-
-## Color Palette
-
-| Element | Color | Hex |
-|---------|-------|-----|
-| Primary | Warm Coral | #E07A5F |
-| Secondary | Cream | #F4F1DE |
-| Accent | Forest Green | #3D405B |
-| Text | Dark Gray | #333333 |
-| Highlight | Sage Green | #81B29A |
-
-### Typography
-- **Headings:** Playfair Display
-- **Body:** Inter
-- **Quotes:** Lora (italic)
-
----
-
-## Cross-Site Links
-
-Always link to sibling SILK sites where relevant:
+All images MUST be saved as `.avif`. Use the `<picture>` element with fallback for maximum compatibility:
 
 ```html
-<!-- In footer or related content -->
-<a href="https://silkcorp.org">SILK Corp</a>
-<a href="https://silkyoga.org">SILK Yoga</a>
-<a href="https://silkarts.org">SILK Arts</a>
-<a href="https://silkcafe.org">SILK Cafe</a>
-<a href="https://silkhomes.org">SILK Homes</a>
-<a href="https://silkwomen.org">SILK Women</a>
+<picture>
+  <source srcset="assets/images/hero.avif" type="image/avif">
+  <img src="assets/images/hero.avif" alt="Descriptive alt text"
+       width="1024" height="768" loading="lazy" decoding="async">
+</picture>
 ```
 
----
+For hero/above-the-fold images, do NOT use `loading="lazy"` — instead use `fetchpriority="high"`:
 
-## Quick Reference
+```html
+<img src="assets/images/hero.avif" alt="Hero description"
+     width="1600" height="900" fetchpriority="high" decoding="async">
+```
 
-| Task | Action |
-|------|--------|
-| New article | Copy `post-*.html`, update content, add to category |
-| New character | Add to CHARACTERS.md first, then reference |
-| Homepage image | Must be 330x242 for thumbnails, 330x330 for squares |
-| Article image | 1024x1024 for hero, resize for thumbnails |
-| Writing check | Is it first-person? Specific time? Named character? Imperfect? |
+### Lazy loading (mandatory for below-fold images)
 
----
+- Add `loading="lazy"` to every `<img>` that is NOT in the initial viewport
+- Add `decoding="async"` to all images
+- Always include `width` and `height` attributes to prevent layout shift
 
-*This document is the canonical reference for SILK Life development. Consult CHARACTERS.md before writing any community content.*
+### Image generation
+
+Use the `/comfyui` skill to generate images. The default model (Z-Image Turbo) produces photorealistic 1024x1024 images in ~6 seconds. Output format is AVIF by default.
+
+Common dimensions for site images:
+
+| Use Case | Generate Size | Display Size | Aspect |
+|----------|--------------|--------------|--------|
+| Hero banner | 1024x576 | 1600x900 | 16:9 |
+| Card / thumbnail | 1024x768 | 600x450 | 4:3 |
+| Square (social, avatar) | 1024x1024 | 400x400 | 1:1 |
+| Portrait | 768x1344 | 400x700 | ~9:16 |
+
+After generating, place images in the repo's existing image directory (typically `assets/images/`, `images/`, or `assets/img/`).
+
+## HTML Standards
+
+### Structure
+
+- These are static HTML sites — no build tools, no npm, no bundlers
+- Do NOT add package.json, webpack, vite, or any build system
+- Keep the existing CSS framework (Bootstrap 3, 4, or 5 — whichever the site uses)
+- Preserve the existing directory structure and naming conventions
+
+### Navigation consistency
+
+Many sites have navigation copy-pasted across every HTML file. When updating navigation:
+- Update ALL HTML files in the repo, not just one
+- Use grep/glob to find every file containing the nav markup
+- Verify the update is consistent across all pages
+
+### Semantic HTML
+
+- Use `<header>`, `<main>`, `<footer>`, `<section>`, `<nav>`, `<article>` elements
+- Every `<img>` must have a descriptive `alt` attribute (never empty, never "image")
+- Use heading hierarchy (`h1` > `h2` > `h3`) — one `h1` per page
+
+### Performance
+
+- Add `defer` to all `<script>` tags (except inline scripts that must run immediately)
+- Preload the hero/LCP image: `<link rel="preload" as="image" href="hero.avif" type="image/avif">`
+- Do NOT add new JavaScript libraries unless absolutely necessary
+- Prefer CSS animations over JavaScript animations
+
+## CSS Standards
+
+- Follow the existing site's class naming convention (BEM, utility, or template-specific like `ct-`)
+- Add new styles to the existing custom stylesheet — do NOT create new CSS files
+- Use CSS custom properties (`var(--color-primary)`) for colors when the site already uses them
+- Mobile-first responsive design: start with mobile styles, add `min-width` media queries for larger screens
+
+## What NOT To Do
+
+- Do NOT delete the `CNAME` file
+- Do NOT add build tools, bundlers, or package managers
+- Do NOT replace the existing CSS framework with a different one
+- Do NOT add React, Vue, Angular, or any SPA framework
+- Do NOT commit node_modules or any dependency directories
+- Do NOT use placeholder text (Lorem ipsum) — always write real content
+- Do NOT leave dead code (commented-out sections, unused CSS/JS)
+- Do NOT reference external images by URL — always commit images to the repo
+- Do NOT use PHP, Python, or any server-side code (GitHub Pages is static only)
