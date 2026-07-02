@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Calendar Nobody Asked For - SILK Life Magazine</title>
+		<!--meta-->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="SILK Life, Community, Events Calendar, Technology, Connection" />
+		<meta name="description" content="Jordan made a community calendar to solve a problem nobody knew they had. Turns out, we needed it more than we thought." />
+		<!--style-->
+		<link href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="style/reset.css">
+		<link rel="stylesheet" type="text/css" href="style/superfish.css">
+		<link rel="stylesheet" type="text/css" href="style/prettyPhoto.css">
+		<link rel="stylesheet" type="text/css" href="style/jquery.qtip.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="style/menu_styles.css">
+		<link rel="stylesheet" type="text/css" href="style/animations.css">
+		<link rel="stylesheet" type="text/css" href="style/responsive.css">
+		<link rel="stylesheet" type="text/css" href="style/odometer-theme-default.css">
+		<link rel="stylesheet" type="text/css" href="style/silk-life.css">
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.avif">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.avif">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.avif">
+		<link rel="manifest" href="images/site.webmanifest">
+		<meta name="theme-color" content="#9CAF88">
+	</head>
+	<body>
+		<div class="site_container">
+			<div class="header_top_bar_container clearfix">
+				<div class="header_top_bar">
+					<form class="search" action="search.html" method="get">
+						<input type="text" name="s" placeholder="Search stories..." value="Search stories..." class="search_input hint">
+						<input type="submit" class="search_submit" value="">
+					</form>
+					<ul class="social_icons clearfix">
+						<li>
+							<a target="_blank" href="https://facebook.com/silkcorp" class="social_icon facebook" title="facebook">
+								&nbsp;
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://twitter.com/silkcorp" class="social_icon twitter" title="twitter">
+								&nbsp;
+							</a>
+						</li>
+						<li>
+							<a href="mailto:info@silklife.org" class="social_icon mail" title="mail">
+								&nbsp;
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://instagram.com/silkcorp" class="social_icon instagram" title="instagram">
+								&nbsp;
+							</a>
+						</li>
+					</ul>
+					<div class="latest_news_scrolling_list_container">
+						<ul>
+							<li class="category">LATEST</li>
+							<li class="left"><a href="#"></a></li>
+							<li class="right"><a href="#"></a></li>
+							<li class="posts">
+								<ul class="latest_news_scrolling_list">
+									<li>
+										<a href="post-yoga-morning-flow.html" title="">The Parlor Floor Practice</a>
+									</li>
+									<li>
+										<a href="post-cafe-farm-table.html" title="">When Bill Brought Tomatoes</a>
+									</li>
+									<li>
+										<a href="post-home-community-gathering.html" title="">Sunday Evening on Bill's Porch</a>
+									</li>
+								</ul>
+							</li>
+							<li class="date">
+								<abbr title="04 Dec 2025" class="timeago current">04 Dec 2025</abbr>
+								<abbr title="03 Dec 2025" class="timeago">03 Dec 2025</abbr>
+								<abbr title="02 Dec 2025" class="timeago">02 Dec 2025</abbr>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header_container">
+				<div class="header clearfix">
+					<div class="logo">
+						<h1><a href="index.html" title="SILK Life">SILK Life</a></h1>
+						<h4>Stories of Intentional Living</h4>
+					</div>
+					<div class="placeholder">728 x 90</div>
+				</div>
+			</div>
+			<div class="menu_container clearfix">
+				<nav>
+				<ul class="sf-menu">
+					<li>
+						<a href="index.html" title="Home">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Stories">
+							Stories
+						</a>
+					</li>
+					<li>
+						<a href="community.html" title="Community">
+							Community
+						</a>
+					</li>
+					<li>
+						<a href="events.html" title="Events">
+							Events
+						</a>
+					</li>
+					<li>
+						<a href="about.html" title="About">
+							About
+						</a>
+					</li>
+					<li>
+						<a href="subscribe.html" title="Subscribe">
+							Subscribe
+						</a>
+					</li>
+				</ul>
+				</nav>
+				<div class="mobile_menu_container">
+					<a href="#" class="mobile-menu-switch">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</a>
+					<div class="mobile-menu-divider"></div>
+					<nav>
+					<ul class="mobile-menu">
+						<li>
+							<a href="index.html" title="Home">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Stories">
+								Stories
+							</a>
+						</li>
+						<li>
+							<a href="community.html" title="Community">
+								Community
+							</a>
+						</li>
+						<li>
+							<a href="events.html" title="Events">
+								Events
+							</a>
+						</li>
+						<li>
+							<a href="about.html" title="About">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="subscribe.html" title="Subscribe">
+								Subscribe
+							</a>
+						</li>
+					</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="page">
+				<div class="page_layout page_margin_top clearfix">
+				<!-- HEADER BANNER AD: Cross-promote SILK Cafe -->
+				<div class="header-banner-ad" style="text-align: center; margin: 20px 0;">
+					<a href="https://silkcafe.org" target="_blank" rel="noopener" style="display: block;">
+						<img src="images/ads/banner/silk-cafe-banner.avif" alt="SILK Cafe - Community gathering" style="max-width: 100%; height: auto; border-radius: 8px;">
+					</a>
+					<p style="font-size: 10px; color: #A0AEC0; margin-top: 6px;">Advertisement</p>
+				</div>
+					<div class="row page_margin_top">
+						<div class="column column_2_3">
+							<div class="row">
+								<div class="post single">
+									<h1 class="post_title">
+										The Calendar Nobody Asked For
+									</h1>
+									<ul class="post_details clearfix">
+										<li class="detail category">In <a href="category_community.html" title="COMMUNITY">COMMUNITY</a></li>
+										<li class="detail date">10:00 AM, Dec 10, 2025</li>
+										<li class="detail author">By <a href="#" title="Jordan Hayes">Jordan Hayes</a></li>
+										<li class="detail views">2,500 Views</li>
+										<li class="detail comments"><a href="#comments_list" class="scroll_to_comments" title="8 Comments">8 Comments</a></li>
+									</ul>
+									<a href="images/articles/valley-calendar.avif" class="post_image page_margin_top prettyPhoto" title="The Calendar Nobody Asked For">
+										<img src='images/articles/valley-calendar.avif' alt='The Calendar Nobody Asked For'>
+									</a>
+									<div class="sentence">
+										<span class="text">Jordan spent three weeks building a shared calendar for our community of fifteen people.</span>
+										<span class="author">Jordan Hayes, SILK Life</span>
+									</div>
+									<div class="post_content page_margin_top_section clearfix">
+										<div class="content_box">
+											<h3 class="excerpt">Jordan spent three weeks building a shared calendar for our community of fifteen people. We mocked him gently. Then we started using it. Now we can't imagine life before "The Calendar."</h3>
+											<div class="text">
+												<p>Jordan showed up at community meeting with a laptop and the slightly manic energy of someone who's solved a problem nobody asked him to solve.</p>
+<p>"I made us a calendar," he announced.</p>
+<p>We stared. We're fifteen people living in six Victorian cottages on two connected streets. We see each other daily, sometimes hourly. Why would we need a calendar?</p>
+<p>"Hear me out," Jordan continued, undeterred by our collective skepticism. "Last week, Tom ran the same day Sarah did. They could've carpooled. Maya's pottery class overlapped with Elena's painting night—potential crossover students. Bill was weeding alone while three of us were free."</p>
+<blockquote class="inside_text page_margin_top">
+Jordan had noticed something the rest of us missed: we were living parallel lives in the same space, missing each other by minutes and hours and assumptions about who was busy when.
+<span class="author">&#8212;&nbsp;&nbsp;Jordan Hayes</span>
+</blockquote>
+<p>"It's color-coded," he added, which made Bill laugh out loud.</p>
+<p>But we looked. Jordan had created categories: Shared Meals (green), Classes/Skills (blue), Community Projects (yellow), Just For Fun (pink), Help Needed (red). The calendar was populated with everything from "Tom's Tuesday Run - 6AM" to "Sarah's Bread-Baking - Overflow welcome" to "Bill's Garden Hours - Volunteers appreciated."</p>
+<p>"This is overcomplicating friendship," Rachel said, but she was smiling.</p>
+<p>"This is facilitating friendship," Jordan countered. "Technology serving community, not replacing it."</p>
+<p>We adopted it grudgingly. Emma added her morning meditation—"Anyone can join, please be quiet." Maya listed her pottery studio open hours. Tom put in his weekly poker night. Sarah added "Sunday Pancakes - Seriously, come eat these, I make too many."</p>
+<p>The first week, nothing changed. The second week, Jesse showed up for Tom's run. Third week, four people attended Sarah's bread-baking. By week four, "The Calendar" (capital T, capital C) had become a living document of our overlapping lives.</p>
+<p>Then it got weird—good weird.</p>
+<p>Someone added "Midnight Porch Sitting" with the note "No talking required, just company." Three people showed up. It became a weekly thing.</p>
+<p>Bill started posting "Garden Crisis - Emergency Help" when rabbits attacked his lettuce. Five people mobilized within an hour.</p>
+<p>Maya created "Imperfect Pottery Sale - Cheap mugs for clumsy friends." We all showed up. Her studio has never been so social.</p>
+<blockquote class="inside_text page_margin_top">
+The calendar stopped being about scheduling and started being about invitation. Not "here's when I'm busy" but "here's when you're welcome."
+<span class="author">&#8212;&nbsp;&nbsp;Jordan Hayes</span>
+</blockquote>
+<p>We learned things: Bill gardens every morning at 6:30 AM (earlier than we thought). Emma meditates at 5:45 AM (earlier than should be legal). Tom's poker night is actually more about bourbon and life advice than cards. Sarah's bread overflow isn't overflow—she just wants company.</p>
+<p>The categories evolved. "Help Needed" became our most active. "Just For Fun" grew to include "Front Porch Reading—Silently Together" and "Stargazing When We Remember To Look Up." Someone added a "Feeling Lonely" category with the description "Company available, no questions asked."</p>
+<p>Last month, Rachel posted "Bad Day - Kitchen Table Open" at 3 PM. By 3:15, four people were there. Nobody asked what happened. Somebody made tea. Someone else brought cookies. We sat until Rachel smiled, then slowly dispersed. The calendar said she needed company; we showed up. Simple.</p>
+<p>Jordan's calendar revealed what we'd been missing: not scheduling conflicts but synchronicity opportunities. Moments where solitary activities could become shared experiences if we just knew they were happening.</p>
+<p>Now the calendar includes everything from the practical ("Who's going to town? I need milk") to the profound ("Sitting with grief - company welcome"). It's become less about organizing fifteen schedules and more about weaving fifteen lives into something resembling a shared existence.</p>
+<p>We still mock Jordan gently. "The Calendar demands your presence!" someone will joke. But we check it daily. We add to it constantly. We've learned that technology doesn't replace community—sometimes it just helps us find each other in the gaps between our separate days.</p>
+<p>And that's Jordan's real genius: not creating a solution we asked for, but noticing a problem we'd accepted as normal. Parallel lives don't have to stay parallel. Sometimes they just need a color-coded Google Calendar to find their intersection points.</p>
+											<div class="sidebar-ad page_margin_top" style="margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #f4f7f2 0%, #fff 100%); border-radius: 8px; text-align: center; border: 1px solid rgba(156, 175, 136, 0.3);">
+												<a href="https://silktech.org" class="silk-ad-banner" target="_blank" rel="noopener" style="display: block;">
+													<div style="color: #0f0f23; font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600;">SILK Tech</div>
+													<div style="color: #00d4ff; font-size: 12px; margin-top: 5px;">Technology Serving Community</div>
+													<div style="color: #0f0f23; font-size: 11px; margin-top: 10px; padding: 5px 15px; border: 1px solid #00d4ff; display: inline-block; border-radius: 3px;">Explore silktech.org</div>
+												</a>
+												<p style="font-size: 10px; color: #718096; margin-top: 5px;">Advertisement</p>
+											</div>
+											<p>The digital infrastructure is simple—Google Calendar with shared permissions. But what Jordan really built was cultural: permission to be explicit about our time, our availability, our need for company or help or just shared silence.</p>
+											<p>Now when I look at The Calendar on Thursday mornings while drinking my coffee, I see more than events. I see Bill's patient garden hours, Maya's generous overflow cooking, Tom's reliable presence at dawn. I see a community that was always overlapping—we just needed help seeing where the edges met.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row page_margin_top">
+								<div class="share_box clearfix">
+									<label>Share:</label>
+									<ul class="social_icons clearfix">
+										<li>
+											<a target="_blank" title="" href="https://facebook.com/silkcorp" class="social_icon facebook">
+												&nbsp;
+											</a>
+										</li>
+										<li>
+											<a target="_blank" title="" href="https://twitter.com/silkcorp" class="social_icon twitter">
+												&nbsp;
+											</a>
+										</li>
+										<li>
+											<a title="" href="mailto:info@silklife.org" class="social_icon mail">
+												&nbsp;
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row page_margin_top">
+								<ul class="taxonomies tags left clearfix">
+									<li>
+										<a href="#" title="Community">COMMUNITY</a>
+									</li>
+									<li>
+										<a href="#" title="Technology">TECHNOLOGY</a>
+									</li>
+									<li>
+										<a href="#" title="Connection">CONNECTION</a>
+									</li>
+									<li>
+										<a href="#" title="Innovation">INNOVATION</a>
+									</li>
+								</ul>
+								<ul class="taxonomies categories right clearfix">
+									<li>
+										<a href="category-general.html" title="COMMUNITY">COMMUNITY</a>
+									</li>
+								</ul>
+							</div>
+							<div class="row page_margin_top_section">
+								<h4 class="box_header">Leave a Comment</h4>
+								<p class="padding_top_30">Your email address will not be published. Required fields are marked with *</p>
+								<form class="comment_form margin_top_15" id="comment_form" method="post" action="post-valley-calendar.html">
+									<fieldset class="column column_1_3">
+										<input class="text_input" name="name" type="text" value="Your Name *" placeholder="Your Name *">
+									</fieldset>
+									<fieldset class="column column_1_3">
+										<input class="text_input" name="email" type="text" value="Your Email *" placeholder="Your Email *">
+									</fieldset>
+									<fieldset class="column column_1_3">
+										<input class="text_input" name="website" type="text" value="Website" placeholder="Website">
+									</fieldset>
+									<fieldset>
+										<textarea name="message" placeholder="Comment *">Comment *</textarea>
+									</fieldset>
+									<fieldset>
+										<input type="submit" value="POST COMMENT" class="more active">
+										<a href="#cancel" id="cancel_comment" title="Cancel reply">Cancel reply</a>
+									</fieldset>
+								</form>
+							</div>
+							<div class="row page_margin_top_section">
+								<h4 class="box_header">8 Comments</h4>
+								<ul id="comments_list">
+									<li class="comment clearfix" id="comment-1">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Emma Clarke">Emma Clarke</a></h5>
+												<abbr title="10 Dec 2025" class="timeago">10 Dec 2025</abbr>
+											</div>
+											<p>
+												I laughed so hard at this. Jordan showing up with that manic energy is EXACTLY how it happened. But honestly? The Calendar changed everything. I found three people for my SCOBY overflow last week.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-2">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Bill Henderson">Bill Henderson</a></h5>
+												<abbr title="10 Dec 2025" class="timeago">10 Dec 2025</abbr>
+											</div>
+											<p>
+												"Color-coded" still makes me chuckle. But Jordan was right. I garden alone less now. Good for the tomatoes, better for me.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-3">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Maya Chen">Maya Chen</a></h5>
+												<abbr title="11 Dec 2025" class="timeago">11 Dec 2025</abbr>
+											</div>
+											<p>
+												My pottery studio open hours entry has become the most social part of my week. People just show up now. I love it.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-4">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Sarah Mitchell">Sarah Mitchell</a></h5>
+												<abbr title="11 Dec 2025" class="timeago">11 Dec 2025</abbr>
+											</div>
+											<p>
+												The "Sunday Pancakes - Seriously, come eat these" note is peak honesty. And yes, I've been showing up. The pancakes are excellent.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-5">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Tom Richardson">Tom Richardson</a></h5>
+												<abbr title="12 Dec 2025" class="timeago">12 Dec 2025</abbr>
+											</div>
+											<p>
+												The Calendar found me a running partner. Jesse showing up that second week changed my whole routine. Sometimes tech gets it right.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-6">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Rachel Kim">Rachel Kim</a></h5>
+												<abbr title="12 Dec 2025" class="timeago">12 Dec 2025</abbr>
+											</div>
+											<p>
+												I use the "Feeling Lonely - company available" category more than I expected. No shame in that anymore. Someone always shows up.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-7">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Jesse Martinez">Jesse Martinez</a></h5>
+												<abbr title="13 Dec 2025" class="timeago">13 Dec 2025</abbr>
+											</div>
+											<p>
+												The "Garden Crisis - Emergency Help" feature saved my lettuce last month. Five people mobilized. That's what neighbors are for.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+									<li class="comment clearfix" id="comment-8">
+										<div class="comment_author_avatar">
+											&nbsp;
+										</div>
+										<div class="comment_details">
+											<div class="posted_by clearfix">
+												<h5><a class="author" href="#" title="Omar Hassan">Omar Hassan</a></h5>
+												<abbr title="13 Dec 2025" class="timeago">13 Dec 2025</abbr>
+											</div>
+											<p>
+												As someone who works in tech, this is exactly what technology should do: facilitate human connection, not replace it. Well done, Jordan.
+											</p>
+											<a class="read_more" href="#comment_form" title="Reply">
+												<span class="arrow"></span><span>REPLY</span>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="column column_1_3">
+							<div class="tabs no_scroll clearfix" style="background: linear-gradient(135deg, #f4f7f2 0%, #fff 100%); border-radius: 12px; padding: 20px; border: 1px solid rgba(156, 175, 136, 0.3);">
+								<ul class="tabs_navigation clearfix">
+									<li>
+										<a href="#sidebar-most-read" title="Most Read">
+											Most Read
+										</a>
+										<span></span>
+									</li>
+								</ul>
+								<div id="sidebar-most-read">
+									<ul class="blog rating page_margin_top clearfix">
+										<li class="post">
+											<a href="post-yoga-morning-flow.html" title="The Parlor Floor Practice">
+												<img src='images/articles/morning-practice-parlor.avif' alt='img'>
+											</a>
+											<div class="post_content">
+												<span class="number animated_element" data-value="5 234"></span>
+												<h5><a href="post-yoga-morning-flow.html" title="The Parlor Floor Practice">The Parlor Floor Practice</a></h5>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="sidebar-ad page_margin_top">
+									<a href="https://silkcorp.org" class="silk-ad-banner" target="_blank" rel="noopener" style="display: block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background: linear-gradient(135deg, #2e3d50 0%, #4a5568 100%); padding: 20px; text-align: center;">
+										<div style="color: #fff; font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600;">SILK Corp</div>
+										<div style="color: #9CAF88; font-size: 12px; margin-top: 5px;">Strength. Integrity. Love. Knowledge.</div>
+										<div style="color: #fff; font-size: 11px; margin-top: 10px; padding: 5px 15px; border: 1px solid #9CAF88; display: inline-block; border-radius: 3px;">Visit silkcorp.org</div>
+									</a>
+									<p style="font-size: 10px; color: #718096; text-align: center; margin-top: 5px;">Advertisement</p>
+								</div>
+
+								<blockquote class="inside_text page_margin_top" style="border-left: 3px solid #9CAF88; padding-left: 15px; margin-left: 0;">
+									Community isn't about living in the same place. It's about knowing when people are available and showing up.
+									<span class="author">&#8212;&nbsp;&nbsp;Jordan Hayes</span>
+								</blockquote>
+
+								<div class="sidebar-ad page_margin_top">
+									<a href="https://silkhomes.org" class="silk-ad-banner" target="_blank" rel="noopener" style="display: block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background: linear-gradient(135deg, #8B7355 0%, #A0826D 100%); padding: 20px; text-align: center;">
+										<div style="color: #fff; font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600;">SILK Homes</div>
+										<div style="color: #F4F1DE; font-size: 12px; margin-top: 5px;">Intentional Living in the Ohio Valley</div>
+										<div style="color: #fff; font-size: 11px; margin-top: 10px; padding: 5px 15px; border: 1px solid #F4F1DE; display: inline-block; border-radius: 3px;">Explore silkhomes.org</div>
+									</a>
+									<p style="font-size: 10px; color: #718096; text-align: center; margin-top: 5px;">Advertisement</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_container">
+				<div class="footer clearfix">
+					<div class="row copyright_row">
+						<div class="column column_2_3">
+							&copy; 2026 <a href="https://silkcorp.org" title="SILK Corp" target="_blank">SILK Corp</a> - SILK Life Magazine
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

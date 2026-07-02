@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Subscribe to SILK Life | Newsletter & Contact</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="SILK Life, subscribe, newsletter, contact, intentional living magazine" />
+		<meta name="description" content="Subscribe to SILK Life Magazine for weekly stories of intentional living, community events, and exclusive content from the SILK ecosystem." />
+
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap' rel='stylesheet'>
+
+		<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="style/reset.css">
+		<link rel="stylesheet" type="text/css" href="style/superfish.css">
+		<link rel="stylesheet" type="text/css" href="style/prettyPhoto.css">
+		<link rel="stylesheet" type="text/css" href="style/jquery.qtip.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="style/menu_styles.css">
+		<link rel="stylesheet" type="text/css" href="style/animations.css">
+		<link rel="stylesheet" type="text/css" href="style/responsive.css">
+		<link rel="stylesheet" type="text/css" href="style/odometer-theme-default.css">
+		<link rel="stylesheet" type="text/css" href="style/silk-life.css">
+
+		<!-- Subscribe Page Custom Styles -->
+		<style>
+			/* Locations List Styling */
+			.locations-list {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.locations-list li {
+				padding: 12px 0;
+				border-bottom: 1px solid #e8e8e8;
+				color: #333333;
+				font-size: 14px;
+				line-height: 1.6;
+			}
+			.locations-list li:last-child {
+				border-bottom: none;
+			}
+			.locations-list li strong {
+				color: #2C3E50;
+				font-weight: 600;
+			}
+
+			/* Subscribe page headings */
+			.about_title {
+				font-family: 'Playfair Display', serif;
+				font-size: 28px;
+				color: #2C3E50;
+				font-weight: 400;
+				margin-bottom: 0;
+			}
+			.about_subtitle {
+				font-family: 'Playfair Display', serif;
+				font-size: 42px;
+				color: #9CAF88;
+				font-weight: 600;
+				margin-top: 5px;
+				margin-bottom: 20px;
+			}
+
+			/* Box headers */
+			.box_header {
+				font-family: 'Playfair Display', serif;
+				color: #2C3E50;
+				border-bottom: 2px solid #9CAF88;
+				padding-bottom: 10px;
+			}
+
+			/* Features icons accent color */
+			.features_icon {
+				background-color: #9CAF88;
+			}
+
+			/* Form styling */
+			.contact_form .text_input,
+			.contact_form textarea {
+				border: 1px solid #ddd;
+				border-radius: 4px;
+				padding: 12px;
+				font-family: 'Inter', sans-serif;
+				transition: border-color 0.3s ease;
+			}
+			.contact_form .text_input:focus,
+			.contact_form textarea:focus {
+				border-color: #9CAF88;
+				outline: none;
+			}
+			.contact_form .more.active {
+				background-color: #9CAF88;
+				border-color: #9CAF88;
+				color: #ffffff;
+				font-weight: 600;
+				padding: 12px 30px;
+				transition: background-color 0.3s ease;
+			}
+			.contact_form .more.active:hover {
+				background-color: #8A9E79;
+			}
+
+			/* Announcement section */
+			.announcement {
+				background: linear-gradient(135deg, #2C3E50 0%, #3d5167 100%);
+				border-radius: 8px;
+			}
+			.announcement h2 {
+				color: #ffffff;
+			}
+			.announcement h2.expose {
+				color: #9CAF88;
+			}
+
+			/* Blog post links */
+			.blog.small .post h5 a {
+				color: #2C3E50;
+			}
+			.blog.small .post h5 a:hover {
+				color: #9CAF88;
+			}
+
+			/* Page title */
+			.page_title {
+				color: #2C3E50;
+				font-family: 'Playfair Display', serif;
+				white-space: nowrap;
+			}
+
+			/* Text readability */
+			.text, p.text {
+				color: #333333;
+				line-height: 1.7;
+			}
+
+			/* Item content text */
+			.item_content .text h3 {
+				color: #2C3E50;
+			}
+			.item_content .text h5 {
+				color: #2C3E50;
+			}
+			.item_content .text p {
+				color: #555555;
+			}
+
+			/* Footer column layout fix */
+			.footer_container {
+				background: #2C3E50;
+				padding: 40px 0;
+			}
+			.footer {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 20px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+			.footer .column_1_4 {
+				width: 23%;
+				min-width: 200px;
+				float: left;
+				padding: 0 15px;
+				box-sizing: border-box;
+			}
+			.footer .column_1_4.last {
+				float: left;
+			}
+			.footer h4 {
+				color: #ffffff;
+				font-family: 'Playfair Display', serif;
+				font-size: 18px;
+				margin-bottom: 20px;
+				border-bottom: 1px solid rgba(255,255,255,0.2);
+				padding-bottom: 10px;
+			}
+			.footer_menu {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: block;
+				column-count: 1;
+			}
+			.footer_menu li {
+				margin-bottom: 8px;
+				display: block;
+				width: 100%;
+			}
+			.footer_menu li a {
+				color: #E0E0E0;
+				text-decoration: none;
+				font-size: 14px;
+				transition: color 0.3s ease;
+			}
+			.footer_menu li a:hover {
+				color: #9CAF88;
+			}
+			.footer_bottom_container {
+				background: #1a2a38;
+				padding: 15px 0;
+			}
+			.footer_bottom {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+
+			/* Responsive footer */
+			@media (max-width: 900px) {
+				.footer .column_1_4 {
+					width: 48%;
+					margin-bottom: 30px;
+				}
+			}
+			@media (max-width: 600px) {
+				.footer .column_1_4 {
+					width: 100%;
+				}
+			}
+		</style>
+
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="manifest" href="images/site.webmanifest">
+		<meta name="theme-color" content="#9CAF88">
+	</head>
+	<body>
+		<div class="site_container">
+			<!-- SILK Ecosystem Navigation -->
+			<div class="silk-nav-bar">
+				<ul class="silk-sites">
+					<li><a href="https://silkcorp.org" title="SILK Corp">Corp</a></li>
+					<li class="active"><a href="https://silklife.org" title="SILK Life">Life</a></li>
+					<li><a href="https://silkyoga.org" title="SILK Yoga">Yoga</a></li>
+					<li><a href="https://silkarts.org" title="SILK Arts">Arts</a></li>
+					<li><a href="https://silkcafe.org" title="SILK Cafe">Cafe</a></li>
+					<li><a href="https://silkhomes.org" title="SILK Homes">Homes</a></li>
+					<li><a href="https://silkwomen.org" title="SILK Women">Women</a></li>
+				</ul>
+			</div>
+
+			<!-- Top Bar -->
+			<div class="header_top_bar_container clearfix">
+				<div class="header_top_bar">
+					<form class="search" action="search.html" method="get">
+						<input type="text" name="s" placeholder="Search stories..." value="" class="search_input hint">
+						<input type="submit" class="search_submit" value="">
+					</form>
+					<ul class="social_icons clearfix">
+						<li>
+							<a target="_blank" href="https://facebook.com/silklifemag" class="social_icon facebook" title="Facebook">&nbsp;</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://instagram.com/silklifemag" class="social_icon instagram" title="Instagram">&nbsp;</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://twitter.com/silklifemag" class="social_icon twitter" title="Twitter">&nbsp;</a>
+						</li>
+						<li>
+							<a href="mailto:info@silkcorp.org" class="social_icon mail" title="Email">&nbsp;</a>
+						</li>
+					</ul>
+					<div class="latest_news_scrolling_list_container">
+						<ul>
+							<li class="category">LATEST</li>
+							<li class="left"><a href="#"></a></li>
+							<li class="right"><a href="#"></a></li>
+							<li class="posts">
+								<ul class="latest_news_scrolling_list">
+									<li>
+										<a href="post-morning-rituals.html" title="">Morning Rituals at SILK Homes Ravenswood</a>
+									</li>
+									<li>
+										<a href="post-first-harvest.html" title="">The First Harvest: Victory Gardens Overflow with Abundance</a>
+									</li>
+									<li>
+										<a href="post-yoga-retreat.html" title="">30-Day Yoga Retreat: Stories of Transformation</a>
+									</li>
+								</ul>
+							</li>
+							<li class="date">
+								<abbr title="21 Dec 2025" class="timeago current">21 Dec 2025</abbr>
+								<abbr title="20 Dec 2025" class="timeago">20 Dec 2025</abbr>
+								<abbr title="19 Dec 2025" class="timeago">19 Dec 2025</abbr>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Header -->
+			<div class="header_container">
+				<div class="header clearfix">
+					<div class="logo">
+						<h1><a href="index.html" title="SILK Life">SILK Life</a></h1>
+						<h4>Stories of Intentional Living</h4>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main Navigation -->
+			<div class="menu_container clearfix">
+				<nav aria-label="Main navigation">
+				<ul class="sf-menu">
+					<li>
+						<a href="index.html" title="Home">
+							Home
+						</a>
+					</li>
+					<li class="submenu mega_menu_parent">
+						<a href="#" title="Stories">
+							Stories
+						</a>
+						<ul>
+							<li class="submenu">
+								<a href="category_yoga.html" title="Yoga & Wellness">
+									Yoga & Wellness
+								</a>
+								<ul class="mega_menu blog">
+									<li class="post">
+										<a href="post-yoga-mindful-movement.html" title="The Attic Book Discovery">
+											<img src='images/articles/yoga-mindful-movement.webp' alt='img'>
+										</a>
+										<h5><a href="post-yoga-mindful-movement.html" title="The Attic Book Discovery">The Attic Book Discovery</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="YOGA" href="category_yoga.html">YOGA</a></li>
+											<li class="date">
+												7:15 AM, Dec 15
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-yoga-breathing.html" title="The Window Seat Breathing Practice">
+											<img src='images/articles/yoga-breathing.webp' alt='img'>
+										</a>
+										<h5><a href="post-yoga-breathing.html" title="The Window Seat Breathing Practice">The Window Seat Breathing Practice</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="YOGA" href="category_yoga.html">YOGA</a></li>
+											<li class="date">
+												9:45 AM, Dec 14
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-yoga-stillness.html" title="Twenty Minutes of Nothing">
+											<img src='images/articles/yoga-stillness.webp' alt='img'>
+										</a>
+										<h5><a href="post-yoga-stillness.html" title="Twenty Minutes of Nothing">Twenty Minutes of Nothing</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="YOGA" href="category_yoga.html">YOGA</a></li>
+											<li class="date">
+												11:00 AM, Dec 13
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="category_arts.html" title="Arts & Culture">
+									Arts & Culture
+								</a>
+								<ul class="mega_menu blog">
+									<li class="post">
+										<a href="post-arts-transforming-spaces.html" title="The Room Sarah Reclaimed">
+											<span class="icon gallery"></span>
+											<img src='images/homepage/hp-home-03-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-arts-transforming-spaces.html" title="The Room Sarah Reclaimed">The Room Sarah Reclaimed</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="ARTS" href="category_arts.html">ARTS</a></li>
+											<li class="date">
+												4:15 PM, Dec 15
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-arts-creative-expression.html" title="The Thread Annie Found">
+											<span class="icon gallery"></span>
+											<img src='images/homepage/hp-sculpture-14-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-arts-creative-expression.html" title="The Thread Annie Found">The Thread Annie Found</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="ARTS" href="category_arts.html">ARTS</a></li>
+											<li class="date">
+												1:45 PM, Dec 14
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-arts-gallery-opening.html" title="The Night We Opened Jacob's Living Room">
+											<span class="icon gallery"></span>
+											<img src='images/homepage/hp-cafe-04-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-arts-gallery-opening.html" title="The Night We Opened Jacob's Living Room">The Night We Opened Jacob's Living Room</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="ARTS" href="category_arts.html">ARTS</a></li>
+											<li class="date">
+												9:30 AM, Dec 13
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="category_cafe.html" title="Cafe & Culinary">
+									Cafe & Culinary
+								</a>
+								<ul class="mega_menu blog">
+									<li class="post">
+										<a href="post-cafe-farm-revolution.html" title="Farm-to-Table Revolution">
+											<img src='images/homepage/hp-garden-08-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-cafe-farm-revolution.html" title="Farm-to-Table Revolution">Farm-to-Table Revolution</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="CAFE" href="category_cafe.html">CAFE</a></li>
+											<li class="date">
+												5:30 PM, Dec 15
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-cafe-coffee-gathering.html" title="Community Gathering Over Coffee">
+											<img src='images/homepage/hp-pottery-10-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-cafe-coffee-gathering.html" title="Community Gathering Over Coffee">Community Gathering Over Coffee</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="CAFE" href="category_cafe.html">CAFE</a></li>
+											<li class="date">
+												10:00 AM, Dec 14
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-cafe-seasonal-harvest.html" title="Seasonal Menu Celebrates Local Harvest">
+											<img src='images/homepage/hp-arts-02-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-cafe-seasonal-harvest.html" title="Seasonal Menu Celebrates Local Harvest">Seasonal Menu Celebrates Local Harvest</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="CAFE" href="category_cafe.html">CAFE</a></li>
+											<li class="date">
+												2:00 PM, Dec 12
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="category_homes.html" title="Homes & Living">
+									Homes & Living
+								</a>
+								<div class="mega_menu row">
+									<div class="column column_1_2">
+										<ul class="blog small">
+											<li class="post">
+												<a href="post-homes-intentional-living.html" title="Learning to Share Space (and Myself)">
+													<img src='images/homepage/thumbs/hp-yoga-01-100.webp' alt='img'>
+												</a>
+												<div class="post_content">
+													<h5>
+														<a href="post-homes-intentional-living.html" title="Learning to Share Space (and Myself)">Learning to Share Space (and Myself)</a>
+													</h5>
+													<ul class="post_details simple">
+														<li class="category"><a href="category_homes.html" title="HOMES">HOMES</a></li>
+														<li class="date">
+															4:30 PM, Dec 15
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="post">
+												<a href="post-homes-sustainable-design.html" title="Small Fixes That Made an Old House Work">
+													<img src='images/homepage/thumbs/hp-tech-07-100.webp' alt='img'>
+												</a>
+												<div class="post_content">
+													<h5>
+														<a href="post-homes-sustainable-design.html" title="Small Fixes That Made an Old House Work">Small Fixes That Made an Old House Work</a>
+													</h5>
+													<ul class="post_details simple">
+														<li class="category"><a href="category_homes.html" title="HOMES">HOMES</a></li>
+														<li class="date">
+															11:15 AM, Dec 14
+														</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="column column_1_2">
+										<ul class="blog small">
+											<li class="post">
+												<a href="post-homes-sacred-spaces.html" title="The Butler's Pantry Meditation">
+													<img src='images/homepage/thumbs/hp-dining-09-100.webp' alt='img'>
+												</a>
+												<div class="post_content">
+													<h5>
+														<a href="post-homes-sacred-spaces.html" title="The Butler's Pantry Meditation">The Butler's Pantry Meditation</a>
+													</h5>
+													<ul class="post_details simple">
+														<li class="category"><a href="category_homes.html" title="HOMES">HOMES</a></li>
+														<li class="date">
+															3:20 PM, Dec 13
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="post">
+												<a href="post-homes-community-stories.html" title="Small Moments That Build a Life Together">
+													<img src='images/homepage/thumbs/hp-meditation-13-100.webp' alt='img'>
+												</a>
+												<div class="post_content">
+													<h5>
+														<a href="post-homes-community-stories.html" title="Small Moments That Build a Life Together">Small Moments That Build a Life Together</a>
+													</h5>
+													<ul class="post_details simple">
+														<li class="category"><a href="category_homes.html" title="HOMES">HOMES</a></li>
+														<li class="date">
+															9:45 AM, Dec 12
+														</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="submenu">
+								<a href="category_tech.html" title="Tech & Innovation">
+									Tech & Innovation
+								</a>
+								<ul class="mega_menu blog">
+									<li class="post">
+										<a href="post-tech-modern-wellness.html" title="The Digital Sunset Ritual">
+											<img src='images/homepage/hp-meditation-13-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-tech-modern-wellness.html" title="The Digital Sunset Ritual">The Digital Sunset Ritual</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="TECH" href="category_tech.html">TECH</a></li>
+											<li class="date">
+												2:15 PM, Dec 21
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-tech-intentionality.html" title="The Community Calendar That Brought Us Together">
+											<img src='images/homepage/hp-dining-09-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-tech-intentionality.html" title="The Community Calendar That Brought Us Together">The Community Calendar That Brought Us Together</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="TECH" href="category_tech.html">TECH</a></li>
+											<li class="date">
+												5:00 PM, Dec 22
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-tech-sustainable.html" title="The Laptop That Wouldn't Die">
+											<img src='images/homepage/hp-tech-07-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-tech-sustainable.html" title="The Laptop That Wouldn't Die">The Laptop That Wouldn't Die</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="TECH" href="category_tech.html">TECH</a></li>
+											<li class="date">
+												1:30 PM, Dec 23
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="community.html" title="Community">
+							Community
+						</a>
+					</li>
+					<li>
+						<a href="events.html" title="Events">
+							Events
+						</a>
+					</li>
+					<li>
+						<a href="about.html" title="About">
+							About
+						</a>
+					</li>
+					<li class="selected">
+						<a href="subscribe.html" title="Subscribe">
+							Subscribe
+						</a>
+					</li>
+				</ul>
+				</nav>
+				<div class="mobile_menu_container">
+					<a href="#" class="mobile-menu-switch">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</a>
+					<div class="mobile-menu-divider"></div>
+					<nav>
+					<ul class="mobile-menu">
+						<li>
+							<a href="index.html" title="Home">
+								Home
+							</a>
+						</li>
+						<li class="submenu">
+							<a href="#" title="Stories">
+								Stories
+							</a>
+							<ul>
+								<li>
+									<a href="category_yoga.html" title="Yoga & Wellness">
+										Yoga & Wellness
+									</a>
+								</li>
+								<li>
+									<a href="category_arts.html" title="Arts & Culture">
+										Arts & Culture
+									</a>
+								</li>
+								<li>
+									<a href="category_cafe.html" title="Cafe & Culinary">
+										Cafe & Culinary
+									</a>
+								</li>
+								<li>
+									<a href="category_homes.html" title="Homes & Living">
+										Homes & Living
+									</a>
+								</li>
+								<li>
+									<a href="category_tech.html" title="Tech & Innovation">
+										Tech & Innovation
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="community.html" title="Community">
+								Community
+							</a>
+						</li>
+						<li>
+							<a href="events.html" title="Events">
+								Events
+							</a>
+						</li>
+						<li>
+							<a href="about.html" title="About">
+								About
+							</a>
+						</li>
+						<li class="selected">
+							<a href="subscribe.html" title="Subscribe">
+								Subscribe
+							</a>
+						</li>
+					</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="page">
+				<div class="page_header clearfix page_margin_top">
+					<div class="page_header_left">
+						<h1 class="page_title">Subscribe & Connect</h1>
+					</div>
+					<div class="page_header_right">
+						<ul class="bread_crumb">
+							<li>
+								<a title="Home" href="index.html">
+									Home
+								</a>
+							</li>
+							<li class="separator icon_small_arrow right_gray">
+								&nbsp;
+							</li>
+							<li>
+								Subscribe
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="page_layout clearfix">
+					<div class="divider_block clearfix">
+						<hr class="divider first">
+						<hr class="divider subheader_arrow">
+						<hr class="divider last">
+					</div>
+					<div class="row page_margin_top">
+						<div class="column column_1_2">
+							<img class="responsive pr_preload" src='images/subscribe/subscribe-hero.webp' alt='Person reading SILK Life magazine in a cozy Victorian cottage living room'>
+						</div>
+						<div class="column column_1_2">
+							<h1 class="about_title">Stay Connected to</h1>
+							<h2 class="about_subtitle">SILK Life</h2>
+							<h3 class="page_margin_top">Join thousands of readers who receive quarterly stories of intentional living, exclusive event invites, and inspiring content from our community.</h3>
+							<p class="text padding_top_0 page_margin_top">From morning yoga practices on the mat to evening gatherings in community kitchens, SILK Life brings you authentic stories from across the YACHT ecosystem—Yoga, Arts, Cafe, Homes, and Tech. Subscribe today and become part of a growing movement toward purposeful, connected living.</p>
+						</div>
+					</div>
+					<div class="row page_margin_top_section">
+						<div class="column column_1_3">
+							<div class="row">
+								<h4 class="box_header">Our Locations</h4>
+								<p class="padding_top_30">SILK Life stories emerge from three vibrant communities across the Mid-Ohio Valley. Visit us, stay with us, or simply follow along through our magazine.</p>
+								<ul class="locations-list margin_top_15">
+									<li><strong>Ravenswood, WV</strong> - Historic Victorian cottages along the Ohio River</li>
+									<li><strong>Parkersburg, WV</strong> - Urban homesteading meets mid-century modern</li>
+									<li><strong>Marietta, OH</strong> - Colonial Revival charm in Ohio's first settlement</li>
+								</ul>
+							</div>
+						</div>
+						<div class="column column_1_3">
+							<div class="row">
+								<h4 class="box_header">Contact Information</h4>
+								<ul class="page_margin_top">
+									<li class="item_content clearfix">
+										<span class="features_icon envelope animated_element animation-scale"></span>
+										<div class="text">
+											<h3>Editorial Office</h3>
+											<p>SILK Life Magazine<br>c/o SILK Corp<br>Mid-Ohio Valley Region</p>
+										</div>
+									</li>
+									<li class="item_content border_top clearfix">
+										<span class="features_icon mobile animated_element animation-scale"></span>
+										<div class="text">
+											<h3>Email & Social</h3>
+											<p>Email: <a href="mailto:info@silkcorp.org" title="info@silkcorp.org">info@silkcorp.org</a><br>Social: @silklifemag</p>
+										</div>
+									</li>
+									<li class="item_content border_top clearfix">
+										<span class="features_icon clock animated_element animation-scale"></span>
+										<div class="text">
+											<h3>Publishing Schedule</h3>
+											<p>Magazine: Quarterly<br>Events: Year-round</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="column column_1_3">
+							<div class="row">
+								<h4 class="box_header">
+									Newsletter Signup
+								</h4>
+								<p class="padding_top_30">Join our community and receive quarterly stories, event invites, seasonal recipes, wellness tips, and exclusive content you won't find anywhere else.</p>
+								<form class="contact_form margin_top_15" id="contact_form" method="post" action="contact_form/contact_form.php">
+									<fieldset class="column column_1_3">
+										<div class="block">
+											<input class="text_input" name="name" type="text" value="Your Name *" placeholder="Your Name *">
+										</div>
+									</fieldset>
+									<fieldset class="column column_1_3">
+										<div class="block">
+											<input class="text_input" name="email" type="text" value="Your Email *" placeholder="Your Email *">
+										</div>
+									</fieldset>
+									<fieldset class="column column_1_3">
+										<div class="block">
+											<input class="text_input" name="location" type="text" value="Your City" placeholder="Your City">
+										</div>
+									</fieldset>
+									<fieldset>
+										<div class="block">
+											<textarea name="message" placeholder="Tell us what brings you to SILK Life... (Optional)">Tell us what brings you to SILK Life... (Optional)</textarea>
+										</div>
+									</fieldset>
+									<fieldset>
+										<input type="hidden" name="action" value="contact_form" />
+										<input type="submit" name="submit" value="SUBSCRIBE" class="more active">
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="row page_margin_top_section">
+						<div class="column column_1_1">
+							<h4 class="box_header">What You'll Receive</h4>
+							<div class="row page_margin_top">
+								<div class="column column_1_4">
+									<ul class="page_margin_top">
+										<li class="item_content clearfix">
+											<span title="Weekly Stories" class="features_icon speaker animated_element animation-scale"></span>
+											<div class="text">
+												<h3>Quarterly Stories</h3>
+												<p>Fresh articles each quarter featuring real experiences from our community members.</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="column column_1_4">
+									<ul class="page_margin_top">
+										<li class="item_content clearfix">
+											<span title="Event Invites" class="features_icon calendar animated_element animation-scale"></span>
+											<div class="text">
+												<h3>Event Invites</h3>
+												<p>First access to yoga retreats, gallery openings, community dinners, and workshops.</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="column column_1_4">
+									<ul class="page_margin_top">
+										<li class="item_content clearfix">
+											<span title="Seasonal Content" class="features_icon faq animated_element animation-scale"></span>
+											<div class="text">
+												<h3>Seasonal Content</h3>
+												<p>Garden tips, seasonal recipes, and wellness practices aligned with the rhythms of nature.</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="column column_1_4">
+									<ul class="page_margin_top">
+										<li class="item_content clearfix">
+											<span title="Community Updates" class="features_icon graph animated_element animation-scale"></span>
+											<div class="text">
+												<h3>Community Updates</h3>
+												<p>News from across the SILK ecosystem and opportunities to contribute your own stories.</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row page_margin_top_section">
+						<div class="column column_1_1">
+							<div class="announcement clearfix">
+								<ul class="columns no_width">
+									<li class="column_left column">
+										<div class="vertical_align">
+											<div class="vertical_align_cell">
+												<h2>Follow Our Journey on Social Media</h2>
+												<h2 class="expose">@silklifemag</h2>
+											</div>
+										</div>
+									</li>
+									<li class="column_right column">
+										<div class="vertical_align">
+											<div class="vertical_align_cell">
+												<ul class="social_icons dark clearfix" style="margin:0;padding:20px;">
+													<li>
+														<a target="_blank" title="" href="https://facebook.com/silklifemag" class="social_icon facebook">
+															&nbsp;
+														</a>
+													</li>
+													<li>
+														<a target="_blank" title="" href="https://instagram.com/silklifemag" class="social_icon instagram">
+															&nbsp;
+														</a>
+													</li>
+													<li>
+														<a target="_blank" title="" href="https://twitter.com/silklifemag" class="social_icon twitter">
+															&nbsp;
+														</a>
+													</li>
+													<li>
+														<a title="" href="mailto:info@silkcorp.org" class="social_icon mail">
+															&nbsp;
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row page_margin_top_section">
+						<div class="column column_1_2">
+							<h4 class="box_header">Visit Our Communities</h4>
+							<ul class="page_margin_top">
+								<li class="item_content clearfix">
+									<span title="Ravenswood, WV" class="features_icon pin animated_element animation-scale">
+									</span>
+									<div class="text">
+										<h5>Ravenswood, West Virginia</h5>
+										<p>Four historic 1890s cottages along the Ohio River. Experience small-town hospitality with walkable downtown, river views, and front porch conversations. Stay with us as a short-term guest or inquire about longer-term community living.</p>
+									</div>
+								</li>
+								<li class="item_content clearfix">
+									<span title="Parkersburg, WV" class="features_icon quote animated_element animation-scale">
+									</span>
+									<div class="text">
+										<h5>Parkersburg, West Virginia</h5>
+										<p>Mid-century modern homes featuring the largest victory garden in the city. Urban homesteading meets contemporary design in West Virginia's growing arts district. Perfect for remote workers and creatives.</p>
+									</div>
+								</li>
+								<li class="item_content clearfix">
+									<span title="Marietta, OH" class="features_icon app animated_element animation-scale">
+									</span>
+									<div class="text">
+										<h5>Marietta, Ohio</h5>
+										<p>Colonial Revival charm in Ohio's first permanent settlement. Rooftop gardens, historic architecture, and a welcoming innkeeper create an ideal setting for travelers and those seeking intentional community.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="column column_1_2">
+							<h4 class="box_header">Explore the YACHT Ecosystem</h4>
+							<p class="padding_top_30">SILK Life is part of a larger ecosystem of intentional living experiences:</p>
+							<ul class="blog small">
+								<li class="post">
+									<a href="https://silkyoga.org" title="SILK Yoga">
+										<img src='images/subscribe/yacht-yoga.webp' alt='Yoga practice in Victorian cottage'>
+									</a>
+									<div class="post_content">
+										<h5>
+											<a href="https://silkyoga.org" title="SILK Yoga">SILK Yoga</a>
+										</h5>
+										<p>Daily practices, retreats, and transformative wellness in the yoga tradition.</p>
+									</div>
+								</li>
+								<li class="post">
+									<a href="https://silkarts.org" title="SILK Arts">
+										<img src='images/subscribe/yacht-arts.webp' alt='Pottery and creative arts in cottage studio'>
+									</a>
+									<div class="post_content">
+										<h5>
+											<a href="https://silkarts.org" title="SILK Arts">SILK Arts</a>
+										</h5>
+										<p>Studios and creative spaces where every member discovers their inner artist.</p>
+									</div>
+								</li>
+								<li class="post">
+									<a href="https://silkcafe.org" title="SILK Cafe">
+										<img src='images/subscribe/yacht-cafe.webp' alt='Community kitchen gathering'>
+									</a>
+									<div class="post_content">
+										<h5>
+											<a href="https://silkcafe.org" title="SILK Cafe">SILK Cafe</a>
+										</h5>
+										<p>Farm-to-table dining and community kitchens celebrating seasonal abundance.</p>
+									</div>
+								</li>
+								<li class="post">
+									<a href="https://silkhomes.org" title="SILK Homes">
+										<img src='images/subscribe/yacht-homes.webp' alt='Victorian cottage exterior'>
+									</a>
+									<div class="post_content">
+										<h5>
+											<a href="https://silkhomes.org" title="SILK Homes">SILK Homes</a>
+										</h5>
+										<p>Intentional co-housing communities where peaceful living creates sanctuary.</p>
+									</div>
+								</li>
+								<li class="post">
+									<a href="https://silktech.org" title="SILK Tech">
+										<img src='images/subscribe/yacht-tech.webp' alt='Mindful technology use in Victorian home office'>
+									</a>
+									<div class="post_content">
+										<h5>
+											<a href="https://silktech.org" title="SILK Tech">SILK Tech</a>
+										</h5>
+										<p>Digital wellness and mindful technology for intentional living.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer -->
+			<div class="footer_container clearfix">
+				<div class="footer clearfix">
+					<div class="column_1_4">
+						<h4>About SILK Life</h4>
+						<p style="color:#E0E0E0;font-size:13px;line-height:1.7;">SILK Life Magazine is the heart of the SILK Hive, where authentic stories of intentional living, wellness, and creativity come together to inspire and connect.</p>
+						<ul class="social_icons clearfix" style="margin-top:15px;">
+							<li><a target="_blank" href="https://facebook.com/silklifemag" class="social_icon facebook" title="Facebook">&nbsp;</a></li>
+							<li><a target="_blank" href="https://instagram.com/silklifemag" class="social_icon instagram" title="Instagram">&nbsp;</a></li>
+							<li><a target="_blank" href="https://twitter.com/silklifemag" class="social_icon twitter" title="Twitter">&nbsp;</a></li>
+						</ul>
+					</div>
+					<div class="column_1_4">
+						<h4>SILK Ecosystem</h4>
+						<ul class="footer_menu clearfix">
+							<li><a href="https://silkcorp.org" title="SILK Corp">SILK Corp</a></li>
+							<li><a href="https://silkyoga.org" title="SILK Yoga">SILK Yoga</a></li>
+							<li><a href="https://silkarts.org" title="SILK Arts">SILK Arts</a></li>
+							<li><a href="https://silkcafe.org" title="SILK Cafe">SILK Cafe</a></li>
+							<li><a href="https://silkhomes.org" title="SILK Homes">SILK Homes</a></li>
+							<li><a href="https://silktech.org" title="SILK Tech">SILK Tech</a></li>
+							<li><a href="https://silkwomen.org" title="SILK Women">SILK Women</a></li>
+							<li><a href="https://silkhive.org" title="SILK Hive">SILK Hive</a></li>
+						</ul>
+					</div>
+					<div class="column_1_4">
+						<h4>Stories</h4>
+						<ul class="footer_menu clearfix">
+							<li><a href="category_yoga.html" title="Yoga & Wellness">Yoga & Wellness</a></li>
+							<li><a href="category_arts.html" title="Arts & Culture">Arts & Culture</a></li>
+							<li><a href="category_cafe.html" title="Cafe & Culinary">Cafe & Culinary</a></li>
+							<li><a href="category_homes.html" title="Homes & Living">Homes & Living</a></li>
+							<li><a href="category_tech.html" title="Tech & Innovation">Tech & Innovation</a></li>
+						</ul>
+					</div>
+					<div class="column_1_4 last">
+						<h4>Contact</h4>
+						<p style="color:#E0E0E0;font-size:13px;line-height:1.7;">
+							<strong style="color:#ffffff;">Email:</strong> info@silkcorp.org
+						</p>
+						<p style="color:#E0E0E0;font-size:13px;line-height:1.7;margin-top:15px;">
+							Part of the SILK Corp family of intentional living communities.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer_bottom_container clearfix">
+				<div class="footer_bottom">
+					<p style="color:#AAAAAA;font-size:12px;text-align:center;padding:15px 0;">
+						&copy; 2026 SILK Life Magazine. A publication of <a href="https://silkcorp.org" style="color:#9CAF88;">SILK Corp</a>. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="background_overlay"></div>
+		<!--js-->
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-bbq.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.12.1.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.4.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+		<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+		<script type="text/javascript" src="js/jquery.sliderControl.js"></script>
+		<script type="text/javascript" src="js/jquery.timeago.js"></script>
+		<script type="text/javascript" src="js/jquery.hint.js"></script>
+		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+		<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+		<script type="text/javascript" src="js/jquery.imagesloaded-packed.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/odometer.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arts & Culture - SILK Life Magazine</title>
+		<!--meta-->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="SILK Arts, Gallery, Sculpture, Pottery, Painting, Creative Workshops" />
+		<meta name="description" content="Explore gallery exhibitions, sculpture, pottery, painting, and creative workshops at SILK Arts" />
+		<!--style-->
+		<link href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="style/reset.css">
+		<link rel="stylesheet" type="text/css" href="style/superfish.css">
+		<link rel="stylesheet" type="text/css" href="style/prettyPhoto.css">
+		<link rel="stylesheet" type="text/css" href="style/jquery.qtip.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="style/menu_styles.css">
+		<link rel="stylesheet" type="text/css" href="style/animations.css">
+		<link rel="stylesheet" type="text/css" href="style/responsive.css">
+		<link rel="stylesheet" type="text/css" href="style/odometer-theme-default.css">
+		<link rel="stylesheet" type="text/css" href="style/silk-life.css">
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="manifest" href="images/site.webmanifest">
+		<meta name="theme-color" content="#9CAF88">
+		<style>
+			.category-arts { color: #C71585; }
+			.category-arts a { color: #C71585; }
+		</style>
+	</head>
+	<body>
+		<div class="site_container">
+			<div class="header_top_bar_container clearfix">
+				<div class="header_top_bar">
+					<form class="search" action="search.html" method="get">
+						<input type="text" name="s" placeholder="Search..." value="Search..." class="search_input hint">
+						<input type="submit" class="search_submit" value="">
+					</form>
+					<ul class="social_icons clearfix">
+						<li>
+							<a target="_blank" href="https://facebook.com/silkcorp" class="social_icon facebook" title="facebook">
+								&nbsp;
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://twitter.com/silkcorp" class="social_icon twitter" title="twitter">
+								&nbsp;
+							</a>
+						</li>
+						<li>
+							<a href="mailto:contact@silklife.org" class="social_icon mail" title="mail">
+								&nbsp;
+							</a>
+						</li>
+					</ul>
+					<div class="latest_news_scrolling_list_container">
+						<ul>
+							<li class="category">LATEST</li>
+							<li class="left"><a href="#"></a></li>
+							<li class="right"><a href="#"></a></li>
+							<li class="posts">
+								<ul class="latest_news_scrolling_list">
+									<li>
+										<a href="post.html" title="">New Gallery Exhibition Opens This Weekend</a>
+									</li>
+									<li>
+										<a href="post.html" title="">Pottery Workshop Series Announced</a>
+									</li>
+									<li>
+										<a href="post.html" title="">Artist Spotlight: Local Sculptors</a>
+									</li>
+								</ul>
+							</li>
+							<li class="date">
+								<abbr title="2025-12-15" class="timeago current">Dec 15, 2025</abbr>
+								<abbr title="2025-12-10" class="timeago">Dec 10, 2025</abbr>
+								<abbr title="2025-12-05" class="timeago">Dec 5, 2025</abbr>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header_container">
+				<div class="header clearfix">
+					<div class="logo">
+						<h1><a href="index.html" title="SILK Life">SILK Life</a></h1>
+						<h4>Stories of Intentional Living</h4>
+					</div>
+					<div class="placeholder">728 x 90</div>
+				</div>
+			</div>
+			<div class="menu_container clearfix">
+				<nav>
+				<ul class="sf-menu">
+					<li>
+						<a href="index.html" title="Home">
+							Home
+						</a>
+					</li>
+					<li class="submenu selected">
+						<a href="#" title="SILK YACHT">
+							SILK YACHT
+						</a>
+						<ul>
+							<li>
+								<a href="category-yoga.html" title="Yoga & Wellness">
+									Yoga & Wellness
+								</a>
+							</li>
+							<li class="selected">
+								<a href="category-arts.html" title="Arts & Culture">
+									Arts & Culture
+								</a>
+							</li>
+							<li>
+								<a href="category-cafe.html" title="Cafe & Culinary">
+									Cafe & Culinary
+								</a>
+							</li>
+							<li>
+								<a href="category-homes.html" title="Homes & Living">
+									Homes & Living
+								</a>
+							</li>
+							<li>
+								<a href="category-tech.html" title="Tech & Innovation">
+									Tech & Innovation
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="category-community.html" title="Community">
+							Community
+						</a>
+					</li>
+					<li>
+						<a href="category-wellness.html" title="Wellness">
+							Wellness
+						</a>
+					</li>
+					<li>
+						<a href="https://silkcorp.org" title="SILK Corp">
+							SILK Corp
+						</a>
+					</li>
+					<li>
+						<a href="about.html" title="About">
+							About
+						</a>
+					</li>
+					<li>
+						<a href="contact.html" title="Contact">
+							Contact
+						</a>
+					</li>
+				</ul>
+				</nav>
+				<div class="mobile_menu_container">
+					<a href="#" class="mobile-menu-switch">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</a>
+					<div class="mobile-menu-divider"></div>
+					<nav>
+					<ul class="mobile-menu">
+						<li>
+							<a href="index.html" title="Home">
+								Home
+							</a>
+						</li>
+						<li class="submenu selected">
+							<a href="category-arts.html" title="SILK YACHT">
+								SILK YACHT
+							</a>
+							<ul>
+								<li>
+									<a href="category-yoga.html" title="Yoga & Wellness">
+										Yoga & Wellness
+									</a>
+								</li>
+								<li class="selected">
+									<a href="category-arts.html" title="Arts & Culture">
+										Arts & Culture
+									</a>
+								</li>
+								<li>
+									<a href="category-cafe.html" title="Cafe & Culinary">
+										Cafe & Culinary
+									</a>
+								</li>
+								<li>
+									<a href="category-homes.html" title="Homes & Living">
+										Homes & Living
+									</a>
+								</li>
+								<li>
+									<a href="category-tech.html" title="Tech & Innovation">
+										Tech & Innovation
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="category-community.html" title="Community">
+								Community
+							</a>
+						</li>
+						<li>
+							<a href="category-wellness.html" title="Wellness">
+								Wellness
+							</a>
+						</li>
+						<li>
+							<a href="https://silkcorp.org" title="SILK Corp">
+								SILK Corp
+							</a>
+						</li>
+						<li>
+							<a href="about.html" title="About">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="contact.html" title="Contact">
+								Contact
+							</a>
+						</li>
+					</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="page">
+				<div class="page_header clearfix page_margin_top">
+					<div class="page_header_left">
+						<h1 class="page_title category-arts">Arts & Culture</h1>
+					</div>
+					<div class="page_header_right">
+						<ul class="bread_crumb">
+							<li>
+								<a title="Home" href="index.html">
+									Home
+								</a>
+							</li>
+							<li class="separator icon_small_arrow right_gray">
+								&nbsp;
+							</li>
+							<li>
+								Arts & Culture
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="page_layout clearfix">
+					<div class="divider_block clearfix">
+						<hr class="divider first">
+						<hr class="divider subheader_arrow">
+						<hr class="divider last">
+					</div>
+					<div class="row">
+						<div class="column column_2_3">
+							<div class="row">
+								<ul class="blog big">
+									<li class="post">
+										<a href="post_gallery.html" title="Gallery Exhibition: Voices of the Valley">
+											<span class="icon gallery"></span>
+											<img src='images/samples/330x242/image_10.jpg' alt='img'>
+										</a>
+										<div class="post_content">
+											<h2 class="with_number">
+												<a href="post_gallery.html" title="Gallery Exhibition: Voices of the Valley">Gallery Exhibition: Voices of the Valley</a>
+												<a class="comments_number" href="post_gallery.html#comments_list" title="18 comments">18<span class="arrow_comments"></span></a>
+											</h2>
+											<ul class="post_details">
+												<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												<li class="date">
+													Dec 15, 2025
+												</li>
+											</ul>
+											<p>Experience the inaugural exhibition at SILK Arts Gallery featuring local artists exploring themes of community, nature, and transformation through painting and mixed media.</p>
+											<a class="read_more" href="post_gallery.html" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+										</div>
+									</li>
+									<li class="post">
+										<a href="post.html" title="Pottery Workshop: Handbuilding Techniques">
+											<img src='images/samples/330x242/image_05.jpg' alt='img'>
+										</a>
+										<div class="post_content">
+											<h2 class="with_number">
+												<a href="post.html" title="Pottery Workshop: Handbuilding Techniques">Pottery Workshop: Handbuilding Techniques</a>
+												<a class="comments_number" href="post.html#comments_list" title="12 comments">12<span class="arrow_comments"></span></a>
+											</h2>
+											<ul class="post_details">
+												<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												<li class="date">
+													Dec 12, 2025
+												</li>
+											</ul>
+											<p>Learn the ancient art of hand-building pottery in our six-week workshop series. Create functional pieces while exploring the meditative qualities of working with clay.</p>
+											<a class="read_more" href="post.html" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+										</div>
+									</li>
+									<li class="post">
+										<a href="post.html" title="Sculpture Garden: A New Vision">
+											<img src='images/samples/330x242/image_03.jpg' alt='img'>
+										</a>
+										<div class="post_content">
+											<h2 class="with_number">
+												<a href="post.html" title="Sculpture Garden: A New Vision">Sculpture Garden: A New Vision</a>
+												<a class="comments_number" href="post.html#comments_list" title="15 comments">15<span class="arrow_comments"></span></a>
+											</h2>
+											<ul class="post_details">
+												<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												<li class="date">
+													Dec 10, 2025
+												</li>
+											</ul>
+											<p>Discover the outdoor sculpture garden at our Ravenswood property, featuring works by regional artists that blend seamlessly with the natural landscape.</p>
+											<a class="read_more" href="post.html" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+										</div>
+									</li>
+									<li class="post">
+										<a href="post.html" title="Artist Spotlight: Sarah Chen">
+											<img src='images/samples/330x242/image_09.jpg' alt='img'>
+										</a>
+										<div class="post_content">
+											<h2 class="with_number">
+												<a href="post.html" title="Artist Spotlight: Sarah Chen">Artist Spotlight: Sarah Chen</a>
+												<a class="comments_number" href="post.html#comments_list" title="9 comments">9<span class="arrow_comments"></span></a>
+											</h2>
+											<ul class="post_details">
+												<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												<li class="date">
+													Dec 8, 2025
+												</li>
+											</ul>
+											<p>Meet SILK Arts resident artist Sarah Chen, whose watercolor landscapes capture the essence of Appalachian beauty and the spirit of intentional living.</p>
+											<a class="read_more" href="post.html" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+										</div>
+									</li>
+									<li class="post">
+										<a href="post_gallery.html" title="Creative Workshops: Fall Schedule">
+											<span class="icon gallery"></span>
+											<img src='images/samples/330x242/image_12.jpg' alt='img'>
+										</a>
+										<div class="post_content">
+											<h2 class="with_number">
+												<a href="post_gallery.html" title="Creative Workshops: Fall Schedule">Creative Workshops: Fall Schedule</a>
+												<a class="comments_number" href="post_gallery.html#comments_list" title="22 comments">22<span class="arrow_comments"></span></a>
+											</h2>
+											<ul class="post_details">
+												<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												<li class="date">
+													Dec 5, 2025
+												</li>
+											</ul>
+											<p>Browse our complete fall workshop schedule featuring painting, pottery, printmaking, textile arts, and more. All skill levels welcome!</p>
+											<a class="read_more" href="post_gallery.html" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+										</div>
+									</li>
+									<li class="post">
+										<a href="post.html" title="Abstract Expression: Finding Your Voice">
+											<img src='images/samples/330x242/image_13.jpg' alt='img'>
+										</a>
+										<div class="post_content">
+											<h2 class="with_number">
+												<a href="post.html" title="Abstract Expression: Finding Your Voice">Abstract Expression: Finding Your Voice</a>
+												<a class="comments_number" href="post.html#comments_list" title="7 comments">7<span class="arrow_comments"></span></a>
+											</h2>
+											<ul class="post_details">
+												<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												<li class="date">
+													Dec 1, 2025
+												</li>
+											</ul>
+											<p>Explore abstract painting techniques that help you express emotion and meaning beyond representation. This workshop encourages personal artistic exploration.</p>
+											<a class="read_more" href="post.html" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+										</div>
+									</li>
+									<li class="post">
+										<a href="post.html" title="Community Art Project: The Unity Mural">
+											<img src='images/samples/330x242/image_08.jpg' alt='img'>
+										</a>
+										<div class="post_content">
+											<h2 class="with_number">
+												<a href="post.html" title="Community Art Project: The Unity Mural">Community Art Project: The Unity Mural</a>
+												<a class="comments_number" href="post.html#comments_list" title="34 comments">34<span class="arrow_comments"></span></a>
+											</h2>
+											<ul class="post_details">
+												<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												<li class="date">
+													Nov 28, 2025
+												</li>
+											</ul>
+											<p>Join our collaborative mural project bringing together community members of all ages to create a public artwork celebrating unity, diversity, and shared values.</p>
+											<a class="read_more" href="post.html" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+										</div>
+									</li>
+									<li class="post">
+										<a href="post.html" title="Textile Arts: Weaving and Natural Dyes">
+											<img src='images/samples/330x242/image_11.jpg' alt='img'>
+										</a>
+										<div class="post_content">
+											<h2 class="with_number">
+												<a href="post.html" title="Textile Arts: Weaving and Natural Dyes">Textile Arts: Weaving and Natural Dyes</a>
+												<a class="comments_number" href="post.html#comments_list" title="11 comments">11<span class="arrow_comments"></span></a>
+											</h2>
+											<ul class="post_details">
+												<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												<li class="date">
+													Nov 25, 2025
+												</li>
+											</ul>
+											<p>Discover the art of weaving and natural plant-based dyeing. Learn sustainable textile techniques passed down through generations while creating beautiful handmade pieces.</p>
+											<a class="read_more" href="post.html" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+										</div>
+									</li>
+									<li class="post">
+										<a href="post_gallery.html" title="Printmaking Studio Opens">
+											<span class="icon gallery"></span>
+											<img src='images/samples/330x242/image_14.jpg' alt='img'>
+										</a>
+										<div class="post_content">
+											<h2 class="with_number">
+												<a href="post_gallery.html" title="Printmaking Studio Opens">Printmaking Studio Opens</a>
+												<a class="comments_number" href="post_gallery.html#comments_list" title="16 comments">16<span class="arrow_comments"></span></a>
+											</h2>
+											<ul class="post_details">
+												<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												<li class="date">
+													Nov 20, 2025
+												</li>
+											</ul>
+											<p>We're excited to announce the opening of our printmaking studio, equipped for linocut, screen printing, and etching. Studio memberships now available!</p>
+											<a class="read_more" href="post_gallery.html" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<ul class="pagination clearfix page_margin_top_section">
+								<li class="left">
+									<a href="#" title="">&nbsp;</a>
+								</li>
+								<li class="selected">
+									<a href="#" title="">
+										1
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										2
+									</a>
+								</li>
+								<li>
+									<a href="#" title="">
+										3
+									</a>
+								</li>
+								<li class="right">
+									<a href="#" title="">&nbsp;</a>
+								</li>
+							</ul>
+						</div>
+						<div class="column column_1_3 page_margin_top">
+							<div class="tabs no_scroll clearfix">
+								<ul class="tabs_navigation clearfix">
+									<li>
+										<a href="#sidebar-most-read" title="Most Read">
+											Most Read
+										</a>
+										<span></span>
+									</li>
+									<li>
+										<a href="#sidebar-most-commented" title="Commented">
+											Commented
+										</a>
+										<span></span>
+									</li>
+								</ul>
+								<div id="sidebar-most-read">
+									<ul class="blog rating page_margin_top clearfix">
+										<li class="post">
+											<a href="post.html" title="Gallery Exhibition Opening">
+												<img src='images/samples/510x187/image_12.jpg' alt='img'>
+											</a>
+											<div class="post_content">
+												<span class="number animated_element" data-value="9 234"></span>
+												<h5><a href="post.html" title="Gallery Exhibition Opening">Gallery Exhibition Opening</a></h5>
+												<ul class="post_details simple">
+													<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="post">
+											<div class="post_content">
+												<span class="number animated_element" data-value="7 892"></span>
+												<h5><a href="post.html" title="Pottery Workshop Series">Pottery Workshop Series</a></h5>
+												<ul class="post_details simple">
+													<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="post">
+											<div class="post_content">
+												<span class="number animated_element" data-value="6 543"></span>
+												<h5><a href="post.html" title="Sculpture Garden Tour">Sculpture Garden Tour</a></h5>
+												<ul class="post_details simple">
+													<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="post">
+											<div class="post_content">
+												<span class="number animated_element" data-value="5 231"></span>
+												<h5><a href="post.html" title="Community Art Project">Community Art Project</a></h5>
+												<ul class="post_details simple">
+													<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="post">
+											<div class="post_content">
+												<span class="number animated_element" data-value="4 892"></span>
+												<h5><a href="post.html" title="Textile Arts Workshop">Textile Arts Workshop</a></h5>
+												<ul class="post_details simple">
+													<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+									<a class="more page_margin_top" href="#">SHOW MORE</a>
+								</div>
+								<div id="sidebar-most-commented">
+									<ul class="blog rating page_margin_top clearfix">
+										<li class="post">
+											<a href="post.html" title="Community Art Project">
+												<img src='images/samples/510x187/image_02.jpg' alt='img'>
+											</a>
+											<div class="post_content">
+												<span class="number animated_element" data-value="115"></span>
+												<h5><a href="post.html" title="Community Art Project">Community Art Project</a></h5>
+												<ul class="post_details simple">
+													<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="post">
+											<div class="post_content">
+												<span class="number animated_element" data-value="87"></span>
+												<h5><a href="post.html" title="Gallery Exhibition">Gallery Exhibition</a></h5>
+												<ul class="post_details simple">
+													<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="post">
+											<div class="post_content">
+												<span class="number animated_element" data-value="72"></span>
+												<h5><a href="post.html" title="Creative Workshops">Creative Workshops</a></h5>
+												<ul class="post_details simple">
+													<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="post">
+											<div class="post_content">
+												<span class="number animated_element" data-value="54"></span>
+												<h5><a href="post.html" title="Printmaking Studio">Printmaking Studio</a></h5>
+												<ul class="post_details simple">
+													<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="post">
+											<div class="post_content">
+												<span class="number animated_element" data-value="41"></span>
+												<h5><a href="post.html" title="Artist Spotlight">Artist Spotlight</a></h5>
+												<ul class="post_details simple">
+													<li class="category category-arts"><a href="category-arts.html" title="ARTS">ARTS</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+									<a class="more page_margin_top" href="#">SHOW MORE</a>
+								</div>
+							</div>
+							<h4 class="box_header page_margin_top_section">Newsletter Signup</h4>
+							<div class="page_margin_top clearfix">
+								<p>Subscribe to receive updates on exhibitions, workshops, and SILK Arts events.</p>
+								<form action="#" method="post" class="page_margin_top">
+									<input type="email" name="email" placeholder="Your email address" class="hint">
+									<input type="submit" value="Subscribe">
+								</form>
+							</div>
+							<h4 class="box_header page_margin_top_section">Popular Tags</h4>
+							<ul class="tags page_margin_top clearfix">
+								<li><a href="#" title="Gallery">Gallery</a></li>
+								<li><a href="#" title="Exhibition">Exhibition</a></li>
+								<li><a href="#" title="Sculpture">Sculpture</a></li>
+								<li><a href="#" title="Pottery">Pottery</a></li>
+								<li><a href="#" title="Painting">Painting</a></li>
+								<li><a href="#" title="Workshops">Workshops</a></li>
+								<li><a href="#" title="Artists">Artists</a></li>
+								<li><a href="#" title="Community Art">Community Art</a></li>
+								<li><a href="#" title="Textile Arts">Textile Arts</a></li>
+							</ul>
+							<h4 class="box_header page_margin_top_section">Categories</h4>
+							<ul class="blog categories page_margin_top clearfix">
+								<li><a href="category-yoga.html">Yoga & Wellness</a></li>
+								<li><a href="category-arts.html" class="category-arts">Arts & Culture</a></li>
+								<li><a href="category-cafe.html">Cafe & Culinary</a></li>
+								<li><a href="category-homes.html">Homes & Living</a></li>
+								<li><a href="category-tech.html">Tech & Innovation</a></li>
+								<li><a href="category-community.html">Community Stories</a></li>
+								<li><a href="category-wellness.html">Wellness & Lifestyle</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_container">
+				<div class="footer clearfix">
+					<div class="row">
+						<div class="column column_1_3">
+							<h4 class="box_header">About SILK Life</h4>
+							<p class="padding_top_bottom_25">SILK Life Magazine celebrates intentional living through stories from the SILK ecosystem - where wellness, community, and purpose come together.</p>
+							<div class="row">
+								<div class="column column_1_2">
+									<h5>SILK Corp</h5>
+									<p>
+										Parkersburg, WV<br>
+										United States
+									</p>
+								</div>
+								<div class="column column_1_2">
+									<h5>Contact</h5>
+									<p>
+										Email: contact@silklife.org
+									</p>
+								</div>
+							</div>
+							<h4 class="box_header page_margin_top">Connect With Us</h4>
+							<ul class="social_icons dark page_margin_top clearfix">
+								<li>
+									<a target="_blank" title="Facebook" href="https://facebook.com/silkcorp" class="social_icon facebook">
+										&nbsp;
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="Twitter" href="https://twitter.com/silkcorp" class="social_icon twitter">
+										&nbsp;
+									</a>
+								</li>
+								<li>
+									<a title="Email" href="mailto:contact@silklife.org" class="social_icon mail">
+										&nbsp;
+									</a>
+								</li>
+								<li>
+									<a title="Instagram" href="https://instagram.com/silkcorp" class="social_icon instagram">
+										&nbsp;
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="column column_1_3">
+							<h4 class="box_header">SILK Ecosystem</h4>
+							<ul class="blog categories page_margin_top clearfix">
+								<li><a href="https://silkcorp.org">SILK Corp</a></li>
+								<li><a href="https://silkyoga.org">SILK Yoga</a></li>
+								<li><a href="https://silkarts.org">SILK Arts</a></li>
+								<li><a href="https://silkcafe.org">SILK Cafe</a></li>
+								<li><a href="https://silkhomes.org">SILK Homes</a></li>
+								<li><a href="https://silkwomen.org">SILK Women</a></li>
+								<li><a href="https://silkhive.org">SILK Hive</a></li>
+							</ul>
+						</div>
+						<div class="column column_1_3">
+							<h4 class="box_header">Featured Categories</h4>
+							<ul class="blog categories page_margin_top clearfix">
+								<li><a href="category-yoga.html">Yoga & Wellness</a></li>
+								<li><a href="category-arts.html">Arts & Culture</a></li>
+								<li><a href="category-cafe.html">Cafe & Culinary</a></li>
+								<li><a href="category-homes.html">Homes & Living</a></li>
+								<li><a href="category-tech.html">Tech & Innovation</a></li>
+								<li><a href="category-community.html">Community Stories</a></li>
+								<li><a href="category-wellness.html">Wellness & Lifestyle</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row page_margin_top_section">
+						<div class="column column_3_4">
+							<ul class="footer_menu">
+								<li>
+									<h4><a href="category-yoga.html" title="Yoga">Yoga</a></h4>
+								</li>
+								<li>
+									<h4><a href="category-arts.html" title="Arts">Arts</a></h4>
+								</li>
+								<li>
+									<h4><a href="category-cafe.html" title="Cafe">Cafe</a></h4>
+								</li>
+								<li>
+									<h4><a href="category-homes.html" title="Homes">Homes</a></h4>
+								</li>
+								<li>
+									<h4><a href="category-tech.html" title="Tech">Tech</a></h4>
+								</li>
+							</ul>
+						</div>
+						<div class="column column_1_4">
+							<a class="scroll_top" href="#top" title="Scroll to top">Top</a>
+						</div>
+					</div>
+					<div class="row copyright_row">
+						<div class="column column_2_3">
+							© Copyright 2025 <a href="https://silkcorp.org" title="SILK Corp" target="_blank">SILK Corp</a> - All Rights Reserved
+						</div>
+						<div class="column column_1_3">
+							<ul class="footer_menu">
+								<li>
+									<h6><a href="about.html" title="About">About</a></h6>
+								</li>
+								<li>
+									<h6><a href="contact.html" title="Contact">Contact</a></h6>
+								</li>
+								<li>
+									<h6><a href="https://silkcorp.org" title="SILK Corp">SILK Corp</a></h6>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="background_overlay"></div>
+		<!--js-->
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-bbq.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.12.1.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.4.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+		<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+		<script type="text/javascript" src="js/jquery.sliderControl.js"></script>
+		<script type="text/javascript" src="js/jquery.timeago.js"></script>
+		<script type="text/javascript" src="js/jquery.hint.js"></script>
+		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+		<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+		<script type="text/javascript" src="js/jquery.imagesloaded-packed.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/odometer.min.js"></script>
+	</body>
+</html>

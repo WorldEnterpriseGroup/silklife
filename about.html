@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>About SILK Life | Stories of Intentional Living</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="SILK Life, about, intentional living, wellness, community magazine, YACHT, yoga, arts, cafe, homes, tech" />
+		<meta name="description" content="SILK Life Magazine showcases people living the SILK Lifestyle in Victorian cottages along the Ohio River Valley. Discover our YACHT framework: Yoga, Arts, Cafe, Homes, and Tech." />
+
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap' rel='stylesheet'>
+
+		<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="style/reset.css">
+		<link rel="stylesheet" type="text/css" href="style/superfish.css">
+		<link rel="stylesheet" type="text/css" href="style/prettyPhoto.css">
+		<link rel="stylesheet" type="text/css" href="style/jquery.qtip.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="style/menu_styles.css">
+		<link rel="stylesheet" type="text/css" href="style/animations.css">
+		<link rel="stylesheet" type="text/css" href="style/responsive.css">
+		<link rel="stylesheet" type="text/css" href="style/odometer-theme-default.css">
+		<link rel="stylesheet" type="text/css" href="style/silk-life.css">
+
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="manifest" href="images/site.webmanifest">
+		<meta name="theme-color" content="#9CAF88">
+
+		<style>
+			/* About Page Hero */
+			.about-hero {
+				position: relative;
+				height: 500px;
+				background: url('images/about/about-hero.webp') center center;
+				background-size: cover;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 0;
+			}
+			.about-hero::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: linear-gradient(to bottom, rgba(45, 61, 80, 0.6), rgba(45, 61, 80, 0.85));
+			}
+			.about-hero-content {
+				position: relative;
+				z-index: 2;
+				text-align: center;
+				max-width: 900px;
+				padding: 40px;
+			}
+			.about-hero h1 {
+				font-family: 'Playfair Display', Georgia, serif;
+				font-size: 48px;
+				color: #fff;
+				margin-bottom: 15px;
+				line-height: 1.2;
+			}
+			.about-hero h2 {
+				font-family: 'Inter', sans-serif;
+				font-size: 20px;
+				color: #ffffff;
+				font-weight: 300;
+				margin-bottom: 25px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+			}
+			.about-hero p {
+				font-family: 'Lora', Georgia, serif;
+				font-size: 18px;
+				color: #ffffff;
+				line-height: 1.8;
+				max-width: 800px;
+				margin: 0 auto;
+			}
+
+			/* SILK Values Strip */
+			.silk-values-strip {
+				background: #F4F1DE;
+				padding: 40px 0;
+				border-bottom: 3px solid #9CAF88;
+			}
+			.silk-values-grid {
+				display: flex;
+				justify-content: center;
+				gap: 60px;
+				max-width: 1000px;
+				margin: 0 auto;
+				flex-wrap: wrap;
+			}
+			.silk-value-item {
+				text-align: center;
+			}
+			.silk-value-letter {
+				font-family: 'Playfair Display', Georgia, serif;
+				font-size: 48px;
+				font-weight: 700;
+				display: block;
+				margin-bottom: 5px;
+			}
+			.silk-value-item:nth-child(1) .silk-value-letter { color: #A67C52; }
+			.silk-value-item:nth-child(2) .silk-value-letter { color: #5B8A7A; }
+			.silk-value-item:nth-child(3) .silk-value-letter { color: #9E7B8B; }
+			.silk-value-item:nth-child(4) .silk-value-letter { color: #5A7B9A; }
+			.silk-value-name {
+				font-family: 'Inter', sans-serif;
+				font-size: 14px;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				color: #3D405B;
+			}
+
+			/* YACHT Section */
+			.yacht-section {
+				padding: 60px 0;
+				background: #fff;
+			}
+			.yacht-intro {
+				text-align: center;
+				max-width: 800px;
+				margin: 0 auto 50px;
+			}
+			.yacht-intro h2 {
+				font-family: 'Playfair Display', Georgia, serif;
+				font-size: 36px;
+				color: #2C3E50;
+				margin-bottom: 20px;
+			}
+			.yacht-intro p {
+				font-family: 'Inter', sans-serif;
+				font-size: 18px;
+				color: #333333;
+				line-height: 1.8;
+			}
+			.yacht-pillars {
+				display: grid;
+				grid-template-columns: repeat(5, 1fr);
+				gap: 25px;
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+			@media (max-width: 1024px) {
+				.yacht-pillars { grid-template-columns: repeat(3, 1fr); }
+			}
+			@media (max-width: 768px) {
+				.yacht-pillars { grid-template-columns: repeat(2, 1fr); }
+			}
+			@media (max-width: 480px) {
+				.yacht-pillars { grid-template-columns: 1fr; }
+			}
+			.yacht-pillar {
+				background: #fff;
+				border-radius: 8px;
+				overflow: hidden;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+			.yacht-pillar:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+			}
+			.yacht-pillar-image {
+				height: 180px;
+				overflow: hidden;
+			}
+			.yacht-pillar-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: transform 0.5s ease;
+			}
+			.yacht-pillar:hover .yacht-pillar-image img {
+				transform: scale(1.05);
+			}
+			.yacht-pillar-content {
+				padding: 20px;
+				text-align: center;
+			}
+			.yacht-pillar-letter {
+				font-family: 'Playfair Display', Georgia, serif;
+				font-size: 32px;
+				font-weight: 700;
+				margin-bottom: 5px;
+			}
+			.yacht-pillar[data-pillar="yoga"] .yacht-pillar-letter { color: #6B8E5E; }
+			.yacht-pillar[data-pillar="arts"] .yacht-pillar-letter { color: #7D6B8A; }
+			.yacht-pillar[data-pillar="cafe"] .yacht-pillar-letter { color: #8B7355; }
+			.yacht-pillar[data-pillar="homes"] .yacht-pillar-letter { color: #5E7A5A; }
+			.yacht-pillar[data-pillar="tech"] .yacht-pillar-letter { color: #4A6B7C; }
+			.yacht-pillar h3 {
+				font-family: 'Playfair Display', Georgia, serif;
+				font-size: 20px;
+				color: #2C3E50;
+				margin-bottom: 8px;
+			}
+			.yacht-pillar-tagline {
+				font-family: 'Lora', Georgia, serif;
+				font-style: italic;
+				font-size: 13px;
+				color: #555555;
+				margin-bottom: 10px;
+			}
+			.yacht-pillar-cta {
+				display: inline-block;
+				padding: 8px 20px;
+				font-family: 'Inter', sans-serif;
+				font-size: 12px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				border: 2px solid #9CAF88;
+				color: #9CAF88;
+				text-decoration: none;
+				border-radius: 3px;
+				transition: all 0.3s ease;
+				margin-top: 10px;
+			}
+			.yacht-pillar-cta:hover {
+				background: #9CAF88;
+				color: #fff;
+			}
+
+			/* YACHT Pillar Details */
+			.yacht-details {
+				padding: 60px 0;
+				background: #F9F9F9;
+			}
+			.yacht-detail-item {
+				display: flex;
+				gap: 40px;
+				max-width: 1100px;
+				margin: 0 auto 60px;
+				padding: 0 20px;
+				align-items: center;
+			}
+			.yacht-detail-item:nth-child(even) {
+				flex-direction: row-reverse;
+			}
+			.yacht-detail-item:last-child {
+				margin-bottom: 0;
+			}
+			.yacht-detail-image {
+				flex: 0 0 400px;
+				border-radius: 8px;
+				overflow: hidden;
+				box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+			}
+			.yacht-detail-image img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			.yacht-detail-content {
+				flex: 1;
+			}
+			.yacht-detail-content h3 {
+				font-family: 'Playfair Display', Georgia, serif;
+				font-size: 28px;
+				color: #2C3E50;
+				margin-bottom: 10px;
+			}
+			.yacht-detail-content .tagline {
+				font-family: 'Lora', Georgia, serif;
+				font-style: italic;
+				font-size: 16px;
+				color: #5B7A52;
+				margin-bottom: 15px;
+			}
+			.yacht-detail-content p {
+				font-family: 'Inter', sans-serif;
+				font-size: 15px;
+				color: #333333;
+				line-height: 1.8;
+				margin-bottom: 20px;
+			}
+			.yacht-detail-cta {
+				display: inline-block;
+				padding: 12px 28px;
+				font-family: 'Inter', sans-serif;
+				font-size: 13px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				background: #9CAF88;
+				color: #fff;
+				text-decoration: none;
+				border-radius: 3px;
+				transition: all 0.3s ease;
+			}
+			.yacht-detail-cta:hover {
+				background: #7d9a6b;
+			}
+			@media (max-width: 768px) {
+				.yacht-detail-item,
+				.yacht-detail-item:nth-child(even) {
+					flex-direction: column;
+				}
+				.yacht-detail-image {
+					flex: none;
+					width: 100%;
+				}
+			}
+
+			/* SILK Values Deep Section */
+			.values-deep-section {
+				padding: 60px 0;
+				background: #fff;
+			}
+			.values-deep-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 30px;
+				max-width: 1100px;
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+			@media (max-width: 768px) {
+				.values-deep-grid { grid-template-columns: 1fr; }
+			}
+			.value-deep-card {
+				padding: 30px;
+				border-radius: 8px;
+				background: #F4F1DE;
+			}
+			.value-deep-card h3 {
+				font-family: 'Playfair Display', Georgia, serif;
+				font-size: 24px;
+				margin-bottom: 8px;
+			}
+			.value-deep-card.strength h3 { color: #A67C52; }
+			.value-deep-card.integrity h3 { color: #5B8A7A; }
+			.value-deep-card.love h3 { color: #9E7B8B; }
+			.value-deep-card.knowledge h3 { color: #5A7B9A; }
+			.value-deep-card .essence {
+				font-family: 'Lora', Georgia, serif;
+				font-style: italic;
+				font-size: 15px;
+				color: #4A4A4A;
+				margin-bottom: 15px;
+				padding-bottom: 15px;
+				border-bottom: 1px solid rgba(0,0,0,0.15);
+			}
+			.value-deep-card p {
+				font-family: 'Inter', sans-serif;
+				font-size: 14px;
+				color: #333333;
+				line-height: 1.7;
+			}
+
+			/* Build Your YACHT CTA - 508 Compliant */
+			.build-yacht-section {
+				position: relative;
+				padding: 100px 20px;
+				background: url('images/about/about-yacht-cta.webp') center center;
+				background-size: cover;
+			}
+			.build-yacht-section::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba(30, 40, 55, 0.92);
+			}
+			.build-yacht-content {
+				position: relative;
+				z-index: 2;
+				max-width: 900px;
+				margin: 0 auto;
+			}
+			.build-yacht-content h2 {
+				font-family: 'Playfair Display', Georgia, serif;
+				font-size: 40px;
+				margin-bottom: 25px;
+				line-height: 1.2;
+				color: #ffffff;
+			}
+			.build-yacht-content p {
+				font-family: 'Inter', sans-serif;
+				font-size: 16px;
+				line-height: 1.8;
+				margin-bottom: 20px;
+				color: #ffffff;
+			}
+			.build-yacht-quote {
+				font-family: 'Lora', Georgia, serif;
+				font-style: italic;
+				font-size: 20px;
+				padding: 25px;
+				border-left: 4px solid #B8A9C9;
+				background: rgba(255,255,255,0.15);
+				margin: 30px 0;
+				color: #ffffff;
+			}
+			.build-yacht-quote cite {
+				display: block;
+				font-style: normal;
+				font-size: 14px;
+				margin-top: 10px;
+				color: #ffffff;
+			}
+
+			/* Locations Section */
+			.locations-section {
+				padding: 60px 0;
+				background: #fff;
+			}
+			.locations-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 30px;
+				max-width: 1100px;
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+			@media (max-width: 768px) {
+				.locations-grid { grid-template-columns: 1fr; }
+			}
+			.location-card {
+				border-radius: 8px;
+				overflow: hidden;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+				background: #fff;
+			}
+			.location-card-image {
+				height: 200px;
+				overflow: hidden;
+			}
+			.location-card-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.location-card-content {
+				padding: 20px;
+			}
+			.location-card h3 {
+				font-family: 'Playfair Display', Georgia, serif;
+				font-size: 22px;
+				color: #9CAF88;
+				margin-bottom: 10px;
+			}
+			.location-card p {
+				font-family: 'Inter', sans-serif;
+				font-size: 14px;
+				color: #333333;
+				line-height: 1.7;
+			}
+
+			/* Write For Us Section */
+			.write-for-us-section {
+				padding: 60px 0;
+				background: #F4F1DE;
+			}
+			.write-for-us-content {
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 0 20px;
+				text-align: center;
+			}
+			.write-for-us-content h2 {
+				font-family: 'Playfair Display', Georgia, serif;
+				font-size: 36px;
+				color: #2C3E50;
+				margin-bottom: 20px;
+			}
+			.write-for-us-content p {
+				font-family: 'Inter', sans-serif;
+				font-size: 16px;
+				color: #333333;
+				line-height: 1.8;
+				margin-bottom: 15px;
+			}
+			.write-for-us-content .cta-button {
+				display: inline-block;
+				padding: 15px 40px;
+				font-family: 'Inter', sans-serif;
+				font-size: 14px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				background: #9CAF88;
+				color: #fff;
+				text-decoration: none;
+				border-radius: 3px;
+				transition: all 0.3s ease;
+				margin-top: 20px;
+			}
+			.write-for-us-content .cta-button:hover {
+				background: #7d9a6b;
+			}
+
+			/* Section Headers */
+			.about-section-header {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+			.about-section-header h2 {
+				font-family: 'Playfair Display', Georgia, serif;
+				font-size: 36px;
+				color: #2C3E50;
+				margin-bottom: 10px;
+			}
+			.about-section-header p {
+				font-family: 'Inter', sans-serif;
+				font-size: 16px;
+				color: #555555;
+			}
+
+			/* YACHT Links Bar */
+			.yacht-links-bar {
+				background: #2C3E50;
+				padding: 30px 0;
+			}
+			.yacht-links-grid {
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+				flex-wrap: wrap;
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+			.yacht-link {
+				display: inline-block;
+				padding: 12px 25px;
+				font-family: 'Inter', sans-serif;
+				font-size: 13px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				color: #fff;
+				text-decoration: none;
+				border: 2px solid rgba(255,255,255,0.3);
+				border-radius: 3px;
+				transition: all 0.3s ease;
+			}
+			.yacht-link:hover {
+				background: #9CAF88;
+				border-color: #9CAF88;
+			}
+
+			/* Footer Styles */
+			.footer_container {
+				background: #2C3E50;
+				padding: 50px 0 30px;
+			}
+			.footer {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 20px;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 30px;
+			}
+			.footer .column_1_4 {
+				flex: 1;
+				min-width: 200px;
+			}
+			.footer h4 {
+				font-family: 'Playfair Display', Georgia, serif;
+				font-size: 18px;
+				color: #ffffff;
+				margin-bottom: 20px;
+				padding-bottom: 10px;
+				border-bottom: 2px solid #9CAF88;
+			}
+			.footer p {
+				color: #E0E0E0;
+				font-size: 14px;
+				line-height: 1.7;
+			}
+			.footer p strong {
+				color: #ffffff;
+			}
+			.footer .footer_menu {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.footer .footer_menu li {
+				margin-bottom: 10px;
+			}
+			.footer .footer_menu li a {
+				color: #E0E0E0;
+				text-decoration: none;
+				font-size: 14px;
+				transition: color 0.3s ease;
+			}
+			.footer .footer_menu li a:hover {
+				color: #9CAF88;
+			}
+			.footer .social_icons {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: flex;
+				gap: 10px;
+			}
+			.footer .social_icons li a {
+				display: inline-block;
+				width: 36px;
+				height: 36px;
+				background: rgba(255,255,255,0.1);
+				border-radius: 50%;
+				text-align: center;
+				line-height: 36px;
+				transition: background 0.3s ease;
+			}
+			.footer .social_icons li a:hover {
+				background: #9CAF88;
+			}
+			.footer_bottom_container {
+				background: #1a252f;
+				padding: 0;
+			}
+			.footer_bottom {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+			.footer_bottom p {
+				color: #BFBFBF;
+				font-size: 13px;
+				text-align: center;
+				padding: 20px 0;
+				margin: 0;
+			}
+			.footer_bottom a {
+				color: #9CAF88;
+				text-decoration: none;
+			}
+			.footer_bottom a:hover {
+				text-decoration: underline;
+			}
+			@media (max-width: 768px) {
+				.footer {
+					flex-direction: column;
+				}
+				.footer .column_1_4 {
+					min-width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="site_container">
+			<!-- SILK Ecosystem Navigation -->
+			<div class="silk-nav-bar">
+				<ul class="silk-sites">
+					<li><a href="https://silkcorp.org" title="SILK Corp">Corp</a></li>
+					<li class="active"><a href="https://silklife.org" title="SILK Life">Life</a></li>
+					<li><a href="https://silkyoga.org" title="SILK Yoga">Yoga</a></li>
+					<li><a href="https://silkarts.org" title="SILK Arts">Arts</a></li>
+					<li><a href="https://silkcafe.org" title="SILK Cafe">Cafe</a></li>
+					<li><a href="https://silkhomes.org" title="SILK Homes">Homes</a></li>
+					<li><a href="https://silkwomen.org" title="SILK Women">Women</a></li>
+				</ul>
+			</div>
+
+			<!-- Top Bar -->
+			<div class="header_top_bar_container clearfix">
+				<div class="header_top_bar">
+					<form class="search" action="search.html" method="get">
+						<input type="text" name="s" placeholder="Search stories..." value="" class="search_input hint">
+						<input type="submit" class="search_submit" value="">
+					</form>
+					<ul class="social_icons clearfix">
+						<li><a target="_blank" href="https://facebook.com/silklifemag" class="social_icon facebook" title="Facebook">&nbsp;</a></li>
+						<li><a target="_blank" href="https://instagram.com/silklifemag" class="social_icon instagram" title="Instagram">&nbsp;</a></li>
+						<li><a target="_blank" href="https://twitter.com/silklifemag" class="social_icon twitter" title="Twitter">&nbsp;</a></li>
+						<li><a href="mailto:life@silkcorp.org" class="social_icon mail" title="Email">&nbsp;</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Header -->
+			<div class="header_container">
+				<div class="header clearfix">
+					<div class="logo">
+						<h1><a href="index.html" title="SILK Life">SILK Life</a></h1>
+						<h4>Stories of Intentional Living</h4>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main Navigation -->
+			<div class="menu_container clearfix">
+				<nav aria-label="Main navigation">
+				<ul class="sf-menu">
+					<li>
+						<a href="index.html" title="Home">
+							Home
+						</a>
+					</li>
+					<li class="submenu mega_menu_parent">
+						<a href="#" title="Stories">
+							Stories
+						</a>
+						<ul>
+							<li class="submenu">
+								<a href="category_yoga.html" title="Yoga & Wellness">
+									Yoga & Wellness
+								</a>
+								<ul class="mega_menu blog">
+									<li class="post">
+										<a href="post-yoga-mindful-movement.html" title="The Attic Book Discovery">
+											<img src='images/articles/yoga-mindful-movement.webp' alt='img'>
+										</a>
+										<h5><a href="post-yoga-mindful-movement.html" title="The Attic Book Discovery">The Attic Book Discovery</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="YOGA" href="category_yoga.html">YOGA</a></li>
+											<li class="date">
+												7:15 AM, Dec 15
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-yoga-breathing.html" title="The Window Seat Breathing Practice">
+											<img src='images/articles/yoga-breathing.webp' alt='img'>
+										</a>
+										<h5><a href="post-yoga-breathing.html" title="The Window Seat Breathing Practice">The Window Seat Breathing Practice</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="YOGA" href="category_yoga.html">YOGA</a></li>
+											<li class="date">
+												9:45 AM, Dec 14
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-yoga-stillness.html" title="Twenty Minutes of Nothing">
+											<img src='images/articles/yoga-stillness.webp' alt='img'>
+										</a>
+										<h5><a href="post-yoga-stillness.html" title="Twenty Minutes of Nothing">Twenty Minutes of Nothing</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="YOGA" href="category_yoga.html">YOGA</a></li>
+											<li class="date">
+												11:00 AM, Dec 13
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="category_arts.html" title="Arts & Culture">
+									Arts & Culture
+								</a>
+								<ul class="mega_menu blog">
+									<li class="post">
+										<a href="post-arts-transforming-spaces.html" title="The Room Sarah Reclaimed">
+											<span class="icon gallery"></span>
+											<img src='images/homepage/hp-home-03-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-arts-transforming-spaces.html" title="The Room Sarah Reclaimed">The Room Sarah Reclaimed</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="ARTS" href="category_arts.html">ARTS</a></li>
+											<li class="date">
+												4:15 PM, Dec 15
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-arts-creative-expression.html" title="The Thread Annie Found">
+											<span class="icon gallery"></span>
+											<img src='images/homepage/hp-sculpture-14-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-arts-creative-expression.html" title="The Thread Annie Found">The Thread Annie Found</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="ARTS" href="category_arts.html">ARTS</a></li>
+											<li class="date">
+												1:45 PM, Dec 14
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-arts-gallery-opening.html" title="The Night We Opened Jacob's Living Room">
+											<span class="icon gallery"></span>
+											<img src='images/homepage/hp-cafe-04-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-arts-gallery-opening.html" title="The Night We Opened Jacob's Living Room">The Night We Opened Jacob's Living Room</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="ARTS" href="category_arts.html">ARTS</a></li>
+											<li class="date">
+												9:30 AM, Dec 13
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="category_cafe.html" title="Cafe & Culinary">
+									Cafe & Culinary
+								</a>
+								<ul class="mega_menu blog">
+									<li class="post">
+										<a href="post-cafe-farm-revolution.html" title="Farm-to-Table Revolution">
+											<img src='images/homepage/hp-garden-08-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-cafe-farm-revolution.html" title="Farm-to-Table Revolution">Farm-to-Table Revolution</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="CAFE" href="category_cafe.html">CAFE</a></li>
+											<li class="date">
+												5:30 PM, Dec 15
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-cafe-coffee-gathering.html" title="Community Gathering Over Coffee">
+											<img src='images/homepage/hp-pottery-10-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-cafe-coffee-gathering.html" title="Community Gathering Over Coffee">Community Gathering Over Coffee</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="CAFE" href="category_cafe.html">CAFE</a></li>
+											<li class="date">
+												10:00 AM, Dec 14
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-cafe-seasonal-harvest.html" title="Seasonal Menu Celebrates Local Harvest">
+											<img src='images/homepage/hp-arts-02-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-cafe-seasonal-harvest.html" title="Seasonal Menu Celebrates Local Harvest">Seasonal Menu Celebrates Local Harvest</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="CAFE" href="category_cafe.html">CAFE</a></li>
+											<li class="date">
+												2:00 PM, Dec 12
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="category_homes.html" title="Homes & Living">
+									Homes & Living
+								</a>
+								<div class="mega_menu row">
+									<div class="column column_1_2">
+										<ul class="blog small">
+											<li class="post">
+												<a href="post-homes-intentional-living.html" title="Learning to Share Space (and Myself)">
+													<img src='images/homepage/thumbs/hp-yoga-01-100.webp' alt='img'>
+												</a>
+												<div class="post_content">
+													<h5>
+														<a href="post-homes-intentional-living.html" title="Learning to Share Space (and Myself)">Learning to Share Space (and Myself)</a>
+													</h5>
+													<ul class="post_details simple">
+														<li class="category"><a href="category_homes.html" title="HOMES">HOMES</a></li>
+														<li class="date">
+															4:30 PM, Dec 15
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="post">
+												<a href="post-homes-sustainable-design.html" title="Small Fixes That Made an Old House Work">
+													<img src='images/homepage/thumbs/hp-tech-07-100.webp' alt='img'>
+												</a>
+												<div class="post_content">
+													<h5>
+														<a href="post-homes-sustainable-design.html" title="Small Fixes That Made an Old House Work">Small Fixes That Made an Old House Work</a>
+													</h5>
+													<ul class="post_details simple">
+														<li class="category"><a href="category_homes.html" title="HOMES">HOMES</a></li>
+														<li class="date">
+															11:15 AM, Dec 14
+														</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="column column_1_2">
+										<ul class="blog small">
+											<li class="post">
+												<a href="post-homes-sacred-spaces.html" title="The Butler's Pantry Meditation">
+													<img src='images/homepage/thumbs/hp-dining-09-100.webp' alt='img'>
+												</a>
+												<div class="post_content">
+													<h5>
+														<a href="post-homes-sacred-spaces.html" title="The Butler's Pantry Meditation">The Butler's Pantry Meditation</a>
+													</h5>
+													<ul class="post_details simple">
+														<li class="category"><a href="category_homes.html" title="HOMES">HOMES</a></li>
+														<li class="date">
+															3:20 PM, Dec 13
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="post">
+												<a href="post-homes-community-stories.html" title="Small Moments That Build a Life Together">
+													<img src='images/homepage/thumbs/hp-meditation-13-100.webp' alt='img'>
+												</a>
+												<div class="post_content">
+													<h5>
+														<a href="post-homes-community-stories.html" title="Small Moments That Build a Life Together">Small Moments That Build a Life Together</a>
+													</h5>
+													<ul class="post_details simple">
+														<li class="category"><a href="category_homes.html" title="HOMES">HOMES</a></li>
+														<li class="date">
+															9:45 AM, Dec 12
+														</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="submenu">
+								<a href="category_tech.html" title="Tech & Innovation">
+									Tech & Innovation
+								</a>
+								<ul class="mega_menu blog">
+									<li class="post">
+										<a href="post-tech-modern-wellness.html" title="The Digital Sunset Ritual">
+											<img src='images/homepage/hp-meditation-13-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-tech-modern-wellness.html" title="The Digital Sunset Ritual">The Digital Sunset Ritual</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="TECH" href="category_tech.html">TECH</a></li>
+											<li class="date">
+												2:15 PM, Dec 21
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-tech-intentionality.html" title="The Community Calendar That Brought Us Together">
+											<img src='images/homepage/hp-dining-09-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-tech-intentionality.html" title="The Community Calendar That Brought Us Together">The Community Calendar That Brought Us Together</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="TECH" href="category_tech.html">TECH</a></li>
+											<li class="date">
+												5:00 PM, Dec 22
+											</li>
+										</ul>
+									</li>
+									<li class="post">
+										<a href="post-tech-sustainable.html" title="The Laptop That Wouldn't Die">
+											<img src='images/homepage/hp-tech-07-330.webp' alt='img'>
+										</a>
+										<h5><a href="post-tech-sustainable.html" title="The Laptop That Wouldn't Die">The Laptop That Wouldn't Die</a></h5>
+										<ul class="post_details simple">
+											<li class="category"><a title="TECH" href="category_tech.html">TECH</a></li>
+											<li class="date">
+												1:30 PM, Dec 23
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="community.html" title="Community">
+							Community
+						</a>
+					</li>
+					<li>
+						<a href="events.html" title="Events">
+							Events
+						</a>
+					</li>
+					<li class="selected">
+						<a href="about.html" title="About">
+							About
+						</a>
+					</li>
+					<li>
+						<a href="subscribe.html" title="Subscribe">
+							Subscribe
+						</a>
+					</li>
+				</ul>
+				</nav>
+				<div class="mobile_menu_container">
+					<a href="#" class="mobile-menu-switch">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</a>
+					<div class="mobile-menu-divider"></div>
+					<nav>
+					<ul class="mobile-menu">
+						<li>
+							<a href="index.html" title="Home">
+								Home
+							</a>
+						</li>
+						<li class="submenu">
+							<a href="#" title="Stories">
+								Stories
+							</a>
+							<ul>
+								<li>
+									<a href="category_yoga.html" title="Yoga & Wellness">
+										Yoga & Wellness
+									</a>
+								</li>
+								<li>
+									<a href="category_arts.html" title="Arts & Culture">
+										Arts & Culture
+									</a>
+								</li>
+								<li>
+									<a href="category_cafe.html" title="Cafe & Culinary">
+										Cafe & Culinary
+									</a>
+								</li>
+								<li>
+									<a href="category_homes.html" title="Homes & Living">
+										Homes & Living
+									</a>
+								</li>
+								<li>
+									<a href="category_tech.html" title="Tech & Innovation">
+										Tech & Innovation
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="community.html" title="Community">
+								Community
+							</a>
+						</li>
+						<li>
+							<a href="events.html" title="Events">
+								Events
+							</a>
+						</li>
+						<li class="selected">
+							<a href="about.html" title="About">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="subscribe.html" title="Subscribe">
+								Subscribe
+							</a>
+						</li>
+					</ul>
+					</nav>
+				</div>
+			</div>
+
+			<!-- Hero Section -->
+			<div class="about-hero">
+				<div class="about-hero-content">
+					<h1>Living the SILK Lifestyle in the Ohio River Valley</h1>
+					<h2>Yoga &bull; Arts &bull; Cafe &bull; Homes &bull; Tech</h2>
+					<p>We're about 50 people living in 1880s Victorian cottages scattered across three river towns in West Virginia and Ohio. We're not a commune. We're not a movement. We're nurses and teachers, writers and carpenters, gardeners and tech workers who happened to find each other while trying to figure out how to live with a little more intention.</p>
+				</div>
+			</div>
+
+			<!-- SILK Values Strip -->
+			<div class="silk-values-strip">
+				<div class="silk-values-grid">
+					<div class="silk-value-item">
+						<span class="silk-value-letter">S</span>
+						<span class="silk-value-name">Strength</span>
+					</div>
+					<div class="silk-value-item">
+						<span class="silk-value-letter">I</span>
+						<span class="silk-value-name">Integrity</span>
+					</div>
+					<div class="silk-value-item">
+						<span class="silk-value-letter">L</span>
+						<span class="silk-value-name">Love</span>
+					</div>
+					<div class="silk-value-item">
+						<span class="silk-value-letter">K</span>
+						<span class="silk-value-name">Knowledge</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- What is YACHT Section -->
+			<div class="yacht-section">
+				<div class="yacht-intro">
+					<h2>What is YACHT?</h2>
+					<p>YACHT represents the five pillars of intentional living that guide our community. Each letter stands for a practice area where we invest our time and energy: <strong>Y</strong>oga, <strong>A</strong>rts, <strong>C</strong>afe, <strong>H</strong>omes, and <strong>T</strong>ech. Together, they form a framework for building a life that reflects what actually matters.</p>
+				</div>
+				<div class="yacht-pillars">
+					<div class="yacht-pillar" data-pillar="yoga">
+						<div class="yacht-pillar-image">
+							<img src="images/about/about-yoga.webp" alt="Yoga practice in Victorian cottage">
+						</div>
+						<div class="yacht-pillar-content">
+							<span class="yacht-pillar-letter">Y</span>
+							<h3>Yoga</h3>
+							<p class="yacht-pillar-tagline">Practice, not performance</p>
+							<a href="https://silkyoga.org" class="yacht-pillar-cta" target="_blank">Explore</a>
+						</div>
+					</div>
+					<div class="yacht-pillar" data-pillar="arts">
+						<div class="yacht-pillar-image">
+							<img src="images/about/about-arts.webp" alt="Pottery arts in cottage studio">
+						</div>
+						<div class="yacht-pillar-content">
+							<span class="yacht-pillar-letter">A</span>
+							<h3>Arts</h3>
+							<p class="yacht-pillar-tagline">Making things matter</p>
+							<a href="https://silkarts.org" class="yacht-pillar-cta" target="_blank">Discover</a>
+						</div>
+					</div>
+					<div class="yacht-pillar" data-pillar="cafe">
+						<div class="yacht-pillar-image">
+							<img src="images/about/about-cafe.webp" alt="Morning coffee gathering">
+						</div>
+						<div class="yacht-pillar-content">
+							<span class="yacht-pillar-letter">C</span>
+							<h3>Cafe</h3>
+							<p class="yacht-pillar-tagline">Tables that gather</p>
+							<a href="https://silkcafe.org" class="yacht-pillar-cta" target="_blank">Taste</a>
+						</div>
+					</div>
+					<div class="yacht-pillar" data-pillar="homes">
+						<div class="yacht-pillar-image">
+							<img src="images/about/about-homes.webp" alt="Victorian cottage parlor">
+						</div>
+						<div class="yacht-pillar-content">
+							<span class="yacht-pillar-letter">H</span>
+							<h3>Homes</h3>
+							<p class="yacht-pillar-tagline">Victorian bones, modern lives</p>
+							<a href="https://silkhomes.org" class="yacht-pillar-cta" target="_blank">Visit</a>
+						</div>
+					</div>
+					<div class="yacht-pillar" data-pillar="tech">
+						<div class="yacht-pillar-image">
+							<img src="images/about/about-tech.webp" alt="Digital wellness workspace">
+						</div>
+						<div class="yacht-pillar-content">
+							<span class="yacht-pillar-letter">T</span>
+							<h3>Tech</h3>
+							<p class="yacht-pillar-tagline">Tools, not masters</p>
+							<a href="https://silktech.org" class="yacht-pillar-cta" target="_blank">Connect</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- YACHT Details Section -->
+			<div class="yacht-details">
+				<div class="yacht-detail-item">
+					<div class="yacht-detail-image">
+						<img src="images/about/about-yoga.webp" alt="Morning yoga practice">
+					</div>
+					<div class="yacht-detail-content">
+						<h3>Yoga: Practice, Not Performance</h3>
+						<p class="tagline">Personal wellness practices that meet you where you are</p>
+						<p>Yoga here doesn't mean studios or workshops or certified anything. It means Evie Stone doing sun salutations on her porch at 6:15 AM because that's when the light hits just right. It means Iris Yamamoto hosting Wednesday evening meditation in her Market Street parlor, where the radiator clanks and nobody minds. It means Miguel Santos learning from YouTube videos in his kitchen before his 5 AM shift at the diner. We practice yoga the way we practice everything&mdash;imperfectly, at home, because it helps us show up for the rest of our lives.</p>
+						<a href="category-yoga.html" class="yacht-detail-cta">Explore Yoga Stories</a>
+					</div>
+				</div>
+
+				<div class="yacht-detail-item">
+					<div class="yacht-detail-image">
+						<img src="images/about/about-arts.webp" alt="Pottery workshop">
+					</div>
+					<div class="yacht-detail-content">
+						<h3>Arts: Making Things Matter</h3>
+						<p class="tagline">Creative expression in basement studios and sun porch offices</p>
+						<p>Elena Martinez throws pottery in the studio she built onto her 1891 Italianate cottage, between night shifts at the ER. Rachel Kim takes Polaroids of the ordinary moments&mdash;Bill's tomatoes, the morning light through wavy glass windows, Emma's SCOBY collection. Ben Okafor documents our lives with his camera. Nathan Cross makes custom furniture in his Marietta workshop, restoring our sagging porches one board at a time. Art here isn't something you visit in galleries. It's what happens when your hands need to be making something while your mind works through everything else.</p>
+						<a href="category-arts.html" class="yacht-detail-cta">Discover Arts Stories</a>
+					</div>
+				</div>
+
+				<div class="yacht-detail-item">
+					<div class="yacht-detail-image">
+						<img src="images/about/about-cafe.webp" alt="Kitchen gathering">
+					</div>
+					<div class="yacht-detail-content">
+						<h3>Cafe: Tables That Gather</h3>
+						<p class="tagline">Garden-to-table meals and coffee rituals that build community</p>
+						<p>Every Saturday morning, people drift into Maya Chen's kitchen on Front Street for coffee. There's no invitation. No RSVP. Just the understanding that the door's open and the French press is on. Bill Henderson grows Cherokee Purple tomatoes on his wraparound porch and gives away more than he keeps. Jesse Martinez learned to garden after losing his warehouse job&mdash;grew 47 pounds of tomatoes his first season. Deb Morrison's organic farm supplies half the community with produce. We eat together because that's when the best conversations happen.</p>
+						<a href="category-cafe.html" class="yacht-detail-cta">Read Cafe Stories</a>
+					</div>
+				</div>
+
+				<div class="yacht-detail-item">
+					<div class="yacht-detail-image">
+						<img src="images/about/about-homes.webp" alt="Victorian parlor">
+					</div>
+					<div class="yacht-detail-content">
+						<h3>Homes: Victorian Bones, Modern Lives</h3>
+						<p class="tagline">Intentional living in 1880s cottages with all their quirks</p>
+						<p>These houses were built between 1886 and 1895. They have 9-foot ceilings and wavy glass windows and radiators that clank all night. The floors slope. The parlors are too small for modern sectionals. The porches sag. We live in them anyway. Sarah Mitchell manages the SILK Homes property in Marietta, welcoming new arrivals and her three chickens. Sam Rivera learned to heat his Italianate cottage for $165 instead of $340 after his first brutal winter. Tom Richardson fixes things without being asked. It's not always comfortable. But it's real.</p>
+						<a href="category-homes.html" class="yacht-detail-cta">Visit Homes Stories</a>
+					</div>
+				</div>
+
+				<div class="yacht-detail-item">
+					<div class="yacht-detail-image">
+						<img src="images/about/about-tech.webp" alt="Digital workspace">
+					</div>
+					<div class="yacht-detail-content">
+						<h3>Tech: Tools, Not Masters</h3>
+						<p class="tagline">Digital wellness and thoughtful technology in a connected world</p>
+						<p>Omar Hassan runs an informal repair cafe from his Marietta cottage, helping anyone who shows up with a broken phone or confused laptop. Jordan Hayes created a shared community calendar because we kept missing each other. Jacob Torres works remotely half the time, running code from a Victorian cottage with century-old radiators and spotty rural internet. We use technology when it helps us connect, create, or solve real problems. We put it down when it doesn't. Technology serves our lives here. It doesn't run them.</p>
+						<a href="category-tech.html" class="yacht-detail-cta">Explore Tech Stories</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- YACHT Links Bar -->
+			<div class="yacht-links-bar">
+				<div class="yacht-links-grid">
+					<a href="https://silkyoga.org" class="yacht-link" target="_blank">SILK Yoga</a>
+					<a href="https://silkarts.org" class="yacht-link" target="_blank">SILK Arts</a>
+					<a href="https://silkcafe.org" class="yacht-link" target="_blank">SILK Cafe</a>
+					<a href="https://silkhomes.org" class="yacht-link" target="_blank">SILK Homes</a>
+					<a href="https://silktech.org" class="yacht-link" target="_blank">SILK Tech</a>
+				</div>
+			</div>
+
+			<!-- SILK Values Deep Section -->
+			<div class="values-deep-section">
+				<div class="about-section-header">
+					<h2>The SILK Values</h2>
+					<p>Four principles that guide how we live, work, and show up for each other</p>
+				</div>
+				<div class="values-deep-grid">
+					<div class="value-deep-card strength">
+						<h3>Strength</h3>
+						<p class="essence">The courage to show up imperfectly and try again</p>
+						<p>Strength isn't about perfection. It's Jesse Martinez accepting groceries from neighbors after losing his job. It's Rachel Kim's 17 failed sourdough loaves before the 18th one finally rose. It's Elena Martinez working ER night shifts and still showing up to teach pottery on weekends. It's the quiet strength of Tom Richardson fixing everyone's problems without being asked, and the harder strength of learning to accept help when it's offered.</p>
+					</div>
+					<div class="value-deep-card integrity">
+						<h3>Integrity</h3>
+						<p class="essence">Living aligned with your actual values, not your aspirational ones</p>
+						<p>Integrity is Bill Henderson spending 30 years on the Ohio River and another decade learning to grow tomatoes because there's always something new worth learning. It's Sarah Mitchell driving her 1998 CR-V and managing the Marietta property with the same care she gave to her library patrons. It's Tom salting everyone's sidewalks before dawn without taking credit. Integrity is the difference between the life you perform and the life you actually live.</p>
+					</div>
+					<div class="value-deep-card love">
+						<h3>Love</h3>
+						<p class="essence">Showing up for each other in the small, consistent ways that matter</p>
+						<p>Love is Emma Clarke knowing everyone's story and introducing the right people at the right time. It's Terri Washington driving Elena to night shifts so neither of them has to be alone at 10 PM. It's the Saturday coffee at Maya's that nobody has to host alone because someone always shows up to help. It's Rosa Delgado bringing soup when anyone's sick, and Charlie Brooks fixing Maya's porch light even though he pretends to be gruff.</p>
+					</div>
+					<div class="value-deep-card knowledge">
+						<h3>Knowledge</h3>
+						<p class="essence">Learning that comes from doing, failing, and trying again</p>
+						<p>Knowledge isn't something you acquire once. It's Sam Rivera's entire first winter learning about radiators. It's Rachel's 17 failed sourdough attempts. It's Kevin Lee documenting oral histories with Bill, preserving the river stories that would otherwise disappear. It's the knowledge that lives in Dot Brennan's 79 years, and Howard Goldstein's legal mind helping draft community agreements. We learn by doing. Knowledge grows when we share it.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Build Your YACHT Section -->
+			<div class="build-yacht-section">
+				<div class="build-yacht-content">
+					<h2>You Don't Need Permission to Build Your Own YACHT</h2>
+					<p>You don't have to live in a Victorian cottage in the Ohio River Valley to practice YACHT. You don't need a community of 50 people or a wraparound porch or a garden that produces too much zucchini. YACHT isn't a place or a program. It's a framework for building a life that reflects what actually matters to you.</p>
+					<p>Your yoga might be running or swimming or just breathing deeply three times before you start your day. Your arts might be cooking or woodworking or the way you arrange your space. Your cafe might be breakfast with your kids or coffee with one friend. Your homes might be a rental apartment you're making yours. Your tech might be the boundaries you set with your phone.</p>
+					<p>Start anywhere. Pick one practice. Build your YACHT one small choice at a time. You don't need to document it or optimize it or make it Instagram-worthy. You just need to do it. And then do it again tomorrow.</p>
+					<blockquote class="build-yacht-quote">
+						"I spent 30 years on the Ohio River learning one thing. Now I'm learning something new. There's always time to start."
+						<cite>&mdash; Bill Henderson, 73, Ravenswood</cite>
+					</blockquote>
+				</div>
+			</div>
+
+			<!-- Locations Section -->
+			<div class="locations-section">
+				<div class="about-section-header">
+					<h2>Our Locations</h2>
+					<p>Three river towns where the SILK community has taken root</p>
+				</div>
+				<div class="locations-grid">
+					<div class="location-card">
+						<div class="location-card-image">
+							<img src="images/about/about-ravenswood.webp" alt="Victorian cottages in Ravenswood, WV">
+						</div>
+						<div class="location-card-content">
+							<h3>Ravenswood, WV</h3>
+							<p>A quiet river town where Victorian architecture survived because nobody had money to tear it down. About 25 of us live here, mostly on Front Street and River Road. The porches face each other. Bill's wraparound porch is where we gather on summer evenings. This is the heart of the community.</p>
+						</div>
+					</div>
+					<div class="location-card">
+						<div class="location-card-image">
+							<img src="images/about/about-parkersburg.webp" alt="Historic homes in Parkersburg, WV">
+						</div>
+						<div class="location-card-content">
+							<h3>Parkersburg, WV</h3>
+							<p>The bigger, more diverse, more working-class cousin to Ravenswood. About 15 of us scattered across Market Street and Avery Street. This is where Iris hosts Wednesday meditation, where Jesse learned to garden, where Miguel works 5 AM shifts at the diner and Tony runs the pizza shop his grandfather started.</p>
+						</div>
+					</div>
+					<div class="location-card">
+						<div class="location-card-image">
+							<img src="images/about/about-marietta.webp" alt="Historic Marietta, OH riverfront">
+						</div>
+						<div class="location-card-content">
+							<h3>Marietta, OH</h3>
+							<p>A college town with an arts scene and a historic downtown. About 10 of us on Second and Third Streets. Sarah manages the SILK Homes property here with her three chickens. Omar runs the repair cafe. The academic and artistic energy is different&mdash;more book clubs, more music nights.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Write For Us Section -->
+			<div class="write-for-us-section">
+				<div class="write-for-us-content">
+					<h2>Your Story Belongs Here</h2>
+					<p>We're always looking for real stories from real people trying to live intentionally. Not success stories. Not how-to guides. Not perfectly curated moments. We want the Tuesday at 6:47 AM stories. The failed experiments. The awkward first attempts. The moments when your neighbor showed up and everything shifted slightly.</p>
+					<p>Personal yoga practices, creative projects, food stories, living in imperfect spaces, technology boundaries, community moments that happened accidentally&mdash;anything that reflects the YACHT pillars and the messy reality of trying to live with intention.</p>
+					<p>Have a story? Send it to <strong>stories@silklife.org</strong>. Include your name, location, and which YACHT pillar(s) your story touches. First-person narratives preferred. Imperfection required.</p>
+					<a href="contact.html" class="cta-button">Get In Touch</a>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<div class="footer_container clearfix">
+				<div class="footer clearfix">
+					<div class="column_1_4">
+						<h4>About SILK Life</h4>
+						<p style="color:rgba(255,255,255,0.7);font-size:13px;line-height:1.7;">SILK Life Magazine is the heart of the SILK community, where authentic stories of intentional living, wellness, and creativity come together to inspire and connect.</p>
+						<ul class="social_icons clearfix" style="margin-top:15px;">
+							<li><a target="_blank" href="https://facebook.com/silklifemag" class="social_icon facebook" title="Facebook">&nbsp;</a></li>
+							<li><a target="_blank" href="https://instagram.com/silklifemag" class="social_icon instagram" title="Instagram">&nbsp;</a></li>
+							<li><a target="_blank" href="https://twitter.com/silklifemag" class="social_icon twitter" title="Twitter">&nbsp;</a></li>
+						</ul>
+					</div>
+					<div class="column_1_4">
+						<h4>SILK Ecosystem</h4>
+						<ul class="footer_menu clearfix">
+							<li><a href="https://silkcorp.org" title="SILK Corp">SILK Corp</a></li>
+							<li><a href="https://silkyoga.org" title="SILK Yoga">SILK Yoga</a></li>
+							<li><a href="https://silkarts.org" title="SILK Arts">SILK Arts</a></li>
+							<li><a href="https://silkcafe.org" title="SILK Cafe">SILK Cafe</a></li>
+							<li><a href="https://silkhomes.org" title="SILK Homes">SILK Homes</a></li>
+							<li><a href="https://silkwomen.org" title="SILK Women">SILK Women</a></li>
+						</ul>
+					</div>
+					<div class="column_1_4">
+						<h4>YACHT Life</h4>
+						<ul class="footer_menu clearfix">
+							<li><a href="category-yoga.html" title="Yoga & Wellness">Yoga & Wellness</a></li>
+							<li><a href="category-arts.html" title="Arts & Culture">Arts & Culture</a></li>
+							<li><a href="category-cafe.html" title="Cafe & Culinary">Cafe & Culinary</a></li>
+							<li><a href="category-homes.html" title="Homes & Living">Homes & Living</a></li>
+							<li><a href="category-tech.html" title="Tech & Innovation">Tech & Innovation</a></li>
+						</ul>
+					</div>
+					<div class="column_1_4 last">
+						<h4>Contact</h4>
+						<p style="color:rgba(255,255,255,0.7);font-size:13px;line-height:1.7;">
+							<strong>Stories:</strong> stories@silklife.org<br>
+							<strong>Editorial:</strong> editor@silklife.org<br>
+							<strong>General:</strong> life@silkcorp.org
+						</p>
+						<p style="color:rgba(255,255,255,0.7);font-size:13px;line-height:1.7;margin-top:15px;">
+							Part of the SILK Corp family of intentional living communities.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer_bottom_container clearfix">
+				<div class="footer_bottom">
+					<p style="color:rgba(255,255,255,0.5);font-size:12px;text-align:center;padding:15px 0;">
+						&copy; 2026 SILK Life Magazine. A publication of <a href="https://silkcorp.org" style="color:#E07A5F;">SILK Corp</a>. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script type='text/javascript' src='js/jquery.js'></script>
+		<script type='text/javascript' src='js/hoverIntent.js'></script>
+		<script type='text/javascript' src='js/superfish.js'></script>
+		<script type='text/javascript' src='js/jquery.prettyPhoto.js'></script>
+		<script type='text/javascript' src='js/jquery.qtip.js'></script>
+		<script type='text/javascript' src='js/jquery.carouFredSel.js'></script>
+		<script type='text/javascript' src='js/jquery.easing.js'></script>
+		<script type='text/javascript' src='js/jquery.timeago.js'></script>
+		<script type='text/javascript' src='js/jquery.touchSwipe.js'></script>
+		<script type='text/javascript' src='js/odometer.js'></script>
+		<script type='text/javascript' src='js/main.js'></script>
+	</body>
+</html>

@@ -1,0 +1,876 @@
+/* ============================================
+   SILK Life Magazine - Custom Branding Styles
+   ============================================
+   Calming yoga-inspired palette matching
+   SILK Yoga (#b39fd3) and SILK Corp (#a5cbe1)
+   ============================================ */
+
+:root {
+    --silk-primary: #9CAF88;      /* Sage Green - calming, natural */
+    --silk-secondary: #F7F6F3;    /* Warm off-white */
+    --silk-accent: #B8A9C9;       /* Soft lavender - ties to SILK Yoga */
+    --silk-dark: #2e3d50;         /* Dark slate - matches SILK Corp */
+    --silk-light: #FAFAF8;        /* Soft warm white */
+    --silk-text: #4A5568;         /* Softer dark gray */
+    --silk-text-light: #718096;   /* Muted gray */
+    --silk-warm: #D4C5B9;         /* Warm taupe for accents */
+}
+
+/* --- Typography --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
+body {
+    font-family: 'Inter', 'Arial', sans-serif;
+    background: var(--silk-light);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+blockquote,
+.quote_content {
+    font-family: 'Lora', Georgia, serif;
+    font-style: italic;
+}
+
+/* --- Header Branding --- */
+.header_top_bar_container {
+    background: var(--silk-dark);
+}
+
+.header_top_bar_container .header_top_bar {
+    background: var(--silk-dark);
+}
+
+.header_container {
+    background: #FFF;
+    border-bottom: 3px solid var(--silk-primary);
+}
+
+.header .logo h1 a {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--silk-primary) !important;
+    font-weight: 700;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.header .logo h4 {
+    color: var(--silk-accent) !important;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* --- Navigation --- */
+.menu_container {
+    background: var(--silk-dark); /* Changed from sage green to dark slate for 12.6:1 contrast ratio (508 compliant) */
+}
+
+.menu_container nav ul.sf-menu > li > a {
+    color: #FFF !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu_container nav ul.sf-menu > li:hover > a,
+.menu_container nav ul.sf-menu > li.selected > a {
+    background: rgba(0,0,0,0.2);
+}
+
+.menu_container nav ul.sf-menu ul {
+    background: var(--silk-dark);
+}
+
+.menu_container nav ul.sf-menu ul li a {
+    color: #FFF !important;
+}
+
+.menu_container nav ul.sf-menu ul li a:hover {
+    background: var(--silk-primary);
+}
+
+/* --- Category Labels --- */
+.post_details .category a,
+li.category a,
+.category_label {
+    background: var(--silk-primary) !important;
+    color: #FFF !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+
+/* Category-specific colors - soft, muted tones */
+.category-yoga a,
+[data-category="yoga"] .category a {
+    background: #9CAF88 !important; /* Sage Green */
+}
+
+.category-arts a,
+[data-category="arts"] .category a {
+    background: #B8A9C9 !important; /* Soft Lavender */
+}
+
+.category-cafe a,
+[data-category="cafe"] .category a {
+    background: #C4A77D !important; /* Warm Sand/Latte */
+}
+
+.category-homes a,
+[data-category="homes"] .category a {
+    background: #A8B5A0 !important; /* Muted Olive */
+}
+
+.category-tech a,
+[data-category="tech"] .category a {
+    background: #94A7B8 !important; /* Soft Steel Blue */
+}
+
+.category-community a,
+[data-category="community"] .category a {
+    background: var(--silk-accent) !important;
+}
+
+.category-wellness a,
+[data-category="wellness"] .category a {
+    background: #9CAF88 !important;
+}
+
+/* --- Section Headers --- */
+.section_header,
+.box_header {
+    border-left: 4px solid var(--silk-primary);
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.section_header h4,
+.box_header h4 {
+    color: var(--silk-dark);
+    font-weight: 600;
+}
+
+.section_header h4 span,
+.box_header h4 span {
+    color: var(--silk-primary);
+}
+
+/* --- Post Titles --- */
+.post h5 a,
+.post_content h5 a,
+.blog h5 a {
+    color: var(--silk-dark);
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 500;
+}
+
+.post h5 a:hover,
+.post_content h5 a:hover,
+.blog h5 a:hover {
+    color: var(--silk-primary);
+    text-decoration: none;
+}
+
+/* --- Buttons --- */
+.more,
+.button,
+input[type="submit"] {
+    background: var(--silk-primary) !important;
+    color: #FFF !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.more:hover,
+.button:hover,
+input[type="submit"]:hover {
+    background: var(--silk-accent) !important;
+    text-decoration: none;
+}
+
+/* --- Slider --- */
+.slider_container .description {
+    background: rgba(44, 62, 80, 0.9);
+}
+
+.slider_container .description h2 a {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.slider_container .description h2 a:hover {
+    color: var(--silk-primary);
+}
+
+/* --- Sidebar --- */
+.sidebar .box_header {
+    background: var(--silk-secondary);
+    border-left: 4px solid var(--silk-primary);
+}
+
+.sidebar .box_header h4 {
+    color: var(--silk-dark);
+}
+
+/* --- Footer --- */
+.footer_container {
+    background: var(--silk-dark);
+}
+
+.footer_container h4 {
+    color: #FFF;
+    font-family: 'Playfair Display', Georgia, serif;
+    border-bottom: 2px solid var(--silk-primary);
+    padding-bottom: 10px;
+}
+
+.footer_container a {
+    color: rgba(255,255,255,0.8);
+}
+
+.footer_container a:hover {
+    color: var(--silk-primary);
+}
+
+.footer_bottom_container {
+    background: #1a252f;
+}
+
+/* --- 508 Compliance: Footer text contrast fix --- */
+/* Original #9DA4AB on #2e3d50 = ~3.7:1 (FAILS)
+   Updated to #C5CCD3 on #2e3d50 = ~6.5:1 (PASSES WCAG AA) */
+.footer .blog ul.post_details.simple li.category,
+.footer .blog ul.post_details.simple li.category a,
+.footer .post_details li.date,
+.footer .post a.comments_number {
+    color: #C5CCD3 !important;
+}
+
+.footer p,
+.footer .post h5 a {
+    color: #FFFFFF;
+}
+
+.footer .ecosystem-item p {
+    color: rgba(255,255,255,0.85);
+}
+
+/* --- Social Icons --- */
+.social_icons a:hover {
+    opacity: 0.8;
+}
+
+/* --- Newsletter Box --- */
+.newsletter_box {
+    background: var(--silk-secondary);
+    border: 2px solid var(--silk-primary);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.newsletter_box h4 {
+    color: var(--silk-dark);
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* --- Tabs --- */
+.tabs_box .tabs li.selected a {
+    background: var(--silk-primary);
+    color: #FFF;
+}
+
+/* --- Author Box --- */
+.author_box {
+    border-left: 4px solid var(--silk-primary);
+    background: var(--silk-secondary);
+}
+
+/* --- Blockquotes --- */
+blockquote {
+    border-left: 4px solid var(--silk-primary);
+    background: var(--silk-secondary);
+    font-family: 'Lora', Georgia, serif;
+    font-style: italic;
+    color: var(--silk-dark);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .header .logo h1 a {
+        font-size: 28px;
+    }
+
+    .menu_container nav {
+        background: var(--silk-dark); /* Updated for 508 compliance */
+    }
+}
+
+/* --- 508 Compliance: Skip Link --- */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #2e3d50;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+/* --- 508 Compliance: Visible Focus States --- */
+.sf-menu li a:focus,
+.menu_container nav ul.sf-menu > li > a:focus,
+a:focus,
+button:focus {
+    outline: 3px solid #B8A9C9 !important;
+    outline-offset: 2px;
+}
+
+/* --- 508 Compliance: Screen Reader Only Utility --- */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* --- SILK Unified Navigation Bar --- */
+.silk-nav-bar {
+    background: var(--silk-dark);
+    padding: 8px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+
+.silk-nav-bar .silk-sites {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.silk-nav-bar .silk-sites a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.silk-nav-bar .silk-sites a:hover {
+    color: var(--silk-primary);
+}
+
+.silk-nav-bar .silk-sites .active a {
+    color: var(--silk-primary);
+    font-weight: 600;
+}
+
+/* --- Article Cards Enhancement --- */
+.post {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* --- Single Article Page: Disable hover effect (not clickable) --- */
+.post.single {
+    transition: none;
+}
+
+.post.single:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* --- Article Text Padding: Prevent text from touching container edges --- */
+.post.single .article-intro .text,
+.post.single .article-full-content .text {
+    padding: 0 20px;
+}
+
+.post.single .content_box .excerpt {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+/* --- Sticky Sidebar: Handled via page-level JavaScript for article pages --- */
+/* See individual post-*.html files for sticky sidebar implementation */
+/* IMPORTANT: Do not use generic .column_1_3 selectors - they conflict with form fieldsets */
+
+/* Main content column positioning */
+.article-layout > .column_2_3 {
+    position: relative;
+}
+
+/* Sidebar column - direct child of article-layout only */
+.article-layout > .column_1_3 {
+    /* Base styles - sticky behavior added via JS */
+}
+
+/* --- 508 Compliance: Enhanced text contrast for featured articles --- */
+/* Add stronger text shadow for better readability without changing layout */
+.blog_grid .post .slider_content_box h5 a,
+.blog_grid .post .slider_content_box h2 a,
+.blog_grid .post .slider_content_box .post_details li,
+.small_slider .slider_content_box h5 a,
+.small_slider .slider_content_box h2 a,
+.small_slider .slider_content_box .post_details li {
+    color: #FFFFFF !important;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Enhance the existing gradient overlay opacity for better contrast */
+.blog_grid .post .slider_content_box,
+.small_slider .slider_content_box {
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.7)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+}
+
+/* --- Featured Story Ribbon --- */
+.featured-ribbon {
+    position: absolute;
+    top: 15px;
+    left: -5px;
+    background: var(--silk-accent);
+    color: #FFF;
+    padding: 5px 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- SILK Values Badge --- */
+.silk-values {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.silk-value {
+    background: var(--silk-secondary);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--silk-dark);
+    font-family: 'Inter', sans-serif;
+}
+
+.silk-value.strength { border-left: 3px solid #9CAF88; }
+.silk-value.integrity { border-left: 3px solid #A8B5A0; }
+.silk-value.love { border-left: 3px solid #B8A9C9; }
+.silk-value.knowledge { border-left: 3px solid #94A7B8; }
+
+/* ============================================
+   SILK Ecosystem Promotion Blocks
+   ============================================ */
+
+.silk-promo-block {
+    background: linear-gradient(135deg, var(--silk-secondary) 0%, #fff 100%);
+    border-radius: 12px;
+    padding: 25px 30px;
+    text-align: center;
+    border: 1px solid rgba(156, 175, 136, 0.3);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.silk-promo-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-color: var(--silk-primary);
+}
+
+.silk-promo-block .promo-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.silk-promo-block .promo-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--silk-text-light);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.silk-promo-block .promo-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--silk-dark);
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.silk-promo-block .promo-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--silk-text);
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.silk-promo-block .promo-cta {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* SILK Yoga - Lavender theme */
+.silk-promo-block.yoga {
+    background: linear-gradient(135deg, #f3eff8 0%, #fff 100%);
+    border-color: rgba(184, 169, 201, 0.4);
+}
+
+.silk-promo-block.yoga .promo-cta {
+    background: #B8A9C9;
+    color: #fff;
+}
+
+.silk-promo-block.yoga .promo-cta:hover {
+    background: #9d8bb3;
+}
+
+/* SILK Homes - Sage Green theme */
+.silk-promo-block.homes {
+    background: linear-gradient(135deg, #f4f7f2 0%, #fff 100%);
+    border-color: rgba(156, 175, 136, 0.4);
+}
+
+.silk-promo-block.homes .promo-cta {
+    background: #9CAF88;
+    color: #fff;
+}
+
+.silk-promo-block.homes .promo-cta:hover {
+    background: #8a9d78;
+}
+
+/* SILK Corp - Slate Blue theme */
+.silk-promo-block.corp {
+    background: linear-gradient(135deg, #eef2f5 0%, #fff 100%);
+    border-color: rgba(46, 61, 80, 0.2);
+}
+
+.silk-promo-block.corp .promo-cta {
+    background: var(--silk-dark);
+    color: #fff;
+}
+
+.silk-promo-block.corp .promo-cta:hover {
+    background: #1a252f;
+}
+
+/* Horizontal promo row */
+.silk-promo-row {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.silk-promo-row .silk-promo-block {
+    flex: 1;
+}
+
+/* Sidebar promo stack */
+.silk-promo-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.silk-promo-sidebar .silk-promo-block {
+    padding: 20px;
+}
+
+.silk-promo-sidebar .silk-promo-block .promo-title {
+    font-size: 18px;
+}
+
+.silk-promo-sidebar .silk-promo-block .promo-text {
+    font-size: 13px;
+}
+
+/* Image-based advertisement blocks */
+.silk-ad-banner {
+    display: block;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin: 30px 0;
+}
+
+.silk-ad-banner:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.silk-ad-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.silk-ad-banner .ad-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    padding: 30px 25px 20px;
+    color: #fff;
+}
+
+.silk-ad-banner .ad-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.silk-ad-banner .ad-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.silk-ad-banner .ad-cta {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--silk-primary);
+}
+
+.silk-ad-banner.full-width {
+    border-radius: 0;
+    margin: 40px -15px;
+}
+
+.silk-ad-banner.full-width .ad-overlay {
+    padding: 40px 30px 25px;
+}
+
+.silk-ad-banner.full-width .ad-title {
+    font-size: 32px;
+}
+
+/* Sidebar ad styling */
+.silk-ad-sidebar {
+    margin: 20px 0;
+}
+
+.silk-ad-sidebar .ad-title {
+    font-size: 18px;
+}
+
+/* Narrow strip banner */
+.silk-ad-strip {
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin: 20px 0;
+}
+
+.silk-ad-strip:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.silk-ad-strip img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+.silk-ad-strip .ad-strip-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(46,61,80,0.9) 0%, rgba(46,61,80,0.7) 50%, rgba(46,61,80,0.5) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 40px;
+}
+
+.silk-ad-strip .ad-strip-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--silk-primary);
+    background: rgba(255,255,255,0.1);
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.silk-ad-strip .ad-strip-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.silk-ad-strip .ad-strip-cta {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--silk-primary);
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.silk-ad-strip:hover .ad-strip-cta {
+    background: #8a9d78;
+}
+
+/* Carousel Ad Items */
+.carousel-ad {
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel-ad img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-ad .ad-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 60px 15px 15px;
+    color: #fff;
+}
+
+.carousel-ad .ad-tag {
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--silk-primary);
+    background: rgba(0,0,0,0.5);
+    padding: 3px 8px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.carousel-ad h5 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 5px 0;
+    line-height: 1.3;
+}
+
+.carousel-ad .ad-site {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: var(--silk-primary);
+    font-weight: 500;
+}
+
+/* Big carousel ad */
+.blog.big .carousel-ad .ad-content {
+    padding: 80px 20px 20px;
+}
+
+.blog.big .carousel-ad h5 {
+    font-size: 20px;
+}
+
+/* Most Engaged - Show 5 items instead of 3 */
+.most-engaged-carousel .vertical_carousel_container {
+    height: auto !important;
+}
+
+.most-engaged-carousel .vertical_carousel_container .caroufredsel_wrapper,
+.most-engaged-carousel .vertical_carousel_container .caroufredsel_wrapper_vertical_carousel {
+    height: 700px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .silk-promo-row {
+        flex-direction: column;
+    }
+
+    .silk-ad-banner .ad-title {
+        font-size: 18px;
+    }
+
+    .silk-ad-banner.full-width .ad-title {
+        font-size: 22px;
+    }
+}
